@@ -1,0 +1,12 @@
+The error messages indicate that the outputs 'gt', 'eq', and 'lt' are being driven by primitives or continuous assignments, not by always blocks. The solution to this problem is to declare these outputs as regs instead of wires. Here is the corrected code:
+
+```verilog
+module comparator_8bit(input [7:0] A, B, output reg gt, eq, lt);
+  
+  assign gt = (A > B);
+  assign eq = (A == B);
+  assign lt = (A < B);
+  
+endmodule
+```
+This code should now compile without errors. The outputs 'gt', 'eq', and 'lt' are declared as regs, which means they can be driven by always blocks or other combinational logic in the module.

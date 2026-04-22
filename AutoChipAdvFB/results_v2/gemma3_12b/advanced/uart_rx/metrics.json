@@ -1,0 +1,66 @@
+{
+  "module": "uart_rx",
+  "model": "gemma3:12b",
+  "condition": "advanced",
+  "pass_at_1": false,
+  "iterations_to_pass": null,
+  "time_to_pass_sec": null,
+  "total_time_sec": 421.5,
+  "total_iterations": 6,
+  "compile_errors": 0,
+  "sim_errors": 6,
+  "latch_warnings": 0,
+  "verilator_catches": 6,
+  "error_types": [
+    "logic_error",
+    "logic_error",
+    "logic_error",
+    "logic_error",
+    "logic_error",
+    "logic_error"
+  ],
+  "per_iter_detail": [
+    {
+      "iter": 1,
+      "verilator_warning": true,
+      "yosys_latch": false,
+      "iverilog_result": "FAIL",
+      "err_type": "logic_error"
+    },
+    {
+      "iter": 2,
+      "verilator_warning": true,
+      "yosys_latch": false,
+      "iverilog_result": "FAIL",
+      "err_type": "logic_error"
+    },
+    {
+      "iter": 3,
+      "verilator_warning": true,
+      "yosys_latch": false,
+      "iverilog_result": "FAIL",
+      "err_type": "logic_error"
+    },
+    {
+      "iter": 4,
+      "verilator_warning": true,
+      "yosys_latch": false,
+      "iverilog_result": "FAIL",
+      "err_type": "logic_error"
+    },
+    {
+      "iter": 5,
+      "verilator_warning": true,
+      "yosys_latch": false,
+      "iverilog_result": "FAIL",
+      "err_type": "logic_error"
+    },
+    {
+      "iter": 6,
+      "verilator_warning": true,
+      "yosys_latch": false,
+      "iverilog_result": "FAIL",
+      "err_type": "logic_error"
+    }
+  ]
+}

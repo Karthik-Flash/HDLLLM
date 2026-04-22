@@ -1,0 +1,11 @@
+--- COMPILATION ---
+results\qwen25-coder_latest\ripple_carry_adder\iter_5\full_adder.v:8: error: reg sum; cannot be driven by primitives or continuous assignment.
+results\qwen25-coder_latest\ripple_carry_adder\iter_5\full_adder.v:9: error: reg cout; cannot be driven by primitives or continuous assignment.
+results\qwen25-coder_latest\ripple_carry_adder\iter_5\full_adder.v:8: error: reg sum; cannot be driven by primitives or continuous assignment.
+results\qwen25-coder_latest\ripple_carry_adder\iter_5\full_adder.v:9: error: reg cout; cannot be driven by primitives or continuous assignment.
+results\qwen25-coder_latest\ripple_carry_adder\iter_5\full_adder.v:8: error: reg sum; cannot be driven by primitives or continuous assignment.
+results\qwen25-coder_latest\ripple_carry_adder\iter_5\full_adder.v:9: error: reg cout; cannot be driven by primitives or continuous assignment.
+results\qwen25-coder_latest\ripple_carry_adder\iter_5\full_adder.v:8: error: reg sum; cannot be driven by primitives or continuous assignment.
+results\qwen25-coder_latest\ripple_carry_adder\iter_5\full_adder.v:9: error: reg cout; cannot be driven by primitives or continuous assignment.
+8 error(s) during elaboration.
+

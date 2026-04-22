@@ -1,0 +1,19 @@
+```verilog
+module alu_8bit (input [7:0] A, B, input [2:0] op, output reg [7:0] result, output wire zero);
+  always @(*) begin
+    case (op)
+      3'b000:   result = A + B;
+      3'b001:   result = A - B;
+      3'b010:   result = A & B;
+      3'b011:   result = A | B;
+      3'b100:   result = A ^ B;
+      3'b101:   result = ~A;
+      3'b110:   result = A << 1;
+      3'b111:   result = A >> 1;
+      default:  result = 8'h00;
+    endcase
+  assign zero = (result == 8'h00);
+  end
+endmodule
+```
+This Verilog code defines a module named 'alu_8bit'. It takes in two 8-bit inputs A and B, along with an opcode of three bits. The output result is a 8-bit register and the zero flag is a wire. The combinational always block uses a case statement to perform different operations based on the value of op. If no valid operation is selected, it defaults to setting the result to 0.

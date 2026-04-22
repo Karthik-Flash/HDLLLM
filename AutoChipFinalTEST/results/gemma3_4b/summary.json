@@ -1,0 +1,334 @@
+{
+  "model": "gemma3:4b",
+  "pass_rate": "10/20",
+  "results": [
+    {
+      "module": "half_adder",
+      "model": "gemma3:4b",
+      "pass_at_1": true,
+      "iterations_to_pass": 1,
+      "time_to_pass_sec": 8.37,
+      "total_time_sec": 8.37,
+      "total_iterations": 1,
+      "compile_errors": 0,
+      "sim_errors": 0,
+      "error_types": [],
+      "max_retries": 5
+    },
+    {
+      "module": "full_adder",
+      "model": "gemma3:4b",
+      "pass_at_1": true,
+      "iterations_to_pass": 1,
+      "time_to_pass_sec": 1.34,
+      "total_time_sec": 1.34,
+      "total_iterations": 1,
+      "compile_errors": 0,
+      "sim_errors": 0,
+      "error_types": [],
+      "max_retries": 5
+    },
+    {
+      "module": "ripple_carry_adder",
+      "model": "gemma3:4b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_time_sec": 31.13,
+      "total_iterations": 5,
+      "compile_errors": 0,
+      "sim_errors": 5,
+      "error_types": [
+        "logic_error",
+        "logic_error",
+        "logic_error",
+        "logic_error",
+        "logic_error"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "comparator_8bit",
+      "model": "gemma3:4b",
+      "pass_at_1": true,
+      "iterations_to_pass": 1,
+      "time_to_pass_sec": 1.43,
+      "total_time_sec": 1.43,
+      "total_iterations": 1,
+      "compile_errors": 0,
+      "sim_errors": 0,
+      "error_types": [],
+      "max_retries": 5
+    },
+    {
+      "module": "bcd_to_7seg",
+      "model": "gemma3:4b",
+      "pass_at_1": true,
+      "iterations_to_pass": 1,
+      "time_to_pass_sec": 3.19,
+      "total_time_sec": 3.19,
+      "total_iterations": 1,
+      "compile_errors": 0,
+      "sim_errors": 0,
+      "error_types": [],
+      "max_retries": 5
+    },
+    {
+      "module": "priority_enc_8",
+      "model": "gemma3:4b",
+      "pass_at_1": true,
+      "iterations_to_pass": 4,
+      "time_to_pass_sec": 14.28,
+      "total_time_sec": 14.28,
+      "total_iterations": 4,
+      "compile_errors": 2,
+      "sim_errors": 1,
+      "error_types": [
+        "logic_error",
+        "reg_wire_mismatch",
+        "reg_wire_mismatch"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "alu_8bit",
+      "model": "gemma3:4b",
+      "pass_at_1": true,
+      "iterations_to_pass": 4,
+      "time_to_pass_sec": 11.57,
+      "total_time_sec": 11.57,
+      "total_iterations": 4,
+      "compile_errors": 3,
+      "sim_errors": 0,
+      "error_types": [
+        "port_mismatch",
+        "port_mismatch",
+        "port_mismatch"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "dff_sync_reset",
+      "model": "gemma3:4b",
+      "pass_at_1": true,
+      "iterations_to_pass": 1,
+      "time_to_pass_sec": 1.33,
+      "total_time_sec": 1.33,
+      "total_iterations": 1,
+      "compile_errors": 0,
+      "sim_errors": 0,
+      "error_types": [],
+      "max_retries": 5
+    },
+    {
+      "module": "counter_4bit",
+      "model": "gemma3:4b",
+      "pass_at_1": true,
+      "iterations_to_pass": 1,
+      "time_to_pass_sec": 1.3,
+      "total_time_sec": 1.3,
+      "total_iterations": 1,
+      "compile_errors": 0,
+      "sim_errors": 0,
+      "error_types": [],
+      "max_retries": 5
+    },
+    {
+      "module": "lfsr_8bit",
+      "model": "gemma3:4b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_time_sec": 16.08,
+      "total_iterations": 5,
+      "compile_errors": 5,
+      "sim_errors": 0,
+      "error_types": [
+        "port_mismatch",
+        "port_mismatch",
+        "port_mismatch",
+        "port_mismatch",
+        "port_mismatch"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "pwm_generator",
+      "model": "gemma3:4b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_time_sec": 9.15,
+      "total_iterations": 5,
+      "compile_errors": 5,
+      "sim_errors": 0,
+      "error_types": [
+        "duplicate_module",
+        "duplicate_module",
+        "duplicate_module",
+        "duplicate_module",
+        "duplicate_module"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "gray_counter_4bit",
+      "model": "gemma3:4b",
+      "pass_at_1": true,
+      "iterations_to_pass": 1,
+      "time_to_pass_sec": 2.03,
+      "total_time_sec": 2.03,
+      "total_iterations": 1,
+      "compile_errors": 0,
+      "sim_errors": 0,
+      "error_types": [],
+      "max_retries": 5
+    },
+    {
+      "module": "simple_cpu_alu",
+      "model": "gemma3:4b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_time_sec": 10.84,
+      "total_iterations": 5,
+      "compile_errors": 5,
+      "sim_errors": 0,
+      "error_types": [
+        "port_mismatch",
+        "port_mismatch",
+        "port_mismatch",
+        "port_mismatch",
+        "port_mismatch"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "fsm_seq_detector",
+      "model": "gemma3:4b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_time_sec": 21.16,
+      "total_iterations": 5,
+      "compile_errors": 5,
+      "sim_errors": 0,
+      "error_types": [
+        "duplicate_module",
+        "duplicate_module",
+        "duplicate_module",
+        "duplicate_module",
+        "duplicate_module"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "uart_tx",
+      "model": "gemma3:4b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_time_sec": 40.88,
+      "total_iterations": 5,
+      "compile_errors": 5,
+      "sim_errors": 0,
+      "error_types": [
+        "duplicate_module",
+        "duplicate_module",
+        "duplicate_module",
+        "duplicate_module",
+        "duplicate_module"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "sync_fifo_8",
+      "model": "gemma3:4b",
+      "pass_at_1": true,
+      "iterations_to_pass": 1,
+      "time_to_pass_sec": 4.78,
+      "total_time_sec": 4.78,
+      "total_iterations": 1,
+      "compile_errors": 0,
+      "sim_errors": 0,
+      "error_types": [],
+      "max_retries": 5
+    },
+    {
+      "module": "alu_accumulator_top",
+      "model": "gemma3:4b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_time_sec": 19.12,
+      "total_iterations": 5,
+      "compile_errors": 4,
+      "sim_errors": 1,
+      "error_types": [
+        "port_mismatch",
+        "port_mismatch",
+        "port_mismatch",
+        "logic_error",
+        "syntax_error"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "param_register_file",
+      "model": "gemma3:4b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_time_sec": 12.6,
+      "total_iterations": 5,
+      "compile_errors": 5,
+      "sim_errors": 0,
+      "error_types": [
+        "port_mismatch",
+        "port_mismatch",
+        "port_mismatch",
+        "port_mismatch",
+        "port_mismatch"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "pipeline_mult_4x4",
+      "model": "gemma3:4b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_time_sec": 10.16,
+      "total_iterations": 5,
+      "compile_errors": 0,
+      "sim_errors": 5,
+      "error_types": [
+        "logic_error",
+        "logic_error",
+        "logic_error",
+        "logic_error",
+        "logic_error"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "spi_master_8bit",
+      "model": "gemma3:4b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_time_sec": 62.75,
+      "total_iterations": 5,
+      "compile_errors": 0,
+      "sim_errors": 5,
+      "error_types": [
+        "logic_error",
+        "logic_error",
+        "logic_error",
+        "logic_error",
+        "logic_error"
+      ],
+      "max_retries": 5
+    }
+  ]
+}

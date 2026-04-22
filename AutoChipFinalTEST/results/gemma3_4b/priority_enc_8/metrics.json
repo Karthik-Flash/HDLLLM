@@ -1,0 +1,17 @@
+{
+  "module": "priority_enc_8",
+  "model": "gemma3:4b",
+  "pass_at_1": true,
+  "iterations_to_pass": 4,
+  "time_to_pass_sec": 14.28,
+  "total_time_sec": 14.28,
+  "total_iterations": 4,
+  "compile_errors": 2,
+  "sim_errors": 1,
+  "error_types": [
+    "logic_error",
+    "reg_wire_mismatch",
+    "reg_wire_mismatch"
+  ],
+  "max_retries": 5
+}

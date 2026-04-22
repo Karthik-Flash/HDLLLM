@@ -1,0 +1,15 @@
+{
+  "module": "shift_register_8bit",
+  "model": "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+  "hardware": "H100-80GB-HPC",
+  "pass_at_1": true,
+  "iterations_to_pass": 2,
+  "time_to_pass_sec": 14.96,
+  "total_iterations": 2,
+  "compile_errors": 1,
+  "sim_errors": 0,
+  "error_types": [
+    "reg_wire_mismatch"
+  ],
+  "max_retries": 5
+}

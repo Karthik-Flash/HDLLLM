@@ -1,0 +1,7 @@
+--- COMPILATION ---
+
+
+--- SIMULATION ---
+FAIL [hold]: value changed when enable=0 (got 8'h7c)
+FAIL [hold2]: value changed when enable=0 (got 8'h7c)
+

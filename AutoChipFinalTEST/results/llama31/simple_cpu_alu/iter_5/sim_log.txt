@@ -1,0 +1,4 @@
+--- COMPILATION ---
+results\llama31\simple_cpu_alu\iter_5\simple_cpu_alu_tb.v:9: error: port ``B'' is not a port of uut.
+1 error(s) during elaboration.
+

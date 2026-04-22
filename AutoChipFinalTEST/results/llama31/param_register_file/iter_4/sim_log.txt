@@ -1,0 +1,4 @@
+--- COMPILATION ---
+results\llama31\param_register_file\iter_4\param_register_file_tb.v:13: error: port ``rd_addr'' is not a port of uut.
+1 error(s) during elaboration.
+

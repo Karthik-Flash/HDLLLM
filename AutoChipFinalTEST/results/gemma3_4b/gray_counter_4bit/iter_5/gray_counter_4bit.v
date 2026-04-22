@@ -1,0 +1,19 @@
+module gray_counter_4bit (
+  input clk,
+  input rst,
+  output reg [3:0] gray_out
+);
+
+  reg [3:0] binary_counter;
+
+  always @(posedge clk or posedge rst) begin
+    if (rst) begin
+      binary_counter <= 0;
+      gray_out <= 0;
+    end else begin
+      binary_counter <= binary_counter + 1;
+      gray_out <= binary_counter ^ (binary_counter >> 1);
+    end
+  end
+
+endmodule

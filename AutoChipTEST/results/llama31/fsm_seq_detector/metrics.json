@@ -1,0 +1,18 @@
+{
+  "module": "fsm_seq_detector",
+  "model": "llama3.1",
+  "pass_at_1": false,
+  "iterations_to_pass": null,
+  "time_to_pass_sec": null,
+  "total_iterations": 5,
+  "compile_errors": 2,
+  "sim_errors": 3,
+  "error_types": [
+    "compile_other",
+    "compile_other",
+    "logic_error",
+    "logic_error",
+    "logic_error"
+  ],
+  "max_retries": 5
+}

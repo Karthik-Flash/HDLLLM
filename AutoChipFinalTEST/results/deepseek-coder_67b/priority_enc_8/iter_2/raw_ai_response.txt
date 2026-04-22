@@ -1,0 +1,21 @@
+The error is due to the incorrect placement of the semicolons in your code. Here's the corrected module:
+
+```verilog
+module priority_enc_8 (input [7:0] in, output reg [2:0] out, output wire valid);
+  
+  assign valid = |in;    // continuous assign, valid is a wire
+  
+  always @(*) begin     // combinational always block
+    if      (in[7]) out = 3'd7;
+    else if (in[6]) out = 3'd6;
+    else if (in[5]) out = 3'd5;
+    else if (in[4]) out = 3'd4;
+    else if (in[3]) out = 3'd3;
+    else if (in[2]) out = 3'd2;
+    else if (in[1]) out = 3'd1;
+    else if (in[0]) out = 3'd0;
+    else            out = 3'd0;
+  end
+endmodule
+```
+This module takes an 8-bit input, `in`. It outputs a 3-bit value to `out` and a single bit signal `valid` that is high if any of the inputs are high (i.e., nonzero). The priority encoding logic is implemented in an always block which checks each bit of the input from most significant to least significant, setting `out` to the corresponding 3-bit value when it finds a set bit and continuing with the next bit until it has checked all bits. If no bits are set, `out` defaults to 0.

@@ -1,0 +1,13 @@
+Sure, here is the Verilog code for a 4-bit up counter with synchronous active high reset:
+
+```verilog
+module counter_4bit (input wire clk, rst, output reg [3:0] count);
+   always @(posedge clk or posedge rst) begin
+      if (rst) 
+         count <= 0;
+      else 
+         count <= count + 1;
+   end
+endmodule
+```
+This module will increment its output 'count' on every positive edge of the clock signal. If the reset signal is active, it will reset the counter to zero. The counter is a 4-bit register named 'count'.

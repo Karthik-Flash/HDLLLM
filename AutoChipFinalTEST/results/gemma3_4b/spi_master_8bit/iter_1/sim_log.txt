@@ -1,0 +1,9 @@
+--- COMPILATION ---
+
+
+--- SIMULATION ---
+FAIL [start]: cs_n should go low after start
+FAIL: done never asserted within timeout
+FAIL [miso]: expected miso_capture=8'hA5 got 8'h00
+FAIL [mosi]: expected mosi_captured=8'hB4 got 8'hxx
+

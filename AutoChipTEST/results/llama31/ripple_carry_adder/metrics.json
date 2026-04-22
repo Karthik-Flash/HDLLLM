@@ -1,0 +1,12 @@
+{
+  "module": "ripple_carry_adder",
+  "model": "llama3.1",
+  "pass_at_1": true,
+  "iterations_to_pass": 1,
+  "time_to_pass_sec": 5.13,
+  "total_iterations": 1,
+  "compile_errors": 0,
+  "sim_errors": 0,
+  "error_types": [],
+  "max_retries": 5
+}

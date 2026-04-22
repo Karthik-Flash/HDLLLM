@@ -1,0 +1,23 @@
+--- COMPILATION ---
+results\qwen25-coder_latest\ripple_carry_adder\iter_1\full_adder.v:8: error: reg sum; cannot be driven by primitives or continuous assignment.
+results\qwen25-coder_latest\ripple_carry_adder\iter_1\full_adder.v:9: error: reg cout; cannot be driven by primitives or continuous assignment.
+results\qwen25-coder_latest\ripple_carry_adder\iter_1\ripple_carry_adder.v:11: error: reg Sum; cannot be driven by primitives or continuous assignment.
+results\qwen25-coder_latest\ripple_carry_adder\iter_1\ripple_carry_adder.v:11: error: Output port expression must support continuous assignment.
+results\qwen25-coder_latest\ripple_carry_adder\iter_1\ripple_carry_adder.v:11:      : Port sum of full_adder is connected to Sum['sd0]
+results\qwen25-coder_latest\ripple_carry_adder\iter_1\full_adder.v:8: error: reg sum; cannot be driven by primitives or continuous assignment.
+results\qwen25-coder_latest\ripple_carry_adder\iter_1\full_adder.v:9: error: reg cout; cannot be driven by primitives or continuous assignment.
+results\qwen25-coder_latest\ripple_carry_adder\iter_1\ripple_carry_adder.v:12: error: reg Sum; cannot be driven by primitives or continuous assignment.
+results\qwen25-coder_latest\ripple_carry_adder\iter_1\ripple_carry_adder.v:12: error: Output port expression must support continuous assignment.
+results\qwen25-coder_latest\ripple_carry_adder\iter_1\ripple_carry_adder.v:12:      : Port sum of full_adder is connected to Sum['sd1]
+results\qwen25-coder_latest\ripple_carry_adder\iter_1\full_adder.v:8: error: reg sum; cannot be driven by primitives or continuous assignment.
+results\qwen25-coder_latest\ripple_carry_adder\iter_1\full_adder.v:9: error: reg cout; cannot be driven by primitives or continuous assignment.
+results\qwen25-coder_latest\ripple_carry_adder\iter_1\ripple_carry_adder.v:13: error: reg Sum; cannot be driven by primitives or continuous assignment.
+results\qwen25-coder_latest\ripple_carry_adder\iter_1\ripple_carry_adder.v:13: error: Output port expression must support continuous assignment.
+results\qwen25-coder_latest\ripple_carry_adder\iter_1\ripple_carry_adder.v:13:      : Port sum of full_adder is connected to Sum['sd2]
+results\qwen25-coder_latest\ripple_carry_adder\iter_1\full_adder.v:8: error: reg sum; cannot be driven by primitives or continuous assignment.
+results\qwen25-coder_latest\ripple_carry_adder\iter_1\full_adder.v:9: error: reg cout; cannot be driven by primitives or continuous assignment.
+results\qwen25-coder_latest\ripple_carry_adder\iter_1\ripple_carry_adder.v:14: error: reg Sum; cannot be driven by primitives or continuous assignment.
+results\qwen25-coder_latest\ripple_carry_adder\iter_1\ripple_carry_adder.v:14: error: Output port expression must support continuous assignment.
+results\qwen25-coder_latest\ripple_carry_adder\iter_1\ripple_carry_adder.v:14:      : Port sum of full_adder is connected to Sum['sd3]
+16 error(s) during elaboration.
+

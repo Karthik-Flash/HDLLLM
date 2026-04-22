@@ -1,0 +1,14 @@
+--- COMPILATION ---
+results\gemini-25-flash\uart_tx\iter_2\uart_tx.v:34: warning: extra digits given for sized hex constant.
+results\gemini-25-flash\uart_tx\iter_2\uart_tx.v:42: warning: extra digits given for sized hex constant.
+results\gemini-25-flash\uart_tx\iter_2\uart_tx.v:77: warning: extra digits given for sized hex constant.
+results\gemini-25-flash\uart_tx\iter_2\uart_tx.v:115: warning: extra digits given for sized hex constant.
+
+
+--- SIMULATION ---
+FAIL [a5]: sent 8'ha5  captured 8'h4a  (bits wrong)
+FAIL [3c]: sent 8'h3c  captured 8'h78  (bits wrong)
+FAIL [3c]: stop bit should be 1, got 0
+FAIL [ff]: sent 8'hff  captured 8'hfe  (bits wrong)
+FAIL [00]: stop bit should be 1, got 0
+

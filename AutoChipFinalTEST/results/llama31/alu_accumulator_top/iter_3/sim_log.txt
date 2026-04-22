@@ -1,0 +1,7 @@
+--- COMPILATION ---
+results\llama31\alu_accumulator_top\iter_3\alu_accumulator_top.v:14: error: Unknown module type: alu_8bit
+2 error(s) during elaboration.
+*** These modules were missing:
+        alu_8bit referenced 1 times.
+***
+

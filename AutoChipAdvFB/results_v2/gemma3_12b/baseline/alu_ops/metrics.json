@@ -1,0 +1,66 @@
+{
+  "module": "alu_ops",
+  "model": "gemma3:12b",
+  "condition": "baseline",
+  "pass_at_1": false,
+  "iterations_to_pass": null,
+  "time_to_pass_sec": null,
+  "total_time_sec": 178.59,
+  "total_iterations": 6,
+  "compile_errors": 6,
+  "sim_errors": 0,
+  "latch_warnings": 0,
+  "verilator_catches": 0,
+  "error_types": [
+    "syntax_error",
+    "syntax_error",
+    "syntax_error",
+    "syntax_error",
+    "syntax_error",
+    "syntax_error"
+  ],
+  "per_iter_detail": [
+    {
+      "iter": 1,
+      "verilator_warning": false,
+      "yosys_latch": false,
+      "iverilog_result": "FAIL",
+      "err_type": "syntax_error"
+    },
+    {
+      "iter": 2,
+      "verilator_warning": false,
+      "yosys_latch": false,
+      "iverilog_result": "FAIL",
+      "err_type": "syntax_error"
+    },
+    {
+      "iter": 3,
+      "verilator_warning": false,
+      "yosys_latch": false,
+      "iverilog_result": "FAIL",
+      "err_type": "syntax_error"
+    },
+    {
+      "iter": 4,
+      "verilator_warning": false,
+      "yosys_latch": false,
+      "iverilog_result": "FAIL",
+      "err_type": "syntax_error"
+    },
+    {
+      "iter": 5,
+      "verilator_warning": false,
+      "yosys_latch": false,
+      "iverilog_result": "FAIL",
+      "err_type": "syntax_error"
+    },
+    {
+      "iter": 6,
+      "verilator_warning": false,
+      "yosys_latch": false,
+      "iverilog_result": "FAIL",
+      "err_type": "syntax_error"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+--- COMPILATION ---
+
+
+--- SIMULATION ---
+PASS reset
+PASS count=1
+PASS count=2
+PASS count=3
+PASS count=4
+PASS count=5
+PASS count=6
+PASS count=7
+PASS count=8
+PASS count=9
+PASS count=10
+PASS count=11
+PASS count=12
+PASS count=13
+PASS count=14
+PASS count=15
+PASS mid-reset
+ALL TESTS PASSED
+results/hpc_qwen25coder_14b/counter_4bit/iter_1/counter_4bit_tb.v:53: $finish called at 196 (1s)
+

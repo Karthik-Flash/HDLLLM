@@ -1,0 +1,17 @@
+Here is the Verilog code for your requirement:
+
+```verilog
+module dff_sync_reset(input wire clk, input wire rst, input wire d, output reg q);
+    always @(posedge clk or posedge rst) begin
+        if (rst) 
+            q <= 0;
+        else 
+            q <= d;
+    end
+endmodule
+```
+This module implements a D flip-flop with synchronous active-high reset. The output `q` is declared as a `reg`, which means it's a register that can be used to hold the state of a flip-flop. 
+
+The always block is an edge triggered one (posedge clk or posedge rst). This means that whenever either the clock signal (clk) goes from low to high (rising edge), or the reset signal (rst) goes from low to high, the code inside the begin and end blocks will be executed. 
+
+If the reset signal is active (high), then `q` is set to 0. If not, `q` takes the value of `d`. This means that if `d` is high, `q` will also go high; if `d` is low, `q` will remain at its previous state or go low depending on the reset signal.

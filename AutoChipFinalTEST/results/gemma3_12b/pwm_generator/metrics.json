@@ -1,0 +1,18 @@
+{
+  "module": "pwm_generator",
+  "model": "gemma3:12b",
+  "pass_at_1": true,
+  "iterations_to_pass": 5,
+  "time_to_pass_sec": 71.72,
+  "total_time_sec": 71.72,
+  "total_iterations": 5,
+  "compile_errors": 1,
+  "sim_errors": 3,
+  "error_types": [
+    "logic_error",
+    "logic_error",
+    "logic_error",
+    "reg_wire_mismatch"
+  ],
+  "max_retries": 5
+}

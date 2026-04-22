@@ -1,0 +1,22 @@
+Here is the Verilog-2001 module named 'lfsr_8bit' according to your specifications:
+
+```verilog
+module lfsr_8bit (input clk, rst, load, enable, input [7:0] seed, output reg [7:0] lfsr_out);
+  always @(posedge clk) begin
+    if (rst)
+      lfsr_out <= 8'hFF;
+    else if (load)
+      lfsr_out <= seed;
+    else if (enable)
+      lfsr_out <= {
+        lfsr_out[0],               // new bit[7] = feedback
+        lfsr_out[7:6],             // bit[6:5] plain shift
+        lfsr_out[5]^lfsr_out[0],   // bit[4] tap x^6
+        lfsr_out[4]^lfsr_out[0],   // bit[3] tap x^5
+        lfsr_out[3]^lfsr_out[0],   // bit[2] tap x^4
+        lfsr_out[2:1]              // bit[1:0] plain shift
+      };
+  end
+endmodule
+```
+This module implements an 8-bit Galois LFSR with the polynomial x^8 + x^6 + x^5 + x^4 + 1. The feedback bit is lfsr_out[0], and it's read before the shift. When reset (rst) is high, the lfsr_out is set to 8'hFF. When load (load) is high, the lfsr_out is loaded with the seed value. When enable (enable) is high, the LFSR performs a right-shift operation and XOR feedback.

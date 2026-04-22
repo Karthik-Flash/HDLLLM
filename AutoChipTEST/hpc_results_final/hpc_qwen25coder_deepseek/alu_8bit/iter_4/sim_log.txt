@@ -1,0 +1,6 @@
+--- COMPILATION ---
+results/hpc_qwen25coder_deepseek/alu_8bit/iter_4/alu_8bit.v:9: error: 'result' has already been declared in this scope.
+results/hpc_qwen25coder_deepseek/alu_8bit/iter_4/alu_8bit.v:5:      : It was declared here as a net.
+results/hpc_qwen25coder_deepseek/alu_8bit/iter_4/alu_8bit.v:10: error: 'zero' has already been declared in this scope.
+results/hpc_qwen25coder_deepseek/alu_8bit/iter_4/alu_8bit.v:6:      : It was declared here as a net.
+

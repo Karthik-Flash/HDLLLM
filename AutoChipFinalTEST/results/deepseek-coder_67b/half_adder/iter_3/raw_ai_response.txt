@@ -1,0 +1,11 @@
+I apologize for the confusion. The error is due to incorrect naming of the output ports in the testbench and also because `out` is declared as a wire, which cannot be assigned inside an always block. Here's the corrected code:
+
+```verilog
+module half_adder  (input a, b, output reg [1:0] out);
+    always @(*) begin
+        out[0] = a ^ b;   // Sum
+        out[1] = a & b;   // Carry
+    end
+endmodule
+```
+In this module, `out` is an array of 2 bits. The first bit (indexed by `out[0]`) represents the sum and the second bit (indexed by `out[1]`) represents the carry output. This way you can use it as a half adder.

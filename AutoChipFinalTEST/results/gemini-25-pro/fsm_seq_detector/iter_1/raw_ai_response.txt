@@ -1,0 +1,63 @@
+```verilog
+module fsm_seq_detector (
+    input clk,
+    input rst,
+    input in,
+    output wire detected
+);
+
+    parameter S0 = 2'd0;
+    parameter S1 = 2'd1;
+    parameter S2 = 2'd2;
+    parameter S3 = 2'd3;
+
+    reg [1:0] state;
+    reg [1:0] next_state;
+
+    // Synchronous state register with synchronous reset
+    always @(posedge clk) begin
+        if (rst) begin
+            state <= S0;
+        end else begin
+            state <= next_state;
+        end
+    end
+
+    // Combinational next-state logic
+    always @(state or in) begin
+        case (state)
+            S0: begin
+                if (in)
+                    next_state = S1;
+                else
+                    next_state = S0;
+            end
+            S1: begin
+                if (in)
+                    next_state = S1;
+                else
+                    next_state = S2;
+            end
+            S2: begin
+                if (in)
+                    next_state = S3;
+                else
+                    next_state = S0;
+            end
+            S3: begin
+                if (in)
+                    next_state = S1;
+                else
+                    next_state = S2;
+            end
+            default: begin
+                next_state = S0;
+            end
+        endcase
+    end
+
+    // Combinational output logic (Mealy)
+    assign detected = (state == S3) & in;
+
+endmodule
+```

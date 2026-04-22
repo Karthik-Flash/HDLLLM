@@ -1,0 +1,29 @@
+--- COMPILATION ---
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/advanced/alu_ops/iter_2/alu_ops.v:14: syntax error
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/advanced/alu_ops/iter_2/alu_ops.v:15: error: Incomprehensible case expression.
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/advanced/alu_ops/iter_2/alu_ops.v:17: syntax error
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/advanced/alu_ops/iter_2/alu_ops.v:18: error: Incomprehensible case expression.
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/advanced/alu_ops/iter_2/alu_ops.v:20: syntax error
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/advanced/alu_ops/iter_2/alu_ops.v:21: error: Incomprehensible case expression.
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/advanced/alu_ops/iter_2/alu_ops.v:23: syntax error
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/advanced/alu_ops/iter_2/alu_ops.v:24: error: Incomprehensible case expression.
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/advanced/alu_ops/iter_2/alu_ops.v:26: syntax error
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/advanced/alu_ops/iter_2/alu_ops.v:27: error: Incomprehensible case expression.
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/advanced/alu_ops/iter_2/alu_ops.v:29: syntax error
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/advanced/alu_ops/iter_2/alu_ops_tb.v:8: error: Malformed statement
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/advanced/alu_ops/iter_2/alu_ops_tb.v:8: error: Incomprehensible case expression.
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/advanced/alu_ops/iter_2/alu_ops_tb.v:9: syntax error
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/advanced/alu_ops/iter_2/alu_ops_tb.v:10: error: Malformed statement
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/advanced/alu_ops/iter_2/alu_ops_tb.v:10: error: Incomprehensible case expression.
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/advanced/alu_ops/iter_2/alu_ops_tb.v:11: syntax error
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/advanced/alu_ops/iter_2/alu_ops_tb.v:19: error: Malformed statement
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/advanced/alu_ops/iter_2/alu_ops_tb.v:19: error: Incomprehensible case expression.
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/advanced/alu_ops/iter_2/alu_ops_tb.v:20: syntax error
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/advanced/alu_ops/iter_2/alu_ops_tb.v:20: error: Malformed statement
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/advanced/alu_ops/iter_2/alu_ops_tb.v:20: error: Incomprehensible case expression.
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/advanced/alu_ops/iter_2/alu_ops_tb.v:21: syntax error
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/advanced/alu_ops/iter_2/alu_ops_tb.v:21: error: Malformed statement
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/advanced/alu_ops/iter_2/alu_ops_tb.v:21: error: Incomprehensible case expression.
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/advanced/alu_ops/iter_2/alu_ops_tb.v:22: syntax error
+I give up.
+

@@ -1,0 +1,6 @@
+--- COMPILATION ---
+results\deepseek-coder_67b\fsm_seq_detector\iter_1\fsm_seq_detector.v:3: syntax error
+results\deepseek-coder_67b\fsm_seq_detector\iter_1\fsm_seq_detector.v:3: error: Invalid module instantiation
+results\deepseek-coder_67b\fsm_seq_detector\iter_1\fsm_seq_detector.v:4: syntax error
+results\deepseek-coder_67b\fsm_seq_detector\iter_1\fsm_seq_detector.v:4: error: Invalid module instantiation
+

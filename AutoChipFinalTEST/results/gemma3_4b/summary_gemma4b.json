@@ -1,0 +1,329 @@
+{
+  "model": "gemma3:4b",
+  "results": [
+    {
+      "module": "half_adder",
+      "model": "gemma3:4b",
+      "pass_at_1": true,
+      "iterations_to_pass": 1,
+      "time_to_pass_sec": 9.36,
+      "total_iterations": 1,
+      "compile_errors": 0,
+      "sim_errors": 0,
+      "error_types": [],
+      "max_retries": 5
+    },
+    {
+      "module": "full_adder",
+      "model": "gemma3:4b",
+      "pass_at_1": true,
+      "iterations_to_pass": 1,
+      "time_to_pass_sec": 1.5,
+      "total_iterations": 1,
+      "compile_errors": 0,
+      "sim_errors": 0,
+      "error_types": [],
+      "max_retries": 5
+    },
+    {
+      "module": "ripple_carry_adder",
+      "model": "gemma3:4b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_iterations": 5,
+      "compile_errors": 5,
+      "sim_errors": 0,
+      "error_types": [
+        "syntax_error",
+        "syntax_error",
+        "syntax_error",
+        "syntax_error",
+        "syntax_error"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "comparator_8bit",
+      "model": "gemma3:4b",
+      "pass_at_1": true,
+      "iterations_to_pass": 1,
+      "time_to_pass_sec": 1.87,
+      "total_iterations": 1,
+      "compile_errors": 0,
+      "sim_errors": 0,
+      "error_types": [],
+      "max_retries": 5
+    },
+    {
+      "module": "bcd_to_7seg",
+      "model": "gemma3:4b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_iterations": 5,
+      "compile_errors": 0,
+      "sim_errors": 5,
+      "error_types": [
+        "logic_error",
+        "logic_error",
+        "logic_error",
+        "logic_error",
+        "logic_error"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "priority_enc_8",
+      "model": "gemma3:4b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_iterations": 5,
+      "compile_errors": 5,
+      "sim_errors": 0,
+      "error_types": [
+        "reg_wire_mismatch",
+        "reg_wire_mismatch",
+        "reg_wire_mismatch",
+        "reg_wire_mismatch",
+        "reg_wire_mismatch"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "alu_8bit",
+      "model": "gemma3:4b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_iterations": 5,
+      "compile_errors": 5,
+      "sim_errors": 0,
+      "error_types": [
+        "port_mismatch",
+        "duplicate_module",
+        "duplicate_module",
+        "duplicate_module",
+        "duplicate_module"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "dff_sync_reset",
+      "model": "gemma3:4b",
+      "pass_at_1": true,
+      "iterations_to_pass": 1,
+      "time_to_pass_sec": 1.39,
+      "total_iterations": 1,
+      "compile_errors": 0,
+      "sim_errors": 0,
+      "error_types": [],
+      "max_retries": 5
+    },
+    {
+      "module": "counter_4bit",
+      "model": "gemma3:4b",
+      "pass_at_1": true,
+      "iterations_to_pass": 1,
+      "time_to_pass_sec": 1.28,
+      "total_iterations": 1,
+      "compile_errors": 0,
+      "sim_errors": 0,
+      "error_types": [],
+      "max_retries": 5
+    },
+    {
+      "module": "lfsr_8bit",
+      "model": "gemma3:4b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_iterations": 5,
+      "compile_errors": 5,
+      "sim_errors": 0,
+      "error_types": [
+        "port_mismatch",
+        "port_mismatch",
+        "port_mismatch",
+        "port_mismatch",
+        "port_mismatch"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "pwm_generator",
+      "model": "gemma3:4b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_iterations": 5,
+      "compile_errors": 0,
+      "sim_errors": 5,
+      "error_types": [
+        "logic_error",
+        "logic_error",
+        "logic_error",
+        "logic_error",
+        "logic_error"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "gray_counter_4bit",
+      "model": "gemma3:4b",
+      "pass_at_1": true,
+      "iterations_to_pass": 1,
+      "time_to_pass_sec": 1.99,
+      "total_iterations": 1,
+      "compile_errors": 0,
+      "sim_errors": 0,
+      "error_types": [],
+      "max_retries": 5
+    },
+    {
+      "module": "simple_cpu_alu",
+      "model": "gemma3:4b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_iterations": 5,
+      "compile_errors": 5,
+      "sim_errors": 0,
+      "error_types": [
+        "port_mismatch",
+        "port_mismatch",
+        "port_mismatch",
+        "port_mismatch",
+        "port_mismatch"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "fsm_seq_detector",
+      "model": "gemma3:4b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_iterations": 5,
+      "compile_errors": 5,
+      "sim_errors": 0,
+      "error_types": [
+        "duplicate_module",
+        "duplicate_module",
+        "duplicate_module",
+        "duplicate_module",
+        "duplicate_module"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "uart_tx",
+      "model": "gemma3:4b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_iterations": 5,
+      "compile_errors": 0,
+      "sim_errors": 5,
+      "error_types": [
+        "logic_error",
+        "logic_error",
+        "logic_error",
+        "logic_error",
+        "logic_error"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "sync_fifo_8",
+      "model": "gemma3:4b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_iterations": 5,
+      "compile_errors": 5,
+      "sim_errors": 0,
+      "error_types": [
+        "syntax_error",
+        "syntax_error",
+        "syntax_error",
+        "syntax_error",
+        "syntax_error"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "alu_accumulator_top",
+      "model": "gemma3:4b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_iterations": 5,
+      "compile_errors": 5,
+      "sim_errors": 0,
+      "error_types": [
+        "syntax_error",
+        "syntax_error",
+        "syntax_error",
+        "syntax_error",
+        "syntax_error"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "param_register_file",
+      "model": "gemma3:4b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_iterations": 5,
+      "compile_errors": 5,
+      "sim_errors": 0,
+      "error_types": [
+        "port_mismatch",
+        "port_mismatch",
+        "port_mismatch",
+        "port_mismatch",
+        "port_mismatch"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "pipeline_mult_4x4",
+      "model": "gemma3:4b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_iterations": 5,
+      "compile_errors": 0,
+      "sim_errors": 5,
+      "error_types": [
+        "logic_error",
+        "logic_error",
+        "logic_error",
+        "logic_error",
+        "logic_error"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "spi_master_8bit",
+      "model": "gemma3:4b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_iterations": 5,
+      "compile_errors": 1,
+      "sim_errors": 4,
+      "error_types": [
+        "logic_error",
+        "logic_error",
+        "logic_error",
+        "logic_error",
+        "syntax_error"
+      ],
+      "max_retries": 5
+    }
+  ]
+}

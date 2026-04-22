@@ -1,0 +1,7 @@
+--- COMPILATION ---
+
+
+--- SIMULATION ---
+ALL TESTS PASSED
+results/hpc_qwen25coder_32b/ripple_carry_adder/iter_1/ripple_carry_adder_tb.v:48: $finish called at 526 (1s)
+

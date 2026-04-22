@@ -1,0 +1,22 @@
+Here is the Verilog-2001 module 'alu_8bit' according to your specifications:
+
+```verilog
+module alu_8bit(input [7:0] A, B, input [2:0] op, output reg [7:0] result, output wire zero);
+  always @* begin
+    case (op)
+      3'b000: result = A + B;
+      3'b001: result = A - B;
+      3'b010: result = A & B;
+      3'b011: result = A | B;
+      3'b100: result = A ^ B;
+      3'b101: result = ~A;
+      3'b110: result = A << 1;
+      3'b111: result = A >> 1;
+      default: result = 8'bx;  // undefined operation
+    endcase
+    
+    zero = (result == 8'd0);  // set the 'zero' flag if result is zero
+  end
+endmodule
+```
+This module implements an 8-bit Arithmetic Logic Unit (ALU) with operations for addition, subtraction, bitwise AND, OR, XOR, NOT and shift left/right. The operation to be performed is selected by the 'op' input. The result of the operation is stored in the 'result' output register. If the result is zero, a high level on the 'zero' output indicates this condition.

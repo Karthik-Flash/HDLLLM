@@ -1,0 +1,5 @@
+--- COMPILATION ---
+results\llama31\param_register_file\iter_2\param_register_file_tb.v:13: error: port ``wr_addr'' is not a port of uut.
+results\llama31\param_register_file\iter_2\param_register_file.v:13: error: Unable to bind wire/reg/memory `wr_addr' in `param_register_file_tb.uut'
+2 error(s) during elaboration.
+

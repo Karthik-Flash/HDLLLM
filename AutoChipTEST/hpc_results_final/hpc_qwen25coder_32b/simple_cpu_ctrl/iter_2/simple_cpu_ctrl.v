@@ -1,0 +1,100 @@
+module simple_cpu_ctrl (
+    input clk,
+    input rst,
+    input [7:0] instruction,
+    output [1:0] alu_op,
+    output we_reg,
+    output [1:0] rs1,
+    output [1:0] rs2,
+    output [1:0] rd
+);
+
+    wire [1:0] opcode;
+    wire [1:0] rs1_wire;
+    wire [1:0] rs2_wire;
+
+    assign opcode = instruction[7:5];
+    assign rs1_wire = instruction[4:3];
+    assign rs2_wire = instruction[2:1];
+    assign rd = rs1_wire;
+
+    reg [1:0] alu_op_reg;
+    reg we_reg_reg;
+    reg [1:0] rs1_reg;
+    reg [1:0] rs2_reg;
+
+    localparam NOP = 3'b000;
+    localparam ADD = 3'b001;
+    localparam SUB = 3'b010;
+    localparam AND = 3'b011;
+    localparam OR  = 3'b100;
+    localparam LOAD = 3'b101;
+    localparam STORE = 3'b110;
+    localparam BRANCH = 3'b111;
+
+    always @(posedge clk or posedge rst) begin
+        if (rst) begin
+            alu_op_reg <= 2'b00;
+            we_reg_reg <= 1'b0;
+            rs1_reg <= 2'b00;
+            rs2_reg <= 2'b00;
+        end else begin
+            case (opcode)
+                ADD: begin
+                    alu_op_reg <= 2'b00;
+                    we_reg_reg <= 1'b1;
+                    rs1_reg <= rs1_wire;
+                    rs2_reg <= rs2_wire;
+                end
+                SUB: begin
+                    alu_op_reg <= 2'b01;
+                    we_reg_reg <= 1'b1;
+                    rs1_reg <= rs1_wire;
+                    rs2_reg <= rs2_wire;
+                end
+                AND: begin
+                    alu_op_reg <= 2'b10;
+                    we_reg_reg <= 1'b1;
+                    rs1_reg <= rs1_wire;
+                    rs2_reg <= rs2_wire;
+                end
+                OR: begin
+                    alu_op_reg <= 2'b11;
+                    we_reg_reg <= 1'b1;
+                    rs1_reg <= rs1_wire;
+                    rs2_reg <= rs2_wire;
+                end
+                LOAD: begin
+                    alu_op_reg <= 2'b00; // Assuming ALU not used for LOAD
+                    we_reg_reg <= 1'b1;
+                    rs1_reg <= rs1_wire;
+                    rs2_reg <= rs2_wire;
+                end
+                STORE: begin
+                    alu_op_reg <= 2'b00; // Assuming ALU not used for STORE
+                    we_reg_reg <= 1'b0;
+                    rs1_reg <= rs1_wire;
+                    rs2_reg <= rs2_wire;
+                end
+                BRANCH: begin
+                    alu_op_reg <= 2'b00; // Assuming ALU not used for BRANCH
+                    we_reg_reg <= 1'b0;
+                    rs1_reg <= rs1_wire;
+                    rs2_reg <= rs2_wire;
+                end
+                default: begin // NOP
+                    alu_op_reg <= 2'b00;
+                    we_reg_reg <= 1'b0;
+                    rs1_reg <= 2'b00;
+                    rs2_reg <= 2'b00;
+                end
+            endcase
+        end
+    end
+
+    assign alu_op = alu_op_reg;
+    assign we_reg = we_reg_reg;
+    assign rs1 = rs1_reg;
+    assign rs2 = rs2_reg;
+
+endmodule

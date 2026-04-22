@@ -1,0 +1,6 @@
+--- COMPILATION ---
+results\gemma3_4b\alu_accumulator_top\iter_5\alu_accumulator_top.v:26: syntax error
+results\gemma3_4b\alu_accumulator_top\iter_5\alu_accumulator_top.v:26: error: Invalid module instantiation
+results\gemma3_4b\alu_accumulator_top\iter_5\alu_accumulator_top.v:28: syntax error
+results\gemma3_4b\alu_accumulator_top\iter_5\alu_accumulator_top.v:28: error: Invalid module instantiation
+

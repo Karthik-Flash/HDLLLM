@@ -1,0 +1,18 @@
+{
+  "module": "ripple_carry_adder",
+  "model": "qwen2.5-coder:latest",
+  "pass_at_1": false,
+  "iterations_to_pass": null,
+  "time_to_pass_sec": null,
+  "total_iterations": 5,
+  "compile_errors": 5,
+  "sim_errors": 0,
+  "error_types": [
+    "reg_wire_mismatch",
+    "reg_wire_mismatch",
+    "reg_wire_mismatch",
+    "reg_wire_mismatch",
+    "reg_wire_mismatch"
+  ],
+  "max_retries": 5
+}

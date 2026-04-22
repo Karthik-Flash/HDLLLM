@@ -1,0 +1,16 @@
+{
+  "module": "uart_tx",
+  "model": "gemini-2.5-pro",
+  "pass_at_1": true,
+  "iterations_to_pass": 3,
+  "time_to_pass_sec": 258.25,
+  "total_time_sec": 258.25,
+  "total_iterations": 3,
+  "compile_errors": 0,
+  "sim_errors": 2,
+  "error_types": [
+    "logic_error",
+    "logic_error"
+  ],
+  "max_retries": 5
+}

@@ -1,0 +1,24 @@
+{
+  "module": "seg7_decoder",
+  "model": "gemma3:12b",
+  "condition": "advanced",
+  "pass_at_1": true,
+  "iterations_to_pass": 1,
+  "time_to_pass_sec": 31.7,
+  "total_time_sec": 31.7,
+  "total_iterations": 1,
+  "compile_errors": 0,
+  "sim_errors": 0,
+  "latch_warnings": 0,
+  "verilator_catches": 0,
+  "error_types": [],
+  "per_iter_detail": [
+    {
+      "iter": 1,
+      "verilator_warning": false,
+      "yosys_latch": false,
+      "iverilog_result": "PASS",
+      "err_type": "PASS"
+    }
+  ]
+}

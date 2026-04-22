@@ -1,0 +1,9 @@
+Here is the Verilog-2001 module 'half_adder' according to your requirements:
+
+```verilog
+module half_adder (input wire a, input wire b, output wire sum, output wire cout);
+  assign sum = a ^ b;
+  assign cout = a & b;
+endmodule
+```
+This module implements the logic for a half adder. The inputs `a` and `b` represent two binary digits to be added together. The outputs `sum` and `cout` are the sum of the input digits (the least significant bit) and the carry out from the addition operation, respectively.

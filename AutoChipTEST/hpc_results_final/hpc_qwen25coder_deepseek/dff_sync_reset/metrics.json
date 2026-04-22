@@ -1,0 +1,13 @@
+{
+  "module": "dff_sync_reset",
+  "model": "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+  "hardware": "H100-80GB-HPC",
+  "pass_at_1": true,
+  "iterations_to_pass": 1,
+  "time_to_pass_sec": 6.29,
+  "total_iterations": 1,
+  "compile_errors": 0,
+  "sim_errors": 0,
+  "error_types": [],
+  "max_retries": 5
+}

@@ -1,0 +1,4 @@
+--- COMPILATION ---
+results\qwen25-coder_latest\fsm_seq_detector\iter_4\fsm_seq_detector.v:29: syntax error
+results\qwen25-coder_latest\fsm_seq_detector\iter_4\fsm_seq_detector.v:29: error: syntax error in continuous assignment
+

@@ -1,0 +1,57 @@
+```verilog
+module sync_fifo_8 (
+    // Inputs
+    clk,
+    rst,
+    wr_en,
+    rd_en,
+    din,
+    // Outputs
+    dout,
+    full,
+    empty
+);
+
+// Port Declarations
+input           clk;
+input           rst;
+input           wr_en;
+input           rd_en;
+input   [7:0]   din;
+output  [7:0]   dout;
+output          full;
+output          empty;
+
+// Internal Signal Declarations
+reg     [7:0]   dout;
+wire            full;
+wire            empty;
+
+reg     [7:0]   mem [0:7];
+reg     [3:0]   wr_ptr;
+reg     [3:0]   rd_ptr;
+
+// Full/Empty Logic
+assign empty = (wr_ptr == rd_ptr);
+assign full  = (wr_ptr[2:0] == rd_ptr[2:0]) && (wr_ptr[3] != rd_ptr[3]);
+
+// Synchronous Logic for Read/Write Operations
+always @(posedge clk) begin
+    if (rst) begin
+        wr_ptr <= 4'b0;
+        rd_ptr <= 4'b0;
+        dout   <= 8'b0;
+    end else begin
+        if (wr_en && !full) begin
+            mem[wr_ptr[2:0]] <= din;
+            wr_ptr <= wr_ptr + 1;
+        end
+        if (rd_en && !empty) begin
+            dout <= mem[rd_ptr[2:0]];
+            rd_ptr <= rd_ptr + 1;
+        end
+    end
+end
+
+endmodule
+```

@@ -1,0 +1,4 @@
+--- COMPILATION ---
+results\gemma3_12b\ripple_carry_adder\iter_2\ripple_carry_adder.v:56: Module full_adder was already declared here: results\gemma3_12b\ripple_carry_adder\iter_2\full_adder.v:1
+
+

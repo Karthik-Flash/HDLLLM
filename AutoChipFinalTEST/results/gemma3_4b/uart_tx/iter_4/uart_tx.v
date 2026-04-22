@@ -1,0 +1,78 @@
+module uart_tx (
+  input clk,
+  input rst,
+  input start,
+  input [7:0] data_in,
+  output reg tx_out,
+  output reg busy,
+  output reg done
+);
+
+  reg [7:0] shift_reg;
+  reg [7:0] baud_cnt;
+  reg [3:0] bit_cnt;
+
+  parameter BAUD_DIV = 104;
+
+  reg [2:0] state;
+
+  // IDLE state
+  if (state == 3'd0) begin
+    tx_out = 1;
+    busy = 0;
+    done = 0;
+    if (start == 1) begin
+      shift_reg = data_in;
+      baud_cnt = 0;
+      bitomania <= 0;
+      state = 3'd1;
+    end
+  end
+
+  // START state
+  else if (state == 3'd1) begin
+    tx_out = 0;
+    busy = 1;
+    baud_cnt = baud_cnt + 1;
+    if (baud_cnt == BAUD_DIV - 1) begin
+      baud_cnt = 0;
+      state = 3'd2;
+    end
+  end
+
+  // DATA state
+  else if (state == 3'd2) begin
+    busy = 1;
+    tx_out = shift_reg[0];
+    baud_cnt = baud_cnt + 1;
+    if (baud_cnt == BAUD_DIV - 1) begin
+      baud_cnt = 0;
+      shift_reg = shift_reg[1:1];
+      bit_cnt = bit_cnt + 1;
+      if (bit_cnt == 7) begin
+        state = 3'd3;
+      end else begin
+        state = 3'd2;
+      end
+    end
+  end
+
+  // STOP state
+  else if (state == 3'd3) begin
+    tx_out = 1;
+    busy = 1;
+    baud_cnt = baud_cnt + 1;
+    if (baud_cnt == BAUD_DIV - 1) begin
+      baud_cnt = 0;
+      state = 3'd4;
+    end
+  end
+
+  // DONE state
+  else if (state == 3'd4) begin
+    done = 1;
+    busy = 0;
+    tx_out = 1;
+    state = 3'd0;
+  end
+end

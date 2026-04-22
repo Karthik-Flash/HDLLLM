@@ -1,0 +1,21 @@
+--- COMPILATION ---
+results\llama31\alu_8bit\iter_5\alu_8bit.v:9: syntax error
+results\llama31\alu_8bit\iter_5\alu_8bit.v:9: error: Invalid module instantiation
+results\llama31\alu_8bit\iter_5\alu_8bit.v:12: error: invalid module item.
+results\llama31\alu_8bit\iter_5\alu_8bit.v:13: syntax error
+results\llama31\alu_8bit\iter_5\alu_8bit.v:13: error: invalid module item.
+results\llama31\alu_8bit\iter_5\alu_8bit.v:14: syntax error
+results\llama31\alu_8bit\iter_5\alu_8bit.v:14: error: invalid module item.
+results\llama31\alu_8bit\iter_5\alu_8bit.v:15: syntax error
+results\llama31\alu_8bit\iter_5\alu_8bit.v:15: error: invalid module item.
+results\llama31\alu_8bit\iter_5\alu_8bit.v:16: syntax error
+results\llama31\alu_8bit\iter_5\alu_8bit.v:16: error: invalid module item.
+results\llama31\alu_8bit\iter_5\alu_8bit.v:17: syntax error
+results\llama31\alu_8bit\iter_5\alu_8bit.v:17: error: invalid module item.
+results\llama31\alu_8bit\iter_5\alu_8bit.v:18: syntax error
+results\llama31\alu_8bit\iter_5\alu_8bit.v:18: error: invalid module item.
+results\llama31\alu_8bit\iter_5\alu_8bit.v:19: syntax error
+results\llama31\alu_8bit\iter_5\alu_8bit.v:19: error: invalid module item.
+results\llama31\alu_8bit\iter_5\alu_8bit.v:20: syntax error
+results\llama31\alu_8bit\iter_5\alu_8bit.v:23: error: invalid module item.
+

@@ -1,0 +1,13 @@
+{
+  "module": "spi_master_8bit",
+  "model": "gemini-2.5-flash",
+  "pass_at_1": false,
+  "iterations_to_pass": null,
+  "time_to_pass_sec": null,
+  "total_time_sec": 1.19,
+  "total_iterations": 5,
+  "compile_errors": 0,
+  "sim_errors": 0,
+  "error_types": [],
+  "max_retries": 5
+}

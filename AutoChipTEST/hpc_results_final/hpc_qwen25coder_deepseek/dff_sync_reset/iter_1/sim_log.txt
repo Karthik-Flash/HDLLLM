@@ -1,0 +1,14 @@
+--- COMPILATION ---
+
+
+--- SIMULATION ---
+PASS test1
+PASS test2
+PASS test3
+PASS test4
+PASS test5
+PASS test6
+PASS test7
+ALL TESTS PASSED
+results/hpc_qwen25coder_deepseek/dff_sync_reset/iter_1/dff_sync_reset_tb.v:34: $finish called at 66 (1s)
+

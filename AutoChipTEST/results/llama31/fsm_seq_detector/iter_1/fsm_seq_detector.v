@@ -1,0 +1,45 @@
+module fsm_seq_detector(
+    input clk,
+    input rst,
+    input in,
+    output reg detected
+);
+
+reg [2:0] state;
+wire next_state;
+
+always @(posedge clk)
+begin
+    if (rst)
+        state <= 3'd0; // S0
+    else
+        state <= next_state;
+end
+
+always_comb
+begin
+    case (state)
+        3'b000:
+            begin
+                detected <= 1'b0;
+                next_state = 3'b001; // S1
+            end
+        3'b001:
+            begin
+                detected <= 1'b0;
+                next_state = 3'b010; // S2
+            end
+        3'b010:
+            begin
+                detected <= 1'b0;
+                next_state = 3'b011; // S3
+            end
+        3'b011:
+            begin
+                detected <= 1'b1;
+                next_state = 3'b000; // S0
+            end
+    endcase
+end
+
+endmodule

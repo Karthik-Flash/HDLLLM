@@ -1,0 +1,18 @@
+{
+  "module": "fsm_seq_detector",
+  "model": "models/gemini-2.5-flash",
+  "pass_at_1": false,
+  "iterations_to_pass": null,
+  "time_to_pass_sec": null,
+  "total_iterations": 5,
+  "compile_errors": 1,
+  "sim_errors": 4,
+  "error_types": [
+    "logic_error",
+    "logic_error",
+    "logic_error",
+    "compile_other",
+    "logic_error"
+  ],
+  "max_retries": 5
+}

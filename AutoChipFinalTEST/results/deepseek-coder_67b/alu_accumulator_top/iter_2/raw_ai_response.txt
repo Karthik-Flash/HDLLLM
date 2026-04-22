@@ -1,0 +1,36 @@
+The error message indicates that the signal `acc_out` is being driven within an always block, which is not allowed in Verilog. The solution to this problem is to declare `acc_out` as a `reg` instead of a `wire`. Here is the corrected code:
+
+```verilog
+module alu_accumulator_top(
+    input clk, rst, load_acc,
+    input [7:0] data_in,
+    input [2:0] op,
+    output reg [7:0] acc_out,
+    output wire zero
+);
+    
+    // Internal wires and registers
+    wire [7:0] alu_result;
+    reg [7:0] acc = 8'h00;
+  
+    // Instantiate 'alu_8bit'
+    alu_8bit u_alu(
+        .A(acc), 
+        .B(data_in), 
+        .op(op), 
+        .result(alu_result), 
+        .zero(zero)
+    );
+  
+    // Accumulator register
+    always @(posedge clk or posedge rst) begin
+        if (rst) acc <= 8'h00;
+        else if (load_acc) acc <= data_in;
+        else acc <= alu_result;
+    end
+  
+    assign acc_out = acc;
+    
+endmodule
+```
+In this corrected code, `acc_out` is declared as a `reg` instead of a `wire`. This allows it to be driven by the always block that updates its value on every positive edge of clock or reset.

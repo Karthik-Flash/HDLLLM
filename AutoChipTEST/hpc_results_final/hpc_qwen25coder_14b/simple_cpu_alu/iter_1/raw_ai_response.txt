@@ -1,0 +1,31 @@
+```verilog
+module simple_cpu_alu (
+    input [3:0] A,
+    input [3:0] B,
+    input [1:0] op,
+    output reg [3:0] result,
+    output wire zero
+);
+
+    // Define operations
+    localparam ADD = 2'b00;
+    localparam SUB = 2'b01;
+    localparam AND = 2'b10;
+    localparam OR  = 2'b11;
+
+    // Combinational logic to perform ALU operation
+    always @(*) begin
+        case (op)
+            ADD: result = A + B;
+            SUB: result = A - B;
+            AND: result = A & B;
+            OR:  result = A | B;
+            default: result = 4'b0000;
+        endcase
+    end
+
+    // Determine if result is zero
+    assign zero = (result == 4'b0000);
+
+endmodule
+```

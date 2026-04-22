@@ -1,0 +1,85 @@
+module simple_cpu_ctrl (
+    input clk, rst,
+    input [7:0] instruction,
+    output reg [1:0] alu_op,
+    output reg we_reg,
+    output reg [1:0] rs1, rs2, rd
+);
+
+    localparam NOP = 3'b000,
+               ADD = 3'b001,
+               SUB = 3'b010,
+               AND = 3'b011,
+               OR  = 3'b100,
+               LOAD = 3'b101,
+               STORE = 3'b110,
+               BRANCH = 3'b111;
+
+    reg [2:0] state, next_state;
+
+    always @(posedge clk or posedge rst) begin
+        if (rst)
+            state <= NOP;
+        else
+            state <= next_state;
+    end
+
+    always @(*) begin
+        next_state = state;
+        alu_op = 2'b00;
+        we_reg = 0;
+        rs1 = instruction[4:3];
+        rs2 = instruction[2:1];
+        rd = instruction[4:3];
+
+        case (state)
+            NOP: begin
+                if (instruction[7:5] == ADD)
+                    next_state = ADD;
+                else if (instruction[7:5] == SUB)
+                    next_state = SUB;
+                else if (instruction[7:5] == AND)
+                    next_state = AND;
+                else if (instruction[7:5] == OR)
+                    next_state = OR;
+                else if (instruction[7:5] == LOAD)
+                    next_state = LOAD;
+                else if (instruction[7:5] == STORE)
+                    next_state = STORE;
+                else if (instruction[7:5] == BRANCH)
+                    next_state = BRANCH;
+            end
+            ADD: begin
+                alu_op = 2'b00;
+                we_reg = 1;
+                next_state = NOP;
+            end
+            SUB: begin
+                alu_op = 2'b01;
+                we_reg = 1;
+                next_state = NOP;
+            end
+            AND: begin
+                alu_op = 2'b10;
+                we_reg = 1;
+                next_state = NOP;
+            end
+            OR: begin
+                alu_op = 2'b11;
+                we_reg = 1;
+                next_state = NOP;
+            end
+            LOAD: begin
+                we_reg = 1;
+                next_state = NOP;
+            end
+            STORE: begin
+                next_state = NOP;
+            end
+            BRANCH: begin
+                next_state = NOP;
+            end
+        endcase
+    end
+
+endmodule

@@ -1,0 +1,34 @@
+```verilog
+module alu_8bit (
+    input [7:0] A,
+    input [7:0] B,
+    input [2:0] op,
+    output [7:0] result,
+    output zero
+);
+
+    // result is declared as reg because it is assigned inside an always block
+    reg [7:0] result;
+    // zero is declared as wire because it is driven by an assign statement
+    wire zero;
+
+    // Combinational always block for ALU operations
+    always @(*) begin
+        case (op)
+            3'b000: result = A + B;      // ADD
+            3'b001: result = A - B;      // SUB
+            3'b010: result = A & B;      // AND
+            3'b011: result = A | B;      // OR
+            3'b100: result = A ^ B;      // XOR
+            3'b101: result = ~A;         // NOT_A
+            3'b110: result = A << 1;     // SHL (Logical Left Shift by 1)
+            3'b111: result = A >> 1;     // SHR (Logical Right Shift by 1)
+            default: result = 8'hXX;     // Undefined operation
+        endcase
+    end
+
+    // zero is true if the result is 0
+    assign zero = (result == 8'h00);
+
+endmodule
+```

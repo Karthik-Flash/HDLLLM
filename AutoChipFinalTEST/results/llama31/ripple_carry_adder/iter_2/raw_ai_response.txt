@@ -1,0 +1,22 @@
+```verilog
+module ripple_carry_adder (
+  input [3:0] A,
+  input [3:0] B,
+  input cin,
+  output reg [3:0] Sum,
+  output reg cout
+);
+
+wire [3:0] Sum_wire;
+wire cout_wire;
+
+full_adder fa0 (.a(A[0]), .b(B[0]), .cin(cin), .sum(Sum_wire[0]), .cout(fa1.cin));
+full_adder fa1 (.a(A[1]), .b(B[1]), .cin(fa1.cin), .sum(Sum_wire[1]), .cout(fa2.cin));
+full_adder fa2 (.a(A[2]), .b(B[2]), .cin(fa2.cin), .sum(Sum_wire[2]), .cout(fa3.cin));
+full_adder fa3 (.a(A[3]), .b(B[3]), .cin(cin), .sum(Sum_wire[3]), .cout(cout));
+
+assign Sum = Sum_wire;
+assign cout = cout_wire;
+
+endmodule
+```

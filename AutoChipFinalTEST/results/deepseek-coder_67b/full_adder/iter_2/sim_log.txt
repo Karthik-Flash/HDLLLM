@@ -1,0 +1,5 @@
+--- COMPILATION ---
+results\deepseek-coder_67b\full_adder\iter_2\full_adder_tb.v:7: error: port ``sum'' is not a port of uut.
+results\deepseek-coder_67b\full_adder\iter_2\full_adder_tb.v:7: error: port ``cout'' is not a port of uut.
+2 error(s) during elaboration.
+

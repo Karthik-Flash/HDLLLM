@@ -1,0 +1,17 @@
+{
+  "module": "comparator_8bit",
+  "model": "deepseek-coder:6.7b",
+  "pass_at_1": true,
+  "iterations_to_pass": 4,
+  "time_to_pass_sec": 145.31,
+  "total_time_sec": 145.31,
+  "total_iterations": 4,
+  "compile_errors": 3,
+  "sim_errors": 0,
+  "error_types": [
+    "reg_wire_mismatch",
+    "reg_wire_mismatch",
+    "reg_wire_mismatch"
+  ],
+  "max_retries": 5
+}

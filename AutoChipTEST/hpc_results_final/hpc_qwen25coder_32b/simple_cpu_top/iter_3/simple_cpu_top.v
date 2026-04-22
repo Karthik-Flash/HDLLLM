@@ -1,0 +1,133 @@
+```verilog
+module simple_cpu_top (
+    input clk,
+    input rst,
+    input [7:0] instruction,
+    output [3:0] result,
+    output zero
+);
+
+    wire [1:0] alu_op;
+    wire we_reg;
+    wire [2:0] rs1, rs2, rd;
+    wire [3:0] A, B;
+
+    simple_cpu_ctrl ctrl (
+        .clk(clk),
+        .rst(rst),
+        .instruction(instruction),
+        .alu_op(alu_op),
+        .we_reg(we_reg),
+        .rs1(rs1[1:0]), // Adjusting to 2 bits
+        .rs2(rs2[1:0]), // Adjusting to 2 bits
+        .rd(rd[1:0])    // Adjusting to 2 bits
+    );
+
+    simple_cpu_regfile rf (
+        .clk(clk),
+        .rst(rst),
+        .we(we_reg),
+        .waddr(rd[1:0]), // Adjusting to 2 bits
+        .raddr1(rs1[1:0]), // Adjusting to 2 bits
+        .raddr2(rs2[1:0]), // Adjusting to 2 bits
+        .wdata(result),
+        .rdata1(A),
+        .rdata2(B)
+    );
+
+    simple_cpu_alu alu (
+        .A(A),
+        .B(B),
+        .op(alu_op),
+        .result(result),
+        .zero(zero)
+    );
+
+endmodule
+
+module simple_cpu_ctrl (
+    input clk,
+    input rst,
+    input [7:0] instruction,
+    output reg [1:0] alu_op,
+    output reg we_reg,
+    output reg [1:0] rs1,
+    output reg [1:0] rs2,
+    output reg [1:0] rd
+);
+
+    always @(posedge clk or posedge rst) begin
+        if (rst) begin
+            alu_op <= 2'b00;
+            we_reg <= 1'b0;
+            rs1 <= 2'b00;
+            rs2 <= 2'b00;
+            rd <= 2'b00;
+        end else begin
+            // Example decoding logic, adjust according to your instruction set
+            case (instruction[7:5])
+                3'b000: begin // ADD
+                    alu_op <= 2'b00;
+                    we_reg <= 1'b1;
+                    rs1 <= instruction[4:3];
+                    rs2 <= instruction[2:1];
+                    rd <= instruction[4:3];
+                end
+                3'b001: begin // SUB
+                    alu_op <= 2'b01;
+                    we_reg <= 1'b1;
+                    rs1 <= instruction[4:3];
+                    rs2 <= instruction[2:1];
+                    rd <= instruction[4:3];
+                end
+                3'b010: begin // AND
+                    alu_op <= 2'b10;
+                    we_reg <= 1'b1;
+                    rs1 <= instruction[4:3];
+                    rs2 <= instruction[2:1];
+                    rd <= instruction[4:3];
+                end
+                3'b011: begin // OR
+                    alu_op <= 2'b11;
+                    we_reg <= 1'b1;
+                    rs1 <= instruction[4:3];
+                    rs2 <= instruction[2:1];
+                    rd <= instruction[4:3];
+                end
+                default: begin
+                    alu_op <= 2'b00;
+                    we_reg <= 1'b0;
+                    rs1 <= 2'b00;
+                    rs2 <= 2'b00;
+                    rd <= 2'b00;
+                end
+            endcase
+        end
+    end
+
+endmodule
+
+module simple_cpu_regfile (
+    input clk,
+    input rst,
+    input we,
+    input [1:0] waddr,
+    input [1:0] raddr1,
+    input [1:0] raddr2,
+    input [3:0] wdata,
+    output [3:0] rdata1,
+    output [3:0] rdata2
+);
+
+    reg [3:0] regfile [0:3];
+
+    always @(posedge clk or posedge rst) begin
+        if (rst) begin
+            regfile[0] <= 4'b0000;
+            regfile[1] <= 4'b0000;
+            regfile[2] <= 4'b0000;
+            regfile[3] <= 4'b0000;
+        end else if (we) begin
+            regfile[waddr] <= wdata;
+        end
+    end

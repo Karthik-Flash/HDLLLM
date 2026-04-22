@@ -1,0 +1,9 @@
+Sure, here is the Verilog-2001 code for a full adder module:
+
+```verilog
+module full_adder (input wire a, b, cin, output wire sum, cout);
+  assign sum = a ^ b ^ cin;
+  assign cout = (a & b) | (b & cin) | (a & cin);
+endmodule
+```
+This module takes three inputs: `a`, `b` and `cin`. It calculates the sum of these inputs using XOR (^), AND (&) operations and assigns it to the output wire `sum`. The carry out is calculated similarly but uses OR (|) operation instead of XOR and assigns it to the output wire `cout`.

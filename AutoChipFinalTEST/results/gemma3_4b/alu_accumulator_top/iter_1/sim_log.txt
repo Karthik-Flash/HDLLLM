@@ -1,0 +1,6 @@
+--- COMPILATION ---
+results\gemma3_4b\alu_accumulator_top\iter_1\alu_accumulator_top_tb.v:16: error: port ``load_acc'' is not a port of uut.
+results\gemma3_4b\alu_accumulator_top\iter_1\alu_accumulator_top.v:26: error: Unable to bind wire/reg/memory `load_acc' in `alu_accumulator_top_tb.uut'
+results\gemma3_4b\alu_accumulator_top\iter_1\alu_accumulator_top.v:26: error: Unable to elaborate condition expression.
+3 error(s) during elaboration.
+

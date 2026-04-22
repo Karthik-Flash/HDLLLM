@@ -1,0 +1,15 @@
+{
+  "module": "shift_register_8bit",
+  "model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+  "hardware": "V100-32GB-HPC",
+  "pass_at_1": true,
+  "iterations_to_pass": 2,
+  "time_to_pass_sec": 11.92,
+  "total_iterations": 2,
+  "compile_errors": 0,
+  "sim_errors": 1,
+  "error_types": [
+    "logic_error"
+  ],
+  "max_retries": 5
+}

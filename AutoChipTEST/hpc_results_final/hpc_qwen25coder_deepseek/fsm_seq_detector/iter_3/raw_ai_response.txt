@@ -1,0 +1,41 @@
+ Apologies for the confusion. Let's correct the FSM to ensure it properly resets to state `S0` and correctly detects the sequence "1011". The issue seems to be with the detection logic not resetting properly or not detecting the sequence correctly.
+
+Here's the corrected module:
+
+```verilog
+module fsm_seq_detector (
+    input clk,
+    input rst,
+    input in,
+    output reg detected
+);
+
+    reg [1:0] state, next_state;
+    localparam S0 = 2'b00, S1 = 2'b01, S2 = 2'b10, S3 = 2'b11;
+
+    always @(posedge clk or posedge rst) begin
+        if (rst)
+            state <= S0;
+        else
+            state <= next_state;
+    end
+
+    always @(*) begin
+        next_state = state;
+        detected = 0;
+        case (state)
+            S0: if (in == 1) next_state = S1;
+            S1: if (in == 0) next_state = S2;
+            S2: if (in == 1) next_state = S3;
+            S3: if (in == 1) begin
+                    next_state = S1;
+                    detected = 1;
+                end else if (in == 0) next_state = S2;
+            default: next_state = S0; // Ensure default state is S0
+        endcase
+    end
+
+endmodule
+```
+
+This corrected module should now properly reset to state `S0` and correctly detect the sequence "1011". The `detected` signal should be asserted on the clock cycle after the last bit of the sequence "1011" is received.

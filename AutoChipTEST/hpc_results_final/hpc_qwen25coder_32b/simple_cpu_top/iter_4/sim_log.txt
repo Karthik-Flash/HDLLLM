@@ -1,0 +1,5 @@
+--- COMPILATION ---
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_4/simple_cpu_top.v:1: warning: macro verilog undefined (and assumed null) at this point.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_4/simple_cpu_top.v:1: syntax error
+I give up.
+

@@ -1,0 +1,12 @@
+--- COMPILATION ---
+
+
+--- SIMULATION ---
+PASS r0
+PASS r1
+PASS r2
+PASS r3
+PASS rst_clear
+ALL TESTS PASSED
+results/hpc_qwen25coder_deepseek/simple_cpu_regfile/iter_1/simple_cpu_regfile_tb.v:21: $finish called at 57 (1s)
+

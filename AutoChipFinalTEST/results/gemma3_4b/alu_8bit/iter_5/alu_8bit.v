@@ -1,0 +1,81 @@
+module alu_8bit (
+  input [7:0] A,
+  input [2:0] op,
+  output reg [7:0] result,
+  output wire zero
+);
+
+  always @(A, B, op) begin
+    case (op)
+      3'b000: begin
+        result = A + B;
+      end
+      3'b001: begin
+        result = A - B;
+      end
+      3'b010: begin
+        result = A & B;
+      end
+      3'b011: begin
+        result = A | B;
+      end
+      3'b100: begin
+        result = A ^ B;
+      end
+      3'b101: begin
+        result = ~A;
+      end
+      3'b110: begin
+        result = A << 1;
+      end
+      3'b111: begin
+        result = A >> 1;
+      end
+      default: begin
+        result = 8'h00;
+      end
+    endcase
+  end
+
+  assign zero = (result == 8'h00);
+
+endmodule
+
+module alu_8bit_tb (
+  input clk,
+  input rst,
+  input [7:0] A,
+  input [2:0] op,
+  output [7:0] result,
+  output wire zero
+);
+
+  reg clk;
+  reg rst;
+  reg [7:0] A;
+  reg [2:0] op;
+  wire [7:0] result;
+  wire zero;
+
+  alu_8bit uut (
+    .A(A),
+    .op(op),
+    .result(result),
+    .zero(zero)
+  );
+
+  // Clock generation
+  always #5 clk = ~clk;
+
+  initial begin
+    clk = 0;
+    rst = 1;
+    #10 rst = 0;
+  end
+
+  initial begin
+    A = 8'h0;
+    op = 3'b000;
+  end
+
+endmodule

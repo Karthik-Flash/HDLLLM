@@ -1,0 +1,42 @@
+module priority_enc_8 (
+  input [7:0] in,
+  output reg [2:0] out,
+  output valid
+);
+
+  wire valid_wire;
+
+  always @(*) begin
+    if (in[7]) begin
+      out = 3'd7;
+      valid_wire = 1'b1;
+    end else if (in[6]) begin
+      out = 3'd6;
+      valid_wire = 1'b1;
+    end else if (in[5]) begin
+      out = 3'd5;
+      valid_wire = 1'b1;
+    end else if (in[4]) begin
+      out = 3'd4;
+      valid_wire = 1'b1;
+    end else if (in[3]) begin
+      out = 3'd3;
+      valid_wire = 1'b1;
+    end else if (in[2]) begin
+      out = 3'd2;
+      valid_wire = 1'b1;
+    end else if (in[1]) begin
+      out = 3'd1;
+      valid_wire = 1'b1;
+    end else if (in[0]) begin
+      out = 3'd0;
+      valid_wire = 1'b1;
+    end else begin
+      out = 3'd0;
+      valid_wire = 1'b0;
+    end
+  end
+
+  assign valid = valid_wire;
+
+endmodule

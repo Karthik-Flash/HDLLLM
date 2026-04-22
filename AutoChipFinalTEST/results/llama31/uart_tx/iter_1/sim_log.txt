@@ -1,0 +1,22 @@
+--- COMPILATION ---
+results\llama31\uart_tx\iter_1\uart_tx.v:42: syntax error
+results\llama31\uart_tx\iter_1\uart_tx.v:48: error: Incomprehensible case expression.
+results\llama31\uart_tx\iter_1\uart_tx.v:50: syntax error
+results\llama31\uart_tx\iter_1\uart_tx.v:54: error: malformed statement
+results\llama31\uart_tx\iter_1\uart_tx.v:54: error: Incomprehensible case expression.
+results\llama31\uart_tx\iter_1\uart_tx.v:55: syntax error
+results\llama31\uart_tx\iter_1\uart_tx.v:62: error: Incomprehensible case expression.
+results\llama31\uart_tx\iter_1\uart_tx.v:64: syntax error
+results\llama31\uart_tx\iter_1\uart_tx.v:70: error: Incomprehensible case expression.
+results\llama31\uart_tx\iter_1\uart_tx.v:72: syntax error
+results\llama31\uart_tx\iter_1\uart_tx_tb.v:13: error: malformed statement
+results\llama31\uart_tx\iter_1\uart_tx_tb.v:13: error: Incomprehensible case expression.
+results\llama31\uart_tx\iter_1\uart_tx_tb.v:14: syntax error
+results\llama31\uart_tx\iter_1\uart_tx_tb.v:27: error: malformed statement
+results\llama31\uart_tx\iter_1\uart_tx_tb.v:27: error: Incomprehensible case expression.
+results\llama31\uart_tx\iter_1\uart_tx_tb.v:28: syntax error
+results\llama31\uart_tx\iter_1\uart_tx_tb.v:29: error: malformed statement
+results\llama31\uart_tx\iter_1\uart_tx_tb.v:29: error: Incomprehensible case expression.
+results\llama31\uart_tx\iter_1\uart_tx_tb.v:30: syntax error
+I give up.
+

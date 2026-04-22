@@ -1,0 +1,7 @@
+--- COMPILATION ---
+results\deepseek-coder_67b\full_adder\iter_1\full_adder_tb.v:7: error: port ``sum'' is not a port of uut.
+results\deepseek-coder_67b\full_adder\iter_1\full_adder_tb.v:7: error: port ``cout'' is not a port of uut.
+results\deepseek-coder_67b\full_adder\iter_1\full_adder.v:2: error: reg out; cannot be driven by primitives or continuous assignment.
+results\deepseek-coder_67b\full_adder\iter_1\full_adder.v:3: error: reg out; cannot be driven by primitives or continuous assignment.
+4 error(s) during elaboration.
+

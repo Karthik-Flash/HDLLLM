@@ -1,0 +1,10 @@
+--- COMPILATION ---
+
+
+--- SIMULATION ---
+FAIL [duty=0]: pwm_out=1 at counter=255 (expected always 0)
+FAIL [duty=4]: counter=255 expected low, got high
+FAIL [duty=4]: counted 5 high cycles (expected 4)
+FAIL [duty=255]: counted 256 high cycles (expected 255)
+FAIL [duty=128]: counted 129 high cycles (expected 128)
+

@@ -1,0 +1,28 @@
+--- COMPILATION ---
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/baseline/decoder_3to8/iter_3/decoder_3to8.v:20: syntax error
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/baseline/decoder_3to8/iter_3/decoder_3to8.v:21: Syntax in assignment statement l-value.
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/baseline/decoder_3to8/iter_3/decoder_3to8.v:24: syntax error
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/baseline/decoder_3to8/iter_3/decoder_3to8_tb.v:14: error: Malformed statement
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/baseline/decoder_3to8/iter_3/decoder_3to8_tb.v:15: syntax error
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/baseline/decoder_3to8/iter_3/decoder_3to8_tb.v:15: error: Malformed statement
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/baseline/decoder_3to8/iter_3/decoder_3to8_tb.v:16: syntax error
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/baseline/decoder_3to8/iter_3/decoder_3to8_tb.v:16: error: Malformed statement
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/baseline/decoder_3to8/iter_3/decoder_3to8_tb.v:17: syntax error
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/baseline/decoder_3to8/iter_3/decoder_3to8_tb.v:17: error: Malformed statement
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/baseline/decoder_3to8/iter_3/decoder_3to8_tb.v:19: syntax error
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/baseline/decoder_3to8/iter_3/decoder_3to8_tb.v:19: error: Malformed statement
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/baseline/decoder_3to8/iter_3/decoder_3to8_tb.v:21: syntax error
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/baseline/decoder_3to8/iter_3/decoder_3to8_tb.v:21: Syntax in assignment statement l-value.
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/baseline/decoder_3to8/iter_3/decoder_3to8_tb.v:23: syntax error
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/baseline/decoder_3to8/iter_3/decoder_3to8_tb.v:23: error: Malformed statement
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/baseline/decoder_3to8/iter_3/decoder_3to8_tb.v:24: syntax error
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/baseline/decoder_3to8/iter_3/decoder_3to8_tb.v:24: error: Malformed statement
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/baseline/decoder_3to8/iter_3/decoder_3to8_tb.v:25: syntax error
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/baseline/decoder_3to8/iter_3/decoder_3to8_tb.v:25: error: Malformed statement
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/baseline/decoder_3to8/iter_3/decoder_3to8_tb.v:26: syntax error
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/baseline/decoder_3to8/iter_3/decoder_3to8_tb.v:26: error: Malformed statement
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/baseline/decoder_3to8/iter_3/decoder_3to8_tb.v:35: syntax error
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/baseline/decoder_3to8/iter_3/decoder_3to8_tb.v:39: error: Malformed statement
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/baseline/decoder_3to8/iter_3/decoder_3to8_tb.v:68: syntax error
+I give up.
+

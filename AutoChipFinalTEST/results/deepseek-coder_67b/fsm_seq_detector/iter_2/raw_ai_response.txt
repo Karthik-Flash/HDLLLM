@@ -1,0 +1,27 @@
+The errors are due to the fact that `next_state` is declared as a wire and it's being used in an always block, which is not allowed in Verilog. We need to change `next_state` from a wire to a reg. Here is the corrected code:
+
+```verilog
+module fsm_seq_detector(input clk, rst, in, output reg detected);
+    reg [1:0] state;
+    reg [1:0] next_state;  // Changed from wire to reg
+    
+    always @(posedge clk or posedge rst) begin
+        if (rst) 
+            state <= 2'd0;
+        else 
+            state <= next_state;
+    end
+    
+    always @(*) begin
+        case (state)
+            2'd0: next_state = in ? 2'd1 : 2'd0;
+            2'd1: next_state = !in ? 2'd2 : 2'd1;
+            2'd2: next_state = in ? 2'd3 : 2'd0;
+            default: next_state = !in ? 2'd1 : 2'd2; // S3 state
+        endcase
+    end
+    
+    assign detected = (state == 2'd3) & in;
+endmodule
+```
+In this corrected code, `next_state` is declared as a reg instead of wire. This change allows it to be used inside an always block and properly updates the state on each clock cycle. The rest of the module remains unchanged.

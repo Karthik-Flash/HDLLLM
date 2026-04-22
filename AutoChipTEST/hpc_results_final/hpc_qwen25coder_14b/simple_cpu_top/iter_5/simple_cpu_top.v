@@ -1,0 +1,52 @@
+module simple_cpu_top (
+    input clk,
+    input rst,
+    input [7:0] instruction,
+    output [3:0] result,
+    output zero
+);
+
+    // Interconnect wires
+    wire [1:0] alu_op;
+    wire we_reg;
+    wire [1:0] rs1;
+    wire [1:0] rs2;
+    wire [1:0] rd;
+    wire [3:0] A;
+    wire [3:0] B;
+
+    // Instantiate control unit
+    simple_cpu_ctrl ctrl (
+        .clk(clk),
+        .rst(rst),
+        .instruction(instruction),
+        .alu_op(alu_op),
+        .we_reg(we_reg),
+        .rs1(rs1),
+        .rs2(rs2),
+        .rd(rd)
+    );
+
+    // Instantiate register file
+    simple_cpu_regfile rf (
+        .clk(clk),
+        .rst(rst),
+        .we(we_reg),
+        .waddr(rd),
+        .raddr1(rs1),
+        .raddr2(rs2),
+        .wdata(result),
+        .rdata1(A),
+        .rdata2(B)
+    );
+
+    // Instantiate ALU
+    simple_cpu_alu alu (
+        .A(A),
+        .B(B),
+        .op(alu_op),
+        .result(result),
+        .zero(zero)
+    );
+
+endmodule

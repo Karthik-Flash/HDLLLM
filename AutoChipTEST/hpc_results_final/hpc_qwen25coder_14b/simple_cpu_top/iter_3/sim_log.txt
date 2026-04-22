@@ -1,0 +1,6 @@
+--- COMPILATION ---
+results/hpc_qwen25coder_14b/simple_cpu_top/iter_3/simple_cpu_ctrl.v:1: error: 'simple_cpu_ctrl' has already been declared in this scope.
+results/hpc_qwen25coder_14b/simple_cpu_top/iter_3/simple_cpu_top.v:1:      : It was declared here as a module.
+results/hpc_qwen25coder_14b/simple_cpu_top/iter_3/simple_cpu_ctrl.v:61: error: Module simple_cpu_ctrl was already declared here: results/hpc_qwen25coder_14b/simple_cpu_top/iter_3/simple_cpu_top.v:1
+
+

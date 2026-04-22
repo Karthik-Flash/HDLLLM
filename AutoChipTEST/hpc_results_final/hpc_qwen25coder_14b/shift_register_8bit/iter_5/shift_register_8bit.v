@@ -1,0 +1,19 @@
+module shift_register_8bit (
+    input wire clk,
+    input wire rst,
+    input wire sin,
+    output reg sout,
+    output reg [7:0] data
+);
+
+always @(posedge clk or posedge rst) begin
+    if (rst) begin
+        data <= 8'b0;
+        sout <= 1'b0;
+    end else begin
+        data <= {data[6:0], sin};
+        sout <= data[7];
+    end
+end
+
+endmodule

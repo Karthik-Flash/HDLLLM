@@ -1,0 +1,7 @@
+--- COMPILATION ---
+
+
+--- SIMULATION ---
+ALL TESTS PASSED
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/baseline/comb_sensitivity/iter_1/comb_sensitivity_tb.v:72: $finish called at 340000 (1ps)
+

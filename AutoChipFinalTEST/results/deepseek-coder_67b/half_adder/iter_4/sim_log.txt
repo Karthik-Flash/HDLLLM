@@ -1,0 +1,10 @@
+--- COMPILATION ---
+results\deepseek-coder_67b\half_adder\iter_4\half_adder_tb.v:7: error: port ``sum'' is not a port of uut.
+results\deepseek-coder_67b\half_adder\iter_4\half_adder_tb.v:7: error: port ``cout'' is not a port of uut.
+results\deepseek-coder_67b\half_adder\iter_4\half_adder.v:3: error: out['sd0] is not a valid l-value in half_adder_tb.uut.
+results\deepseek-coder_67b\half_adder\iter_4\half_adder.v:1:      : out['sd0] is declared here as wire.
+results\deepseek-coder_67b\half_adder\iter_4\half_adder.v:4: error: out['sd1] is not a valid l-value in half_adder_tb.uut.
+results\deepseek-coder_67b\half_adder\iter_4\half_adder.v:1:      : out['sd1] is declared here as wire.
+results\deepseek-coder_67b\half_adder\iter_4\half_adder.v:2: warning: @* found no sensitivities so it will never trigger.
+4 error(s) during elaboration.
+

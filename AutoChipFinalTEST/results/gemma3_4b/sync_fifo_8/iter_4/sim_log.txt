@@ -1,0 +1,5 @@
+--- COMPILATION ---
+results\gemma3_4b\sync_fifo_8\iter_4\sync_fifo_8.v:17: syntax error
+results\gemma3_4b\sync_fifo_8\iter_4\sync_fifo_8.v:17: error: Invalid module instantiation
+results\gemma3_4b\sync_fifo_8\iter_4\sync_fifo_8.v:18: error: Invalid module instantiation
+

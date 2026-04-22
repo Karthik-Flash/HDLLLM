@@ -1,0 +1,28 @@
+--- COMPILATION ---
+results\llama31\bcd_to_7seg\iter_2\bcd_to_7seg.v:12: warning: extra digits given for sized binary constant.
+results\llama31\bcd_to_7seg\iter_2\bcd_to_7seg.v:12: warning: extra digits given for sized binary constant.
+results\llama31\bcd_to_7seg\iter_2\bcd_to_7seg.v:12: warning: extra digits given for sized binary constant.
+results\llama31\bcd_to_7seg\iter_2\bcd_to_7seg.v:12: warning: Numeric constant truncated to 4 bits.
+results\llama31\bcd_to_7seg\iter_2\bcd_to_7seg.v:12: warning: extra digits given for sized binary constant.
+results\llama31\bcd_to_7seg\iter_2\bcd_to_7seg.v:12: warning: Numeric constant truncated to 4 bits.
+results\llama31\bcd_to_7seg\iter_2\bcd_to_7seg.v:13: warning: extra digits given for sized binary constant.
+results\llama31\bcd_to_7seg\iter_2\bcd_to_7seg.v:13: warning: Numeric constant truncated to 4 bits.
+results\llama31\bcd_to_7seg\iter_2\bcd_to_7seg.v:13: warning: extra digits given for sized binary constant.
+results\llama31\bcd_to_7seg\iter_2\bcd_to_7seg.v:13: warning: Numeric constant truncated to 4 bits.
+results\llama31\bcd_to_7seg\iter_2\bcd_to_7seg.v:14: warning: extra digits given for sized binary constant.
+results\llama31\bcd_to_7seg\iter_2\bcd_to_7seg.v:14: warning: Numeric constant truncated to 4 bits.
+
+
+--- SIMULATION ---
+FAIL: bcd=1  expected seg=7'b0110000  got seg=7'b1111110
+FAIL: bcd=2  expected seg=7'b1101101  got seg=7'b1111110
+FAIL: bcd=3  expected seg=7'b1111001  got seg=7'b1111110
+FAIL: bcd=4  expected seg=7'b0110011  got seg=7'b0110000
+FAIL: bcd=5  expected seg=7'b1011011  got seg=7'b0110000
+FAIL: bcd=6  expected seg=7'b1011111  got seg=7'b0110000
+FAIL: bcd=7  expected seg=7'b1110000  got seg=7'b0110000
+FAIL: bcd=8  expected seg=7'b1111111  got seg=7'b1101101
+FAIL: bcd=9  expected seg=7'b1111011  got seg=7'b1101101
+FAIL: bcd=10  expected seg=7'b0000000  got seg=7'b1101101
+FAIL: bcd=15  expected seg=7'b0000000  got seg=7'b1111001
+

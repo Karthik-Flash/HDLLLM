@@ -1,0 +1,320 @@
+{
+  "model": "deepseek-coder:6.7b",
+  "pass_rate": "13/20",
+  "results": [
+    {
+      "module": "half_adder",
+      "model": "deepseek-coder:6.7b",
+      "pass_at_1": true,
+      "iterations_to_pass": 1,
+      "time_to_pass_sec": 24.33,
+      "total_time_sec": 24.33,
+      "total_iterations": 1,
+      "compile_errors": 0,
+      "sim_errors": 0,
+      "error_types": [],
+      "max_retries": 5
+    },
+    {
+      "module": "full_adder",
+      "model": "deepseek-coder:6.7b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_time_sec": 192.93,
+      "total_iterations": 5,
+      "compile_errors": 5,
+      "sim_errors": 0,
+      "error_types": [
+        "reg_wire_mismatch",
+        "port_mismatch",
+        "reg_wire_mismatch",
+        "reg_wire_mismatch",
+        "reg_wire_mismatch"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "ripple_carry_adder",
+      "model": "deepseek-coder:6.7b",
+      "pass_at_1": true,
+      "iterations_to_pass": 1,
+      "time_to_pass_sec": 53.7,
+      "total_time_sec": 53.7,
+      "total_iterations": 1,
+      "compile_errors": 0,
+      "sim_errors": 0,
+      "error_types": [],
+      "max_retries": 5
+    },
+    {
+      "module": "comparator_8bit",
+      "model": "deepseek-coder:6.7b",
+      "pass_at_1": true,
+      "iterations_to_pass": 4,
+      "time_to_pass_sec": 145.31,
+      "total_time_sec": 145.31,
+      "total_iterations": 4,
+      "compile_errors": 3,
+      "sim_errors": 0,
+      "error_types": [
+        "reg_wire_mismatch",
+        "reg_wire_mismatch",
+        "reg_wire_mismatch"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "bcd_to_7seg",
+      "model": "deepseek-coder:6.7b",
+      "pass_at_1": true,
+      "iterations_to_pass": 1,
+      "time_to_pass_sec": 57.1,
+      "total_time_sec": 57.1,
+      "total_iterations": 1,
+      "compile_errors": 0,
+      "sim_errors": 0,
+      "error_types": [],
+      "max_retries": 5
+    },
+    {
+      "module": "priority_enc_8",
+      "model": "deepseek-coder:6.7b",
+      "pass_at_1": true,
+      "iterations_to_pass": 2,
+      "time_to_pass_sec": 88.44,
+      "total_time_sec": 88.44,
+      "total_iterations": 2,
+      "compile_errors": 1,
+      "sim_errors": 0,
+      "error_types": [
+        "syntax_error"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "alu_8bit",
+      "model": "deepseek-coder:6.7b",
+      "pass_at_1": true,
+      "iterations_to_pass": 2,
+      "time_to_pass_sec": 119.01,
+      "total_time_sec": 119.01,
+      "total_iterations": 2,
+      "compile_errors": 1,
+      "sim_errors": 0,
+      "error_types": [
+        "reg_wire_mismatch"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "dff_sync_reset",
+      "model": "deepseek-coder:6.7b",
+      "pass_at_1": true,
+      "iterations_to_pass": 1,
+      "time_to_pass_sec": 11.24,
+      "total_time_sec": 11.24,
+      "total_iterations": 1,
+      "compile_errors": 0,
+      "sim_errors": 0,
+      "error_types": [],
+      "max_retries": 5
+    },
+    {
+      "module": "counter_4bit",
+      "model": "deepseek-coder:6.7b",
+      "pass_at_1": true,
+      "iterations_to_pass": 1,
+      "time_to_pass_sec": 22.55,
+      "total_time_sec": 22.55,
+      "total_iterations": 1,
+      "compile_errors": 0,
+      "sim_errors": 0,
+      "error_types": [],
+      "max_retries": 5
+    },
+    {
+      "module": "lfsr_8bit",
+      "model": "deepseek-coder:6.7b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_time_sec": 425.6,
+      "total_iterations": 5,
+      "compile_errors": 0,
+      "sim_errors": 5,
+      "error_types": [
+        "logic_error",
+        "logic_error",
+        "logic_error",
+        "logic_error",
+        "logic_error"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "pwm_generator",
+      "model": "deepseek-coder:6.7b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_time_sec": 249.87,
+      "total_iterations": 5,
+      "compile_errors": 3,
+      "sim_errors": 2,
+      "error_types": [
+        "reg_wire_mismatch",
+        "reg_wire_mismatch",
+        "reg_wire_mismatch",
+        "logic_error",
+        "logic_error"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "gray_counter_4bit",
+      "model": "deepseek-coder:6.7b",
+      "pass_at_1": true,
+      "iterations_to_pass": 1,
+      "time_to_pass_sec": 27.17,
+      "total_time_sec": 27.17,
+      "total_iterations": 1,
+      "compile_errors": 0,
+      "sim_errors": 0,
+      "error_types": [],
+      "max_retries": 5
+    },
+    {
+      "module": "simple_cpu_alu",
+      "model": "deepseek-coder:6.7b",
+      "pass_at_1": true,
+      "iterations_to_pass": 1,
+      "time_to_pass_sec": 40.16,
+      "total_time_sec": 40.16,
+      "total_iterations": 1,
+      "compile_errors": 0,
+      "sim_errors": 0,
+      "error_types": [],
+      "max_retries": 5
+    },
+    {
+      "module": "fsm_seq_detector",
+      "model": "deepseek-coder:6.7b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_time_sec": 530.69,
+      "total_iterations": 5,
+      "compile_errors": 3,
+      "sim_errors": 2,
+      "error_types": [
+        "reg_wire_mismatch",
+        "reg_wire_mismatch",
+        "reg_wire_mismatch",
+        "logic_error",
+        "logic_error"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "uart_tx",
+      "model": "deepseek-coder:6.7b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_time_sec": 1588.27,
+      "total_iterations": 5,
+      "compile_errors": 5,
+      "sim_errors": 0,
+      "error_types": [
+        "syntax_error",
+        "syntax_error",
+        "syntax_error",
+        "syntax_error",
+        "syntax_error"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "sync_fifo_8",
+      "model": "deepseek-coder:6.7b",
+      "pass_at_1": true,
+      "iterations_to_pass": 1,
+      "time_to_pass_sec": 76.57,
+      "total_time_sec": 76.57,
+      "total_iterations": 1,
+      "compile_errors": 0,
+      "sim_errors": 0,
+      "error_types": [],
+      "max_retries": 5
+    },
+    {
+      "module": "alu_accumulator_top",
+      "model": "deepseek-coder:6.7b",
+      "pass_at_1": true,
+      "iterations_to_pass": 4,
+      "time_to_pass_sec": 364.47,
+      "total_time_sec": 364.47,
+      "total_iterations": 4,
+      "compile_errors": 3,
+      "sim_errors": 0,
+      "error_types": [
+        "reg_wire_mismatch",
+        "reg_wire_mismatch",
+        "reg_wire_mismatch"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "param_register_file",
+      "model": "deepseek-coder:6.7b",
+      "pass_at_1": true,
+      "iterations_to_pass": 1,
+      "time_to_pass_sec": 35.62,
+      "total_time_sec": 35.62,
+      "total_iterations": 1,
+      "compile_errors": 0,
+      "sim_errors": 0,
+      "error_types": [],
+      "max_retries": 5
+    },
+    {
+      "module": "pipeline_mult_4x4",
+      "model": "deepseek-coder:6.7b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_time_sec": 384.79,
+      "total_iterations": 5,
+      "compile_errors": 0,
+      "sim_errors": 5,
+      "error_types": [
+        "logic_error",
+        "logic_error",
+        "logic_error",
+        "logic_error",
+        "logic_error"
+      ],
+      "max_retries": 5
+    },
+    {
+      "module": "spi_master_8bit",
+      "model": "deepseek-coder:6.7b",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_time_sec": 1438.4,
+      "total_iterations": 5,
+      "compile_errors": 5,
+      "sim_errors": 0,
+      "error_types": [
+        "syntax_error",
+        "syntax_error",
+        "syntax_error",
+        "syntax_error",
+        "syntax_error"
+      ],
+      "max_retries": 5
+    }
+  ]
+}

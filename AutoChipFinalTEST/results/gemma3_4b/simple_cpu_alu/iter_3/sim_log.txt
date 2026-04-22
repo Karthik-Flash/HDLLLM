@@ -1,0 +1,8 @@
+--- COMPILATION ---
+results\gemma3_4b\simple_cpu_alu\iter_3\simple_cpu_alu_tb.v:9: error: port ``B'' is not a port of uut.
+results\gemma3_4b\simple_cpu_alu\iter_3\simple_cpu_alu.v:10: error: Unable to bind wire/reg/memory `B' in `simple_cpu_alu_tb.uut'
+results\gemma3_4b\simple_cpu_alu\iter_3\simple_cpu_alu.v:11: error: Unable to bind wire/reg/memory `B' in `simple_cpu_alu_tb.uut'
+results\gemma3_4b\simple_cpu_alu\iter_3\simple_cpu_alu.v:12: error: Unable to bind wire/reg/memory `B' in `simple_cpu_alu_tb.uut'
+results\gemma3_4b\simple_cpu_alu\iter_3\simple_cpu_alu.v:13: error: Unable to bind wire/reg/memory `B' in `simple_cpu_alu_tb.uut'
+5 error(s) during elaboration.
+

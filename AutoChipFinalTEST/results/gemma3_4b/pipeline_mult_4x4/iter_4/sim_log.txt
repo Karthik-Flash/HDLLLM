@@ -1,0 +1,6 @@
+--- COMPILATION ---
+
+
+--- SIMULATION ---
+FAIL [5*6]: expected product=30 at cycle 3, got 12
+

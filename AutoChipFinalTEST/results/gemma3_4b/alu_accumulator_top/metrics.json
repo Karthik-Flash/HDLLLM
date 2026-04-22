@@ -1,0 +1,19 @@
+{
+  "module": "alu_accumulator_top",
+  "model": "gemma3:4b",
+  "pass_at_1": false,
+  "iterations_to_pass": null,
+  "time_to_pass_sec": null,
+  "total_time_sec": 19.12,
+  "total_iterations": 5,
+  "compile_errors": 4,
+  "sim_errors": 1,
+  "error_types": [
+    "port_mismatch",
+    "port_mismatch",
+    "port_mismatch",
+    "logic_error",
+    "syntax_error"
+  ],
+  "max_retries": 5
+}

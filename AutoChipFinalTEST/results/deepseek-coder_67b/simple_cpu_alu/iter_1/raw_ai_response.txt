@@ -1,0 +1,17 @@
+Here is the Verilog-2001 code for your problem:
+
+```verilog
+module simple_cpu_alu (input [3:0] A, B, input [1:0] op, output reg [3:0] result, output wire zero);
+  always @(*) begin
+    case (op)
+      2'b00 : result = A + B; // ADD operation
+      2'b01 : result = A - B; // SUBTRACT operation
+      2'b10 : result = A & B; // AND operation
+      2'b11 : result = A | B; // OR operation
+      default: result = 4'b0;  // Default case, set result to zero
+    endcase
+  end
+  assign zero = (result == 4'b0); // Assign the value of zero based on whether result is zero or not
+endmodule
+```
+This module implements a simple ALU with four operations: addition, subtraction, bitwise AND and OR. The inputs A and B are the operands for these operations, while op selects which operation to perform. The output result gives the result of the selected operation, and the wire zero is asserted when the result is zero.

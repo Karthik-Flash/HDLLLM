@@ -1,0 +1,21 @@
+--- COMPILATION ---
+
+
+--- SIMULATION ---
+FAIL: step 1  expected gray=1 (4'b0001)  got 0 (4'b0000)
+FAIL: step 2  expected gray=3 (4'b0011)  got 1 (4'b0001)
+FAIL: step 3  expected gray=2 (4'b0010)  got 3 (4'b0011)
+FAIL: step 4  expected gray=6 (4'b0110)  got 2 (4'b0010)
+FAIL: step 5  expected gray=7 (4'b0111)  got 6 (4'b0110)
+FAIL: step 6  expected gray=5 (4'b0101)  got 7 (4'b0111)
+FAIL: step 7  expected gray=4 (4'b0100)  got 5 (4'b0101)
+FAIL: step 8  expected gray=12 (4'b1100)  got 4 (4'b0100)
+FAIL: step 9  expected gray=13 (4'b1101)  got 12 (4'b1100)
+FAIL: step 10  expected gray=15 (4'b1111)  got 13 (4'b1101)
+FAIL: step 11  expected gray=14 (4'b1110)  got 15 (4'b1111)
+FAIL: step 12  expected gray=10 (4'b1010)  got 14 (4'b1110)
+FAIL: step 13  expected gray=11 (4'b1011)  got 10 (4'b1010)
+FAIL: step 14  expected gray=9 (4'b1001)  got 11 (4'b1011)
+FAIL: step 15  expected gray=8 (4'b1000)  got 9 (4'b1001)
+FAIL: step 16  expected gray=0 (4'b0000)  got 8 (4'b1000)
+

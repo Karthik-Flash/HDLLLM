@@ -1,0 +1,20 @@
+module pwm_generator (
+    input clk,
+    input rst,
+    input [7:0] duty_cycle,
+    output wire pwm_out
+);
+
+reg [7:0] counter;
+
+always @(posedge clk) begin
+    if (rst) begin
+        counter <= 8'd0;
+    end else begin
+        counter <= counter + 1'b1;
+    end
+end
+
+assign pwm_out = (counter <= duty_cycle);
+
+endmodule

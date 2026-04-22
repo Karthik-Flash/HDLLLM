@@ -1,0 +1,15 @@
+{
+  "module": "priority_enc_8",
+  "model": "deepseek-coder:6.7b",
+  "pass_at_1": true,
+  "iterations_to_pass": 2,
+  "time_to_pass_sec": 88.44,
+  "total_time_sec": 88.44,
+  "total_iterations": 2,
+  "compile_errors": 1,
+  "sim_errors": 0,
+  "error_types": [
+    "syntax_error"
+  ],
+  "max_retries": 5
+}

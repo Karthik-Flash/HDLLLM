@@ -1,0 +1,59 @@
+module fsm_seq_detector (
+    input clk,
+    input rst,
+    input in,
+    output detected
+);
+
+    localparam S0 = 2'b00;
+    localparam S1 = 2'b01;
+    localparam S2 = 2'b10;
+    localparam S3 = 2'b11;
+
+    reg [1:0] state;
+    reg detected_reg;
+
+    always @(posedge clk or posedge rst) begin
+        if (rst) begin
+            state <= S0;
+            detected_reg <= 0;
+        end else begin
+            detected_reg <= 0; // Default value
+            case (state)
+                S0: begin
+                    if (in == 1) begin
+                        state <= S1;
+                    end
+                end
+                S1: begin
+                    if (in == 0) begin
+                        state <= S2;
+                    end else begin
+                        state <= S1;
+                    end
+                end
+                S2: begin
+                    if (in == 1) begin
+                        state <= S3;
+                    end else begin
+                        state <= S2;
+                    end
+                end
+                S3: begin
+                    if (in == 1) begin
+                        state <= S1;
+                    end else begin
+                        state <= S2;
+                        detected_reg <= 1; // Set detected only when transitioning from S3 with in == 0
+                    end
+                end
+                default: begin
+                    state <= S0;
+                end
+            endcase
+        end
+    end
+
+    assign detected = detected_reg;
+
+endmodule

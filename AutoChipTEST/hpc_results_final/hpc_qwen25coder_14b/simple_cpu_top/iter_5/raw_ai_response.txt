@@ -1,0 +1,106 @@
+It appears that the module `simple_cpu_ctrl_inst` is not defined anywhere in your code. This is causing the compilation error. You need to either define the `simple_cpu_ctrl_inst` module or use the correct module name `simple_cpu_ctrl`.
+
+Since you want to use the `simple_cpu_ctrl` module, you should instantiate it directly without renaming it. Here is the corrected `simple_cpu_top` module:
+
+```verilog
+module simple_cpu_top (
+    input clk,
+    input rst,
+    input [7:0] instruction,
+    output [3:0] result,
+    output zero
+);
+
+    // Interconnect wires
+    wire [1:0] alu_op;
+    wire we_reg;
+    wire [1:0] rs1;
+    wire [1:0] rs2;
+    wire [1:0] rd;
+    wire [3:0] A;
+    wire [3:0] B;
+
+    // Instantiate control unit
+    simple_cpu_ctrl ctrl (
+        .clk(clk),
+        .rst(rst),
+        .instruction(instruction),
+        .alu_op(alu_op),
+        .we_reg(we_reg),
+        .rs1(rs1),
+        .rs2(rs2),
+        .rd(rd)
+    );
+
+    // Instantiate register file
+    simple_cpu_regfile rf (
+        .clk(clk),
+        .rst(rst),
+        .we(we_reg),
+        .waddr(rd),
+        .raddr1(rs1),
+        .raddr2(rs2),
+        .wdata(result),
+        .rdata1(A),
+        .rdata2(B)
+    );
+
+    // Instantiate ALU
+    simple_cpu_alu alu (
+        .A(A),
+        .B(B),
+        .op(alu_op),
+        .result(result),
+        .zero(zero)
+    );
+
+endmodule
+```
+
+Ensure that the `simple_cpu_ctrl` module is correctly defined in `simple_cpu_ctrl.v`:
+
+```verilog
+module simple_cpu_ctrl (
+    input clk,
+    input rst,
+    input [7:0] instruction,
+    output reg [1:0] alu_op,
+    output reg we_reg,
+    output reg [1:0] rs1,
+    output reg [1:0] rs2,
+    output reg [1:0] rd
+);
+
+    always @(posedge clk or posedge rst) begin
+        if (rst) begin
+            alu_op <= 2'b00;
+            we_reg <= 1'b0;
+            rs1 <= 2'b00;
+            rs2 <= 2'b00;
+            rd <= 2'b00;
+        end else begin
+            // Decode the instruction and set the control signals
+            case (instruction[7:6])
+                2'b00: begin
+                    alu_op <= 2'b00; // Example operation
+                    we_reg <= 1'b1;
+                    rs1 <= instruction[5:4];
+                    rs2 <= instruction[3:2];
+                    rd <= instruction[1:0];
+                end
+                // Add more cases as needed
+                default: begin
+                    alu_op <= 2'b00;
+                    we_reg <= 1'b0;
+                    rs1 <= 2'b00;
+                    rs2 <= 2'b00;
+                    rd <= 2'b00;
+                end
+            endcase
+        end
+    end
+
+endmodule
+```
+
+Ensure that the `simple_cpu_regfile` and `simple_cpu_alu` modules are also correctly defined and do not have similar issues. This should resolve the errors and ensure that the `simple_cpu_top` module is correctly instantiated with the `simple_cpu_ctrl` module.

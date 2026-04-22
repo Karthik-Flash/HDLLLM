@@ -1,0 +1,26 @@
+--- COMPILATION ---
+
+
+--- SIMULATION ---
+PASS test1 (in=1 detected=0)
+PASS test2 (in=0 detected=0)
+PASS test3 (in=1 detected=0)
+PASS test4 (in=1 detected=1)
+PASS test5 (in=1 detected=0)
+PASS test6 (in=0 detected=0)
+PASS test7 (in=1 detected=0)
+FAIL test8: in=0 | got detected=1 | expected=0
+PASS test9 (in=1 detected=0)
+PASS test10 (in=0 detected=0)
+PASS test11 (in=1 detected=0)
+PASS test12 (in=1 detected=1)
+PASS test13 (in=0 detected=0)
+PASS test14 (in=1 detected=0)
+PASS test15 (in=1 detected=1)
+PASS test16 (in=0 detected=0)
+PASS test17 (in=0 detected=0)
+PASS test18 (in=0 detected=0)
+PASS test19 (in=0 detected=0)
+1 TEST(S) FAILED
+results/hpc_qwen25coder_32b/fsm_seq_detector/iter_2/fsm_seq_detector_tb.v:62: $finish called at 216 (1s)
+

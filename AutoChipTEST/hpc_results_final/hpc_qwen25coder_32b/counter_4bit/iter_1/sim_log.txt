@@ -1,0 +1,4 @@
+--- COMPILATION ---
+results/hpc_qwen25coder_32b/counter_4bit/iter_1/counter_4bit.v:8: error: 'count' has already been declared in this scope.
+results/hpc_qwen25coder_32b/counter_4bit/iter_1/counter_4bit.v:4:      : It was declared here as a net.
+

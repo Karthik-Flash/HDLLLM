@@ -1,0 +1,13 @@
+I apologize for the confusion. The corrected code should be as follows:
+
+```verilog
+module counter_4bit(input clk, rst, output reg [3:0] count);
+  always @(posedge clk or posedge rst) begin
+    if (rst) 
+      count <= 4'b0;
+    else 
+      count <= count + 1'b1;
+  end
+endmodule
+```
+This code defines a 4-bit up counter with synchronous active high reset. The always block is triggered on the rising edge of either clock or reset signal. If reset is asserted, the count is set to zero, otherwise it increments by one.

@@ -1,0 +1,19 @@
+{
+  "module": "simple_cpu_alu",
+  "model": "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+  "hardware": "H100-80GB-HPC",
+  "pass_at_1": false,
+  "iterations_to_pass": null,
+  "time_to_pass_sec": null,
+  "total_iterations": 5,
+  "compile_errors": 5,
+  "sim_errors": 0,
+  "error_types": [
+    "compile_other",
+    "compile_other",
+    "compile_other",
+    "compile_other",
+    "compile_other"
+  ],
+  "max_retries": 5
+}

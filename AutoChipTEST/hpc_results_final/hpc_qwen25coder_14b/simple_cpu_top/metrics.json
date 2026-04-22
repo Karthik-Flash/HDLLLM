@@ -1,0 +1,19 @@
+{
+  "module": "simple_cpu_top",
+  "model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+  "hardware": "V100-32GB-HPC",
+  "pass_at_1": false,
+  "iterations_to_pass": null,
+  "time_to_pass_sec": null,
+  "total_iterations": 5,
+  "compile_errors": 5,
+  "sim_errors": 0,
+  "error_types": [
+    "compile_other",
+    "compile_other",
+    "compile_other",
+    "missing_module",
+    "compile_other"
+  ],
+  "max_retries": 5
+}

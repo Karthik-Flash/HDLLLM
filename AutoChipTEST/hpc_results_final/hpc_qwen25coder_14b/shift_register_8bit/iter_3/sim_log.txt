@@ -1,0 +1,17 @@
+--- COMPILATION ---
+
+
+--- SIMULATION ---
+PASS reset
+PASS shift1
+PASS shift2
+PASS shift3
+PASS shift4
+PASS shift5
+PASS shift6
+PASS shift7
+PASS shift8
+FAIL sout
+1 TEST(S) FAILED
+results/hpc_qwen25coder_14b/shift_register_8bit/iter_3/shift_register_8bit_tb.v:24: $finish called at 86 (1s)
+

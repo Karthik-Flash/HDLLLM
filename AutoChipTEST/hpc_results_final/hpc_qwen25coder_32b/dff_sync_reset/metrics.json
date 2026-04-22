@@ -1,0 +1,16 @@
+{
+  "module": "dff_sync_reset",
+  "model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+  "hardware": "V100-32GB-HPC",
+  "pass_at_1": true,
+  "iterations_to_pass": 3,
+  "time_to_pass_sec": 11.28,
+  "total_iterations": 3,
+  "compile_errors": 2,
+  "sim_errors": 0,
+  "error_types": [
+    "compile_other",
+    "compile_other"
+  ],
+  "max_retries": 5
+}

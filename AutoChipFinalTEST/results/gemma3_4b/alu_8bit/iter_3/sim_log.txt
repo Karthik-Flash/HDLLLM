@@ -1,0 +1,9 @@
+--- COMPILATION ---
+results\gemma3_4b\alu_8bit\iter_3\alu_8bit_tb.v:9: error: port ``B'' is not a port of uut.
+results\gemma3_4b\alu_8bit\iter_3\alu_8bit.v:10: error: Unable to bind wire/reg/memory `B' in `alu_8bit_tb.uut'
+results\gemma3_4b\alu_8bit\iter_3\alu_8bit.v:11: error: Unable to bind wire/reg/memory `B' in `alu_8bit_tb.uut'
+results\gemma3_4b\alu_8bit\iter_3\alu_8bit.v:12: error: Unable to bind wire/reg/memory `B' in `alu_8bit_tb.uut'
+results\gemma3_4b\alu_8bit\iter_3\alu_8bit.v:13: error: Unable to bind wire/reg/memory `B' in `alu_8bit_tb.uut'
+results\gemma3_4b\alu_8bit\iter_3\alu_8bit.v:14: error: Unable to bind wire/reg/memory `B' in `alu_8bit_tb.uut'
+6 error(s) during elaboration.
+

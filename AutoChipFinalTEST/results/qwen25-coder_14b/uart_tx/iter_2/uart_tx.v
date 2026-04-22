@@ -1,0 +1,83 @@
+module uart_tx (
+    input clk,
+    input rst,
+    input start,
+    input [7:0] data_in,
+    output reg tx_out,
+    output reg busy,
+    output reg done
+);
+
+parameter BAUD_DIV = 104;
+
+reg [2:0] state;
+reg [7:0] shift_reg;
+reg [7:0] baud_cnt;
+reg [3:0] bit_cnt;
+
+always @(posedge clk or posedge rst) begin
+    if (rst) begin
+        tx_out <= 1;
+        busy <= 0;
+        done <= 0;
+        state <= 3'd0; // IDLE
+    end else begin
+        case (state)
+            3'd0: begin // IDLE
+                tx_out <= 1;
+                busy <= 0;
+                done <= 0;
+                if (start) begin
+                    shift_reg <= data_in;
+                    baud_cnt <= 0;
+                    bit_cnt <= 0;
+                    state <= 3'd1; // START
+                end
+            end
+            3'd1: begin // START
+                tx_out <= 0;
+                busy <= 1;
+                if (baud_cnt == BAUD_DIV - 1) begin
+                    baud_cnt <= 0;
+                    state <= 3'd2; // DATA
+                end else begin
+                    baud_cnt <= baud_cnt + 1;
+                end
+            end
+            3'd2: begin // DATA
+                busy <= 1;
+                tx_out <= shift_reg[7]; // LSB-first
+                if (baud_cnt == BAUD_DIV - 1) begin
+                    baud_cnt <= 0;
+                    shift_reg <= {shift_reg[6:0], 1'b0};
+                    bit_cnt <= bit_cnt + 1;
+                    if (bit_cnt == 7) begin
+                        state <= 3'd3; // STOP
+                    end else begin
+                        state <= 3'd2; // DATA
+                    end
+                end else begin
+                    baud_cnt <= baud_cnt + 1;
+                end
+            end
+            3'd3: begin // STOP
+                tx_out <= 1;
+                busy <= 1;
+                if (baud_cnt == BAUD_DIV - 1) begin
+                    baud_cnt <= 0;
+                    state <= 3'd4; // DONE
+                end else begin
+                    baud_cnt <= baud_cnt + 1;
+                end
+            end
+            3'd4: begin // DONE
+                done <= 1;
+                busy <= 0;
+                tx_out <= 1;
+                state <= 3'd0; // IDLE
+            end
+        endcase
+    end
+end
+
+endmodule

@@ -1,0 +1,11 @@
+--- COMPILATION ---
+
+
+--- SIMULATION ---
+PASS r0
+PASS r3
+PASS r1
+PASS r2
+ALL TESTS PASSED
+results/hpc_qwen25coder_32b/register_file_4x8/iter_1/register_file_4x8_tb.v:18: $finish called at 38 (1s)
+

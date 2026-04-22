@@ -1,0 +1,17 @@
+The error message indicates that there is a timing issue with the product calculation. In Verilog, the multiplication operation `a*b` returns an intermediate value which needs to be assigned to the `product` register before it can be read in the next clock cycle. 
+
+Here's the corrected code:
+
+```verilog
+module pipeline_mult_4x4(input clk, input [3:0] a, b, output reg [7:0] product);
+  reg [3:0] a_r, b_r;
+  
+  always @(posedge clk) begin
+    a_r <= a;              // Stage 1: latch inputs
+    b_r <= b;
+    
+    #2 product <= {4'b0, a_r} * {4'b0, b_r};    // Stage 2: multiply the latched values after 2 cycles delay
+  end
+endmodule
+```
+In this corrected code, I added `{4'b0, a_r}` and `{4'b0, b_r}` to ensure that multiplication is performed on unsigned numbers. The extra zeroes are used to extend the width of the operands from 4 bits to 8 bits for the multiplication operation. This ensures that the result of the multiplication operation fits into a 8-bit register named `product`.

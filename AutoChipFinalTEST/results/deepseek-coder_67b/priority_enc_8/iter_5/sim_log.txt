@@ -1,0 +1,6 @@
+--- COMPILATION ---
+results\deepseek-coder_67b\priority_enc_8\iter_5\priority_enc_8_tb.v:9: error: port ``valid'' is not a port of uut.
+results\deepseek-coder_67b\priority_enc_8\iter_5\priority_enc_8.v:6: error: valid is not a valid l-value in priority_enc_8_tb.uut.
+results\deepseek-coder_67b\priority_enc_8\iter_5\priority_enc_8.v:3:      : valid is declared here as wire.
+2 error(s) during elaboration.
+

@@ -1,0 +1,25 @@
+--- COMPILATION ---
+results/hpc_qwen25coder_32b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:26: warning: Extra digits given for sized binary constant.
+results/hpc_qwen25coder_32b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:27: warning: Extra digits given for sized binary constant.
+results/hpc_qwen25coder_32b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:28: warning: Extra digits given for sized binary constant.
+results/hpc_qwen25coder_32b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:29: warning: Extra digits given for sized binary constant.
+results/hpc_qwen25coder_32b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:30: warning: Extra digits given for sized binary constant.
+results/hpc_qwen25coder_32b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:30: warning: Numeric constant truncated to 2 bits.
+results/hpc_qwen25coder_32b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:31: warning: Extra digits given for sized binary constant.
+results/hpc_qwen25coder_32b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:31: warning: Numeric constant truncated to 2 bits.
+results/hpc_qwen25coder_32b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:32: warning: Extra digits given for sized binary constant.
+results/hpc_qwen25coder_32b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:32: warning: Numeric constant truncated to 2 bits.
+results/hpc_qwen25coder_32b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:33: warning: Extra digits given for sized binary constant.
+results/hpc_qwen25coder_32b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:33: warning: Numeric constant truncated to 2 bits.
+
+
+--- SIMULATION ---
+PASS test1
+FAIL test2: instr=00101100 | got op=00 we=0 | exp op=00 we=1
+FAIL test3: instr=01010010 | got op=00 we=0 | exp op=01 we=1
+FAIL test4: instr=01100110 | got op=00 we=0 | exp op=10 we=1
+FAIL test5: instr=10011000 | got op=00 we=0 | exp op=11 we=1
+PASS test6
+4 TEST(S) FAILED
+results/hpc_qwen25coder_32b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl_tb.v:39: $finish called at 12 (1s)
+

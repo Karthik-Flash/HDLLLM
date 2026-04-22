@@ -1,0 +1,7 @@
+--- COMPILATION ---
+results/hpc_qwen25coder_14b/simple_cpu_top/iter_4/simple_cpu_top.v:19: error: Unknown module type: simple_cpu_ctrl_inst
+2 error(s) during elaboration.
+*** These modules were missing:
+        simple_cpu_ctrl_inst referenced 1 times.
+***
+

@@ -1,0 +1,18 @@
+--- COMPILATION ---
+results\gemini-25-pro\uart_tx\iter_5\uart_tx.v:39: syntax error
+results\gemini-25-pro\uart_tx\iter_5\uart_tx.v:39: Syntax in assignment statement l-value.
+results\gemini-25-pro\uart_tx\iter_5\uart_tx.v:40: syntax error
+results\gemini-25-pro\uart_tx\iter_5\uart_tx.v:40: Syntax in assignment statement l-value.
+results\gemini-25-pro\uart_tx\iter_5\uart_tx.v:41: syntax error
+results\gemini-25-pro\uart_tx\iter_5\uart_tx.v:41: Syntax in assignment statement l-value.
+results\gemini-25-pro\uart_tx\iter_5\uart_tx.v:42: syntax error
+results\gemini-25-pro\uart_tx\iter_5\uart_tx.v:42: Syntax in assignment statement l-value.
+results\gemini-25-pro\uart_tx\iter_5\uart_tx.v:43: syntax error
+results\gemini-25-pro\uart_tx\iter_5\uart_tx.v:43: Syntax in assignment statement l-value.
+results\gemini-25-pro\uart_tx\iter_5\uart_tx.v:44: syntax error
+results\gemini-25-pro\uart_tx\iter_5\uart_tx.v:44: Syntax in assignment statement l-value.
+results\gemini-25-pro\uart_tx\iter_5\uart_tx.v:45: syntax error
+results\gemini-25-pro\uart_tx\iter_5\uart_tx.v:45: Syntax in assignment statement l-value.
+results\gemini-25-pro\uart_tx\iter_5\uart_tx.v:88: syntax error
+results\gemini-25-pro\uart_tx\iter_5\uart_tx.v:88: error: malformed statement
+

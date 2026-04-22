@@ -1,0 +1,6 @@
+--- COMPILATION ---
+results\deepseek-coder_67b\priority_enc_8\iter_1\priority_enc_8.v:1: warning: macro verilog undefined (and assumed null) at this point.
+results\deepseek-coder_67b\priority_enc_8\iter_1\priority_enc_8.v:1: error: unmatched character (`)
+results\deepseek-coder_67b\priority_enc_8\iter_1\priority_enc_8.v:1: syntax error
+I give up.
+

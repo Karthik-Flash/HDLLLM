@@ -1,0 +1,7 @@
+--- COMPILATION ---
+results\llama31\pwm_generator\iter_1\pwm_generator_tb.v:1: error: `timescale directive can not be inside a module definition.
+results\llama31\pwm_generator\iter_1\pwm_generator_tb.v:5: syntax error
+results\llama31\pwm_generator\iter_1\pwm_generator_tb.v:5: error: missing endmodule or attempt to nest modules.
+results\llama31\pwm_generator\iter_1\pwm_generator.v:1: error: original module (pwm_generator) defined here.
+results\llama31\pwm_generator\iter_1\pwm_generator_tb.v:8: error: Net ``pwm_out'' has already been declared.
+

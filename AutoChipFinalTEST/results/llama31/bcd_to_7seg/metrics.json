@@ -1,0 +1,16 @@
+{
+  "module": "bcd_to_7seg",
+  "model": "llama3.1",
+  "pass_at_1": true,
+  "iterations_to_pass": 3,
+  "time_to_pass_sec": 12.51,
+  "total_time_sec": 12.51,
+  "total_iterations": 3,
+  "compile_errors": 1,
+  "sim_errors": 1,
+  "error_types": [
+    "duplicate_module",
+    "logic_error"
+  ],
+  "max_retries": 5
+}

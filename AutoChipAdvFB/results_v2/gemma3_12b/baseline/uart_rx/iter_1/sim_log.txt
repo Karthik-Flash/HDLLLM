@@ -1,0 +1,13 @@
+--- COMPILATION ---
+
+
+--- SIMULATION ---
+FAIL: data_valid never asserted (timeout)
+FAIL: data_valid never asserted (timeout)
+FAIL: data_valid never asserted (timeout)
+FAIL: data_valid never asserted (timeout)
+FAIL: data_valid never asserted (timeout)
+FAIL: data_valid never asserted (timeout)
+FAIL: 6 test(s) failed
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/baseline/uart_rx/iter_1/uart_rx_tb.v:119: $finish called at 12196000 (1ps)
+

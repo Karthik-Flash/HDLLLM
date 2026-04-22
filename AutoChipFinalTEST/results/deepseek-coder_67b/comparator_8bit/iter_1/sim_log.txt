@@ -1,0 +1,6 @@
+--- COMPILATION ---
+results\deepseek-coder_67b\comparator_8bit\iter_1\comparator_8bit.v:3: error: reg gt; cannot be driven by primitives or continuous assignment.
+results\deepseek-coder_67b\comparator_8bit\iter_1\comparator_8bit.v:4: error: reg eq; cannot be driven by primitives or continuous assignment.
+results\deepseek-coder_67b\comparator_8bit\iter_1\comparator_8bit.v:5: error: reg lt; cannot be driven by primitives or continuous assignment.
+3 error(s) during elaboration.
+

@@ -1,0 +1,6 @@
+--- COMPILATION ---
+
+
+--- SIMULATION ---
+FAIL [miso]: expected miso_capture=8'hA5 got 8'hxx
+

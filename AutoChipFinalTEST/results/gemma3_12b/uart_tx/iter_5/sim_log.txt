@@ -1,0 +1,17 @@
+--- COMPILATION ---
+
+
+--- SIMULATION ---
+FAIL [a5]: busy not asserted after start
+FAIL [a5]: start bit should be 0, got 1
+FAIL [a5]: sent 8'ha5  captured 8'h4a  (bits wrong)
+FAIL [3c]: busy not asserted after start
+FAIL [3c]: start bit should be 0, got 1
+FAIL [3c]: sent 8'h3c  captured 8'hff  (bits wrong)
+FAIL [ff]: busy not asserted after start
+FAIL [ff]: start bit should be 0, got 1
+FAIL [ff]: sent 8'hff  captured 8'hfe  (bits wrong)
+FAIL [00]: busy not asserted after start
+FAIL [00]: start bit should be 0, got 1
+FAIL [00]: sent 8'h00  captured 8'hff  (bits wrong)
+

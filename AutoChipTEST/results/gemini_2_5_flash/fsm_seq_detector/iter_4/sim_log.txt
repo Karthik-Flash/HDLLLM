@@ -1,0 +1,9 @@
+--- COMPILATION ---
+results\gemini_2_5_flash\fsm_seq_detector\iter_4\fsm_seq_detector.v:37: error: detected_comb is not a valid l-value in fsm_seq_detector_tb.uut.
+results\gemini_2_5_flash\fsm_seq_detector\iter_4\fsm_seq_detector.v:20:      : detected_comb is declared here as wire.
+results\gemini_2_5_flash\fsm_seq_detector\iter_4\fsm_seq_detector.v:65: error: detected_comb is not a valid l-value in fsm_seq_detector_tb.uut.
+results\gemini_2_5_flash\fsm_seq_detector\iter_4\fsm_seq_detector.v:20:      : detected_comb is declared here as wire.
+results\gemini_2_5_flash\fsm_seq_detector\iter_4\fsm_seq_detector.v:76: error: detected_comb is not a valid l-value in fsm_seq_detector_tb.uut.
+results\gemini_2_5_flash\fsm_seq_detector\iter_4\fsm_seq_detector.v:20:      : detected_comb is declared here as wire.
+3 error(s) during elaboration.
+

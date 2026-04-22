@@ -1,0 +1,5 @@
+--- COMPILATION ---
+results/hpc_qwen25coder_deepseek/shift_register_8bit/iter_1/shift_register_8bit.v:17: error: Variable 'sout' cannot be driven by a continuous assignment/module.
+results/hpc_qwen25coder_deepseek/shift_register_8bit/iter_1/shift_register_8bit.v:17:      : This is allowed when SystemVerilog is enabled.
+1 error(s) during elaboration.
+

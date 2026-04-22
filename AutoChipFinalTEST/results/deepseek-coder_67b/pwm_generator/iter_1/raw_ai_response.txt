@@ -1,0 +1,15 @@
+Here's the Verilog-2001 code that meets your requirements:
+
+```verilog
+module pwm_generator(input clk, rst, input [7:0] duty_cycle, output reg pwm_out);
+  reg [7:0] counter;
+  
+  always @(posedge clk) begin
+    if (rst) counter <= 8'd0;
+    else     counter <= counter + 1'b1;
+  end
+  
+  assign pwm_out = (counter < duty_cycle);
+endmodule
+```
+This module creates a 8-bit free running counter that resets to zero on every positive clock edge if the reset signal is active. The output `pwm_out` will be high for all values of `counter` from 0 up to and excluding the value specified by `duty_cycle`, at which point it will go low until the counter wraps around back to zero.

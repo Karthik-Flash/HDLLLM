@@ -1,0 +1,29 @@
+module alu_8bit (
+    input [7:0] A,
+    input [7:0] B,
+    input [2:0] op,
+    output [7:0] result,
+    output wire zero
+);
+
+reg [7:0] result_reg;
+
+assign zero = (result_reg == 8'b0);
+
+always @(*) begin
+    case (op)
+        3'b000: result_reg = A + B;
+        3'b001: result_reg = A - B;
+        3'b010: result_reg = A & B;
+        3'b011: result_reg = A | B;
+        3'b100: result_reg = A ^ B;
+        3'b101: result_reg = ~A;
+        3'b110: result_reg = A << 1;
+        3'b111: result_reg = A >> 1;
+        default: result_reg = 8'b0;
+    endcase
+end
+
+assign result = result_reg;
+
+endmodule

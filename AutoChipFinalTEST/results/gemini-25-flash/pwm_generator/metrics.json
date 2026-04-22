@@ -1,0 +1,15 @@
+{
+  "module": "pwm_generator",
+  "model": "gemini-2.5-flash",
+  "pass_at_1": false,
+  "iterations_to_pass": null,
+  "time_to_pass_sec": null,
+  "total_time_sec": 28.24,
+  "total_iterations": 5,
+  "compile_errors": 0,
+  "sim_errors": 1,
+  "error_types": [
+    "logic_error"
+  ],
+  "max_retries": 5
+}

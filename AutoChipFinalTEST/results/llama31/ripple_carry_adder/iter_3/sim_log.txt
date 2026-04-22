@@ -1,0 +1,8 @@
+--- COMPILATION ---
+
+
+--- SIMULATION ---
+FAIL: 15 + 15 + 0  expected Sum=14 cout=1  got Sum=6 cout=1
+FAIL: 5 + 3 + 0  expected Sum=8 cout=0  got Sum=0 cout=0
+FAIL: 0 + 0 + 1  expected Sum=1 cout=0  got Sum=9 cout=0
+

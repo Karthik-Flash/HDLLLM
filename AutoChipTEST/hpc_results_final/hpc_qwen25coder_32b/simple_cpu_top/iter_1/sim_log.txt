@@ -1,0 +1,35 @@
+--- COMPILATION ---
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_1/simple_cpu_ctrl.v:26: warning: Extra digits given for sized binary constant.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_1/simple_cpu_ctrl.v:27: warning: Extra digits given for sized binary constant.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_1/simple_cpu_ctrl.v:28: warning: Extra digits given for sized binary constant.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_1/simple_cpu_ctrl.v:29: warning: Extra digits given for sized binary constant.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_1/simple_cpu_ctrl.v:30: warning: Extra digits given for sized binary constant.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_1/simple_cpu_ctrl.v:30: warning: Numeric constant truncated to 2 bits.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_1/simple_cpu_ctrl.v:31: warning: Extra digits given for sized binary constant.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_1/simple_cpu_ctrl.v:31: warning: Numeric constant truncated to 2 bits.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_1/simple_cpu_ctrl.v:32: warning: Extra digits given for sized binary constant.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_1/simple_cpu_ctrl.v:32: warning: Numeric constant truncated to 2 bits.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_1/simple_cpu_ctrl.v:33: warning: Extra digits given for sized binary constant.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_1/simple_cpu_ctrl.v:33: warning: Numeric constant truncated to 2 bits.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_1/simple_cpu_top.v:14: warning: Port 6 (rs1) of module simple_cpu_ctrl expects 2 bit(s), given 3.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_1/simple_cpu_top.v:14:        : Padding 1 high bits of the expression.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_1/simple_cpu_top.v:14: warning: Port 7 (rs2) of module simple_cpu_ctrl expects 2 bit(s), given 3.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_1/simple_cpu_top.v:14:        : Padding 1 high bits of the expression.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_1/simple_cpu_top.v:14: warning: Port 8 (rd) of module simple_cpu_ctrl expects 2 bit(s), given 3.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_1/simple_cpu_top.v:14:        : Padding 1 high bits of the expression.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_1/simple_cpu_top.v:25: warning: Port 4 (waddr) of module simple_cpu_regfile expects 2 bit(s), given 3.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_1/simple_cpu_top.v:25:        : Pruning 1 high bits of the expression.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_1/simple_cpu_top.v:25: warning: Port 5 (raddr1) of module simple_cpu_regfile expects 2 bit(s), given 3.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_1/simple_cpu_top.v:25:        : Pruning 1 high bits of the expression.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_1/simple_cpu_top.v:25: warning: Port 6 (raddr2) of module simple_cpu_regfile expects 2 bit(s), given 3.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_1/simple_cpu_top.v:25:        : Pruning 1 high bits of the expression.
+
+
+--- SIMULATION ---
+ADD r0+r1 = 0
+AND r0&r1 = 0
+PASS zero flag defined
+PASS result defined
+ALL TESTS PASSED
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_1/simple_cpu_top_tb.v:42: $finish called at 36 (1s)
+

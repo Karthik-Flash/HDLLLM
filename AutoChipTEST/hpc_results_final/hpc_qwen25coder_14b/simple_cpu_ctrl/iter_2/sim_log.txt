@@ -1,0 +1,13 @@
+--- COMPILATION ---
+
+
+--- SIMULATION ---
+PASS test1
+FAIL test2: instr=00101100 | got op=00 we=0 | exp op=00 we=1
+FAIL test3: instr=01010010 | got op=00 we=1 | exp op=01 we=1
+FAIL test4: instr=01100110 | got op=01 we=0 | exp op=10 we=1
+FAIL test5: instr=10011000 | got op=01 we=1 | exp op=11 we=1
+PASS test6
+4 TEST(S) FAILED
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_2/simple_cpu_ctrl_tb.v:45: $finish called at 12 (1s)
+

@@ -1,0 +1,4 @@
+--- COMPILATION ---
+results\gemma3_4b\fsm_seq_detector\iter_1\fsm_seq_detector.v:9: error: Net ``detected'' has already been declared.
+1 error(s) during elaboration.
+

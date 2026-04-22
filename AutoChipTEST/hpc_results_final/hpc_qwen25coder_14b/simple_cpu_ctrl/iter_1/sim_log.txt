@@ -1,0 +1,39 @@
+--- COMPILATION ---
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:44: error: 'alu_op' is not a valid l-value for a procedural assignment.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:5:      : 'alu_op' is declared here as a wire.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:44: error: 'we_reg' is not a valid l-value for a procedural assignment.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:6:      : 'we_reg' is declared here as a wire.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:45: error: 'alu_op' is not a valid l-value for a procedural assignment.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:5:      : 'alu_op' is declared here as a wire.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:45: error: 'we_reg' is not a valid l-value for a procedural assignment.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:6:      : 'we_reg' is declared here as a wire.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:46: error: 'alu_op' is not a valid l-value for a procedural assignment.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:5:      : 'alu_op' is declared here as a wire.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:46: error: 'we_reg' is not a valid l-value for a procedural assignment.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:6:      : 'we_reg' is declared here as a wire.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:47: error: 'alu_op' is not a valid l-value for a procedural assignment.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:5:      : 'alu_op' is declared here as a wire.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:47: error: 'we_reg' is not a valid l-value for a procedural assignment.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:6:      : 'we_reg' is declared here as a wire.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:48: error: 'alu_op' is not a valid l-value for a procedural assignment.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:5:      : 'alu_op' is declared here as a wire.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:48: error: 'we_reg' is not a valid l-value for a procedural assignment.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:6:      : 'we_reg' is declared here as a wire.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:49: error: 'alu_op' is not a valid l-value for a procedural assignment.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:5:      : 'alu_op' is declared here as a wire.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:49: error: 'we_reg' is not a valid l-value for a procedural assignment.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:6:      : 'we_reg' is declared here as a wire.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:50: error: 'alu_op' is not a valid l-value for a procedural assignment.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:5:      : 'alu_op' is declared here as a wire.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:50: error: 'we_reg' is not a valid l-value for a procedural assignment.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:6:      : 'we_reg' is declared here as a wire.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:51: error: 'alu_op' is not a valid l-value for a procedural assignment.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:5:      : 'alu_op' is declared here as a wire.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:51: error: 'we_reg' is not a valid l-value for a procedural assignment.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:6:      : 'we_reg' is declared here as a wire.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:52: error: 'alu_op' is not a valid l-value for a procedural assignment.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:5:      : 'alu_op' is declared here as a wire.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:52: error: 'we_reg' is not a valid l-value for a procedural assignment.
+results/hpc_qwen25coder_14b/simple_cpu_ctrl/iter_1/simple_cpu_ctrl.v:6:      : 'we_reg' is declared here as a wire.
+18 error(s) during elaboration.
+

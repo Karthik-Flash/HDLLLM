@@ -1,0 +1,23 @@
+module shift_register_8bit (
+    input clk,
+    input rst,
+    input sin,
+    output sout,
+    output [7:0] data
+);
+
+reg [7:0] data_reg;
+wire sout_reg;
+
+assign sout = data_reg[7];
+assign data = data_reg;
+
+always @(posedge clk) begin
+    if (rst) begin
+        data_reg <= 8'b0;
+    end else begin
+        data_reg <= {data_reg[6:0], sin};
+    end
+end
+
+endmodule

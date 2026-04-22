@@ -1,0 +1,14 @@
+--- COMPILATION ---
+results\llama31\bcd_to_7seg\iter_1\bcd_to_7seg.v:8: syntax error
+results\llama31\bcd_to_7seg\iter_1\bcd_to_7seg.v:9: error: malformed statement
+results\llama31\bcd_to_7seg\iter_1\bcd_to_7seg.v:10: syntax error
+results\llama31\bcd_to_7seg\iter_1\bcd_to_7seg.v:11: error: malformed statement
+results\llama31\bcd_to_7seg\iter_1\bcd_to_7seg.v:12: syntax error
+results\llama31\bcd_to_7seg\iter_1\bcd_to_7seg.v:13: error: malformed statement
+results\llama31\bcd_to_7seg\iter_1\bcd_to_7seg_tb.v:1: error: `timescale directive can not be inside a module definition.
+results\llama31\bcd_to_7seg\iter_1\bcd_to_7seg_tb.v:7: syntax error
+results\llama31\bcd_to_7seg\iter_1\bcd_to_7seg_tb.v:7: error: missing endmodule or attempt to nest modules.
+results\llama31\bcd_to_7seg\iter_1\bcd_to_7seg.v:1: error: original module (bcd_to_7seg) defined here.
+results\llama31\bcd_to_7seg\iter_1\bcd_to_7seg_tb.v:9: seg wire definition conflicts with reg definition at results\llama31\bcd_to_7seg\iter_1\bcd_to_7seg.v:3.
+results\llama31\bcd_to_7seg\iter_1\bcd_to_7seg_tb.v:9: error: Net ``seg'' has already been declared.
+

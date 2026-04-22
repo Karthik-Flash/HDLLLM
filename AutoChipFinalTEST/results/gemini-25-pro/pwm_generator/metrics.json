@@ -1,0 +1,19 @@
+{
+  "module": "pwm_generator",
+  "model": "gemini-2.5-pro",
+  "pass_at_1": false,
+  "iterations_to_pass": null,
+  "time_to_pass_sec": null,
+  "total_time_sec": 427.05,
+  "total_iterations": 5,
+  "compile_errors": 0,
+  "sim_errors": 5,
+  "error_types": [
+    "logic_error",
+    "logic_error",
+    "logic_error",
+    "logic_error",
+    "logic_error"
+  ],
+  "max_retries": 5
+}

@@ -1,0 +1,87 @@
+module uart_tx (
+  input clk,
+  input rst,
+  input start,
+  input [7:0] data_in,
+  output reg tx_out,
+  output reg busy,
+  output reg done
+);
+
+parameter BAUD_DIV = 104;
+
+reg [2:0] fsm_state;
+reg [7:0] shift_reg;
+reg [7:0] baud_cnt;
+reg [3:0] bit_cnt;
+
+always @(posedge clk) begin
+  if (rst) begin
+    fsm_state <= 3'd0; // IDLE
+    tx_out <= 1'b0;
+    busy <= 1'b0;
+    done <= 1'b0;
+    shift_reg <= 8'h00;
+    baud_cnt <= 8'h00;
+    bit_cnt <= 4'h0;
+  end else begin
+    case (fsm_state)
+      3'd0: // IDLE
+        if (start) begin
+          fsm_state <= 3'd1; // START
+          shift_reg <= data_in;
+          baud_cnt <= 0;
+          bit_cnt <= 0;
+        end
+        else begin
+          tx_out <= 1'b1;
+          busy <= 1'b0;
+          done <= 1'b0;
+        end
+      3'd1: // START
+        if (baud_cnt == BAUD_DIV - 1) begin
+          baud_cnt <= 0;
+          fsm_state <= 3'd2; // DATA
+        end
+        else begin
+          tx_out <= 1'b0;
+          busy <= 1'b1;
+          baud_cnt <= baud_cnt + 1;
+        end
+      3'd2: // DATA
+        if (baud_cnt == BAUD_DIV - 1) begin
+          baud_cnt <= 0;
+          shift_reg <= {1'b0, shift_reg[7:1]};
+          bit_cnt <= bit_cnt + 1;
+          if (bit_cnt == 7) begin
+            fsm_state <= 3'd3; // STOP
+          end
+          else begin
+            fsm_state <= 3'd2; // DATA
+          end
+        end
+        else begin
+          busy <= 1'b1;
+          tx_out <= shift_reg[0];
+          baud_cnt <= baud_cnt + 1;
+        end
+      3'd3: // STOP
+        if (baud_cnt == BAUD_DIV - 1) begin
+          baud_cnt <= 0;
+          fsm_state <= 3'd4; // DONE
+        end
+        else begin
+          tx_out <= 1'b1;
+          busy <= 1'b1;
+          baud_cnt <= baud_cnt + 1;
+        end
+      3'd4: // DONE
+        done <= 1'b1;
+        busy <= 1'b0;
+        tx_out <= 1'b1;
+        fsm_state <= 3'd0; // IDLE
+    endcase
+  end
+end
+
+endmodule

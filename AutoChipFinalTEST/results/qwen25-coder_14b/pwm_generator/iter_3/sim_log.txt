@@ -1,0 +1,7 @@
+--- COMPILATION ---
+
+
+--- SIMULATION ---
+FAIL [duty=4]: counter=3 expected high, got low
+FAIL [duty=4]: counter=255 expected low, got high
+

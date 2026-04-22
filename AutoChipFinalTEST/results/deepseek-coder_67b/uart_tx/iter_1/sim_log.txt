@@ -1,0 +1,6 @@
+--- COMPILATION ---
+results\deepseek-coder_67b\uart_tx\iter_1\uart_tx.v:3: syntax error
+results\deepseek-coder_67b\uart_tx\iter_1\uart_tx.v:3: error: Invalid module instantiation
+results\deepseek-coder_67b\uart_tx\iter_1\uart_tx.v:11: syntax error
+results\deepseek-coder_67b\uart_tx\iter_1\uart_tx.v:11: error: Invalid module instantiation
+

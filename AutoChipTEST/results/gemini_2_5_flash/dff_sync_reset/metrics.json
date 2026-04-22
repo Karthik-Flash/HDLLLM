@@ -1,0 +1,12 @@
+{
+  "module": "dff_sync_reset",
+  "model": "models/gemini-2.5-flash",
+  "pass_at_1": true,
+  "iterations_to_pass": 1,
+  "time_to_pass_sec": 3.38,
+  "total_iterations": 1,
+  "compile_errors": 0,
+  "sim_errors": 0,
+  "error_types": [],
+  "max_retries": 5
+}

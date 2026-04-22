@@ -1,0 +1,30 @@
+Here is the Verilog-2001 code for your FSM sequence detector:
+
+```verilog
+module fsm_seq_detector(input clk, rst, in, output wire detected);
+    reg [1:0] state;
+    wire [1:0] next_state;
+    
+    // State register with synchronous reset to S0
+    always @(posedge clk or posedge rst) begin
+        if (rst) 
+            state <= 2'd0;
+        else 
+            state <= next_state;
+    end
+    
+    // Next state logic
+    always @(*) begin
+        case (state)
+            2'd0: next_state = in ? 2'd1 : 2'd0;
+            2'd1: next_state = !in ? 2'd2 : 2'd1;
+            2'd2: next_state = in ? 2'd3 : 2'd0;
+            default: next_state = !in ? 2'd1 : 2'd2; // S3 state
+        endcase
+    end
+    
+    // Combinational output
+    assign detected = (state == 2'd3) & in;
+endmodule
+```
+This module uses a Mealy FSM to detect the sequence 1011 on serial input 'in'. The states are represented by a two-bit register 'state', and the next state is determined combinatorially based on the current state and the input. The output 'detected' fires when the state is S3 (2'd3) and the input 'in' is 1, indicating that the sequence has been detected.

@@ -1,0 +1,4 @@
+--- COMPILATION ---
+results/hpc_qwen25coder_32b/dff_sync_reset/iter_1/dff_sync_reset.v:8: error: 'q' has already been declared in this scope.
+results/hpc_qwen25coder_32b/dff_sync_reset/iter_1/dff_sync_reset.v:5:      : It was declared here as a net.
+

@@ -1,0 +1,6 @@
+--- COMPILATION ---
+
+
+--- SIMULATION ---
+FAIL: bcd=10  expected seg=7'b0000000  got seg=7'b1110000
+

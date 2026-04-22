@@ -1,0 +1,17 @@
+{
+  "module": "alu_8bit",
+  "model": "gemma3:4b",
+  "pass_at_1": true,
+  "iterations_to_pass": 4,
+  "time_to_pass_sec": 11.57,
+  "total_time_sec": 11.57,
+  "total_iterations": 4,
+  "compile_errors": 3,
+  "sim_errors": 0,
+  "error_types": [
+    "port_mismatch",
+    "port_mismatch",
+    "port_mismatch"
+  ],
+  "max_retries": 5
+}

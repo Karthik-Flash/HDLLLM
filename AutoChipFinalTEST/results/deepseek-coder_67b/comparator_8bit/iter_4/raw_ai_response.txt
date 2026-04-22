@@ -1,0 +1,10 @@
+```verilog
+module comparator_8bit(input [7:0] A, B, output wire gt, eq, lt);
+  
+  assign gt = (A > B);
+  assign eq = (A == B);
+  assign lt = (A < B);
+  
+endmodule
+```
+This module takes two 8-bit inputs A and B. It then compares the values of A and B, setting the outputs 'gt', 'eq', and 'lt' to indicate whether A is greater than, equal to, or less than B respectively. The outputs are declared as wires because they will be driven by assignments inside an always block or other combinational logic in the module.

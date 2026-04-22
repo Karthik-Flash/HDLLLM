@@ -1,0 +1,12 @@
+--- COMPILATION ---
+
+
+--- SIMULATION ---
+FAIL [dd 5+3=8]: expected acc=8'h08 got 8'hzz
+FAIL [d 8+4=12]: expected acc=8'h0c got 8'hzz
+FAIL [ 12-2=10]: expected acc=8'h0a got 8'hzz
+FAIL [x0F=0x0A]: expected acc=8'h0a got 8'hzz
+FAIL [x50=0x5A]: expected acc=8'h5a got 8'hzz
+FAIL [ ADD 0+0]: expected acc=8'h00 got 8'hzz
+FAIL [te 5+3=8]: expected acc=8'h08 got 8'hzz
+

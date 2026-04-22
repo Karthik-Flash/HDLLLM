@@ -1,0 +1,4 @@
+--- COMPILATION ---
+results\deepseek-coder_67b\fsm_seq_detector\iter_2\fsm_seq_detector.v:1: syntax error
+I give up.
+

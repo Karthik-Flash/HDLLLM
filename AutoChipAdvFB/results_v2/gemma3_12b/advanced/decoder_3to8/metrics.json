@@ -1,0 +1,33 @@
+{
+  "module": "decoder_3to8",
+  "model": "gemma3:12b",
+  "condition": "advanced",
+  "pass_at_1": true,
+  "iterations_to_pass": 2,
+  "time_to_pass_sec": 55.1,
+  "total_time_sec": 55.1,
+  "total_iterations": 2,
+  "compile_errors": 0,
+  "sim_errors": 1,
+  "latch_warnings": 0,
+  "verilator_catches": 1,
+  "error_types": [
+    "logic_error"
+  ],
+  "per_iter_detail": [
+    {
+      "iter": 1,
+      "verilator_warning": true,
+      "yosys_latch": false,
+      "iverilog_result": "FAIL",
+      "err_type": "logic_error"
+    },
+    {
+      "iter": 2,
+      "verilator_warning": false,
+      "yosys_latch": false,
+      "iverilog_result": "PASS",
+      "err_type": "PASS"
+    }
+  ]
+}

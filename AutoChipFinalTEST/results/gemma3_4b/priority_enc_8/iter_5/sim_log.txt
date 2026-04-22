@@ -1,0 +1,21 @@
+--- COMPILATION ---
+results\gemma3_4b\priority_enc_8\iter_5\priority_enc_8.v:12: error: valid_wire is not a valid l-value in priority_enc_8_tb.uut.
+results\gemma3_4b\priority_enc_8\iter_5\priority_enc_8.v:7:      : valid_wire is declared here as wire.
+results\gemma3_4b\priority_enc_8\iter_5\priority_enc_8.v:15: error: valid_wire is not a valid l-value in priority_enc_8_tb.uut.
+results\gemma3_4b\priority_enc_8\iter_5\priority_enc_8.v:7:      : valid_wire is declared here as wire.
+results\gemma3_4b\priority_enc_8\iter_5\priority_enc_8.v:18: error: valid_wire is not a valid l-value in priority_enc_8_tb.uut.
+results\gemma3_4b\priority_enc_8\iter_5\priority_enc_8.v:7:      : valid_wire is declared here as wire.
+results\gemma3_4b\priority_enc_8\iter_5\priority_enc_8.v:21: error: valid_wire is not a valid l-value in priority_enc_8_tb.uut.
+results\gemma3_4b\priority_enc_8\iter_5\priority_enc_8.v:7:      : valid_wire is declared here as wire.
+results\gemma3_4b\priority_enc_8\iter_5\priority_enc_8.v:24: error: valid_wire is not a valid l-value in priority_enc_8_tb.uut.
+results\gemma3_4b\priority_enc_8\iter_5\priority_enc_8.v:7:      : valid_wire is declared here as wire.
+results\gemma3_4b\priority_enc_8\iter_5\priority_enc_8.v:27: error: valid_wire is not a valid l-value in priority_enc_8_tb.uut.
+results\gemma3_4b\priority_enc_8\iter_5\priority_enc_8.v:7:      : valid_wire is declared here as wire.
+results\gemma3_4b\priority_enc_8\iter_5\priority_enc_8.v:30: error: valid_wire is not a valid l-value in priority_enc_8_tb.uut.
+results\gemma3_4b\priority_enc_8\iter_5\priority_enc_8.v:7:      : valid_wire is declared here as wire.
+results\gemma3_4b\priority_enc_8\iter_5\priority_enc_8.v:33: error: valid_wire is not a valid l-value in priority_enc_8_tb.uut.
+results\gemma3_4b\priority_enc_8\iter_5\priority_enc_8.v:7:      : valid_wire is declared here as wire.
+results\gemma3_4b\priority_enc_8\iter_5\priority_enc_8.v:36: error: valid_wire is not a valid l-value in priority_enc_8_tb.uut.
+results\gemma3_4b\priority_enc_8\iter_5\priority_enc_8.v:7:      : valid_wire is declared here as wire.
+9 error(s) during elaboration.
+

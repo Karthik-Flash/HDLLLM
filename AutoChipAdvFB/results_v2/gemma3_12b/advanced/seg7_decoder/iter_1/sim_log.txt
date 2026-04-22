@@ -1,0 +1,7 @@
+--- COMPILATION ---
+
+
+--- SIMULATION ---
+ALL TESTS PASSED
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/advanced/seg7_decoder/iter_1/seg7_decoder_tb.v:60: $finish called at 180 (1s)
+

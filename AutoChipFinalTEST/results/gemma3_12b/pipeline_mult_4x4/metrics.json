@@ -1,0 +1,19 @@
+{
+  "module": "pipeline_mult_4x4",
+  "model": "gemma3:12b",
+  "pass_at_1": false,
+  "iterations_to_pass": null,
+  "time_to_pass_sec": null,
+  "total_time_sec": 61.28,
+  "total_iterations": 5,
+  "compile_errors": 0,
+  "sim_errors": 5,
+  "error_types": [
+    "logic_error",
+    "logic_error",
+    "logic_error",
+    "logic_error",
+    "logic_error"
+  ],
+  "max_retries": 5
+}

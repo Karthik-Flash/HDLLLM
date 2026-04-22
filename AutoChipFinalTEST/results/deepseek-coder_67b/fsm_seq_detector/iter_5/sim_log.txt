@@ -1,0 +1,7 @@
+--- COMPILATION ---
+
+
+--- SIMULATION ---
+FAIL: in=1  expected detected=1  got detected=0 (at time 103000)
+FAIL: in=1  expected detected=0  got detected=1 (at time 173000)
+

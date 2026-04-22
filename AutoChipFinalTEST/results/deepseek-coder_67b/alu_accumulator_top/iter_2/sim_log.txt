@@ -1,0 +1,4 @@
+--- COMPILATION ---
+results\deepseek-coder_67b\alu_accumulator_top\iter_2\alu_accumulator_top.v:29: error: reg acc_out; cannot be driven by primitives or continuous assignment.
+1 error(s) during elaboration.
+

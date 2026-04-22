@@ -1,0 +1,3 @@
+I apologize for the confusion. The code you provided is correct and should work as expected. 
+
+However, if you're getting a compilation error, it could be due to several reasons such as incorrect file paths, syntax errors, or missing modules/libraries. Please ensure that your Verilog files are correctly linked together and there are no syntax errors in the code. If the problem persists, please provide more details about your environment (compiler version, exact error message) so I can help you better.

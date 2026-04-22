@@ -1,0 +1,29 @@
+```verilog
+module pipeline_mult_4x4(
+  input clk,
+  input [3:0] a,
+  input [3:0] b,
+  output reg [7:0] product
+);
+
+  reg [7:0] product_r;
+
+  // The original implementation registered the inputs 'a' and 'b' in the first
+  // stage, then multiplied them in the second stage. This resulted in the
+  // product being available one cycle later than the testbench expected.
+  //
+  // To fix this, we restructure the pipeline:
+  // Stage 1: The multiplication is performed on the inputs 'a' and 'b',
+  //          and the result is stored in an intermediate register 'product_r'.
+  // Stage 2: The value from the intermediate register 'product_r' is
+  //          transferred to the final output register 'product'.
+  // This maintains a 2-stage pipeline but aligns the output timing with the
+  // testbench requirements.
+
+  always @(posedge clk) begin
+    product_r <= a * b;
+    product   <= product_r;
+  end
+
+endmodule
+```

@@ -1,0 +1,24 @@
+--- COMPILATION ---
+
+
+--- SIMULATION ---
+Result of addition is  8
+PASS test1
+Result of addition is  0
+PASS test2
+Result of addition is  0
+PASS test3
+Result of subtraction is  4
+PASS test4
+Result of subtraction is  0
+PASS test5
+Result of AND operation is 10
+PASS test6
+Result of AND operation is  0
+PASS test7
+Result of OR operation is 15
+PASS test8
+Result of OR operation is  0
+PASS test9
+ALL TESTS PASSED
+

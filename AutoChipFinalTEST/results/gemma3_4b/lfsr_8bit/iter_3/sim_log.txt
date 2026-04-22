@@ -1,0 +1,6 @@
+--- COMPILATION ---
+results\gemma3_4b\lfsr_8bit\iter_3\lfsr_8bit_tb.v:13: error: port ``enable'' is not a port of uut.
+results\gemma3_4b\lfsr_8bit\iter_3\lfsr_8bit.v:14: error: Unable to bind wire/reg/memory `enable' in `lfsr_8bit_tb.uut'
+results\gemma3_4b\lfsr_8bit\iter_3\lfsr_8bit.v:14: error: Unable to elaborate condition expression.
+3 error(s) during elaboration.
+

@@ -1,0 +1,10 @@
+--- COMPILATION ---
+
+
+--- SIMULATION ---
+FAIL [FF step1]: expected 8'hE3 got 8'hfe
+FAIL [AB step1]: expected 8'hC9 got 8'h56
+FAIL [AB step2]: expected 8'hF8 got 8'hac
+FAIL [hold]: value changed when enable=0 (got 8'h59)
+FAIL [hold2]: value changed when enable=0 (got 8'h59)
+

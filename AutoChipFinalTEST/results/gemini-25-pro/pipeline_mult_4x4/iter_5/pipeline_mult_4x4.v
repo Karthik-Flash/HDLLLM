@@ -1,0 +1,35 @@
+module pipeline_mult_4x4(
+  input clk,
+  input [3:0] a,
+  input [3:0] b,
+  output reg [7:0] product
+);
+
+  reg [7:0] product_r;
+
+  // The failure log indicates the previous design had a 3-cycle latency,
+  // but the testbench expects a 2-cycle latency.
+  // FAIL [3*4]: expected product=12 after 2 cycles, got 0
+  // This means the result of inputs from cycle 0 (3*4) was not available
+  // at cycle 2.
+  //
+  // A 2-cycle pipeline can be implemented by having two register stages
+  // between the input and the output.
+  //
+  // Stage 1: The multiplication is performed on the current inputs 'a' and 'b',
+  //          and the result is stored in an intermediate register 'product_r'.
+  // Stage 2: The value from the intermediate register 'product_r' is
+  //          transferred to the final output register 'product'.
+  //
+  // Trace:
+  // Cycle N:   Inputs 'a' and 'b' are applied.
+  // Cycle N+1: On the clock edge, 'product_r' latches the result of a*b.
+  // Cycle N+2: On the clock edge, 'product' latches the value from 'product_r'.
+  // This correctly implements the required N to N+2 timing.
+
+  always @(posedge clk) begin
+    product_r <= a * b;
+    product   <= product_r;
+  end
+
+endmodule

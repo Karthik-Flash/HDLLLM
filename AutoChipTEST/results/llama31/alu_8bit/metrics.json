@@ -1,0 +1,16 @@
+{
+  "module": "alu_8bit",
+  "model": "llama3.1",
+  "pass_at_1": true,
+  "iterations_to_pass": 4,
+  "time_to_pass_sec": 14.92,
+  "total_iterations": 4,
+  "compile_errors": 3,
+  "sim_errors": 0,
+  "error_types": [
+    "compile_other",
+    "compile_other",
+    "compile_other"
+  ],
+  "max_retries": 5
+}

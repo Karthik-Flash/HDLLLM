@@ -1,0 +1,9 @@
+--- COMPILATION ---
+results\gemma3_12b\pwm_generator\iter_4\pwm_generator.v:19: error: pwm_out is not a valid l-value in pwm_generator_tb.uut.
+results\gemma3_12b\pwm_generator\iter_4\pwm_generator.v:5:      : pwm_out is declared here as wire.
+results\gemma3_12b\pwm_generator\iter_4\pwm_generator.v:21: error: pwm_out is not a valid l-value in pwm_generator_tb.uut.
+results\gemma3_12b\pwm_generator\iter_4\pwm_generator.v:5:      : pwm_out is declared here as wire.
+results\gemma3_12b\pwm_generator\iter_4\pwm_generator.v:23: error: pwm_out is not a valid l-value in pwm_generator_tb.uut.
+results\gemma3_12b\pwm_generator\iter_4\pwm_generator.v:5:      : pwm_out is declared here as wire.
+3 error(s) during elaboration.
+

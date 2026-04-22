@@ -1,0 +1,62 @@
+module fsm_seq_detector (
+    input clk,
+    input rst,
+    input in,
+    output wire detected
+);
+
+    // State declaration
+    reg [1:0] state;
+    reg [1:0] next_state;
+
+    // State parameters
+    localparam S0 = 2'd0;
+    localparam S1 = 2'd1;
+    localparam S2 = 2'd2;
+    localparam S3 = 2'd3;
+
+    // Synchronous state register
+    always @(posedge clk) begin
+        if (rst) begin
+            state <= S0;
+        end else begin
+            state <= next_state;
+        end
+    end
+
+    // Combinational next state logic
+    always @(state or in) begin
+        next_state = state; // Default to self-loop for safety
+        case (state)
+            S0: begin
+                if (in == 1'b1)
+                    next_state = S1;
+                else // in == 1'b0
+                    next_state = S0;
+            end
+            S1: begin
+                if (in == 1'b0)
+                    next_state = S2;
+                else // in == 1'b1
+                    next_state = S1;
+            end
+            S2: begin
+                if (in == 1'b1)
+                    next_state = S3;
+                else // in == 1'b0
+                    next_state = S0;
+            end
+            S3: begin
+                if (in == 1'b1)
+                    next_state = S1;
+                else // in == 1'b0
+                    next_state = S2;
+            end
+            default: next_state = S0; // Should not happen in a well-defined FSM
+        endcase
+    end
+
+    // Combinational output logic (Mealy FSM)
+    assign detected = (state == S3) & in;
+
+endmodule

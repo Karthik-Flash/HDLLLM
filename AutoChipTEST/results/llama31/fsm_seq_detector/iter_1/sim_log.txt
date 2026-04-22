@@ -1,0 +1,17 @@
+--- COMPILATION ---
+results\llama31\fsm_seq_detector\iter_1\fsm_seq_detector.v:20: syntax error
+results\llama31\fsm_seq_detector\iter_1\fsm_seq_detector.v:19: error: Invalid module instantiation
+results\llama31\fsm_seq_detector\iter_1\fsm_seq_detector.v:25: error: Invalid module instantiation
+results\llama31\fsm_seq_detector\iter_1\fsm_seq_detector.v:29: error: invalid module item.
+results\llama31\fsm_seq_detector\iter_1\fsm_seq_detector.v:30: syntax error
+results\llama31\fsm_seq_detector\iter_1\fsm_seq_detector.v:30: error: Invalid module instantiation
+results\llama31\fsm_seq_detector\iter_1\fsm_seq_detector.v:34: error: invalid module item.
+results\llama31\fsm_seq_detector\iter_1\fsm_seq_detector.v:35: syntax error
+results\llama31\fsm_seq_detector\iter_1\fsm_seq_detector.v:35: error: Invalid module instantiation
+results\llama31\fsm_seq_detector\iter_1\fsm_seq_detector.v:39: error: invalid module item.
+results\llama31\fsm_seq_detector\iter_1\fsm_seq_detector.v:40: syntax error
+results\llama31\fsm_seq_detector\iter_1\fsm_seq_detector.v:40: error: Invalid module instantiation
+results\llama31\fsm_seq_detector\iter_1\fsm_seq_detector_tb.v:4: error: invalid module item.
+results\llama31\fsm_seq_detector\iter_1\fsm_seq_detector_tb.v:6: detected wire definition conflicts with reg definition at results\llama31\fsm_seq_detector\iter_1\fsm_seq_detector.v:5.
+results\llama31\fsm_seq_detector\iter_1\fsm_seq_detector_tb.v:6: error: Net ``detected'' has already been declared.
+

@@ -1,0 +1,17 @@
+--- COMPILATION ---
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_5/simple_cpu_top.v:1: warning: macro verilog undefined (and assumed null) at this point.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_5/simple_cpu_ctrl.v:26: warning: Extra digits given for sized binary constant.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_5/simple_cpu_ctrl.v:27: warning: Extra digits given for sized binary constant.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_5/simple_cpu_ctrl.v:28: warning: Extra digits given for sized binary constant.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_5/simple_cpu_ctrl.v:29: warning: Extra digits given for sized binary constant.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_5/simple_cpu_ctrl.v:30: warning: Extra digits given for sized binary constant.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_5/simple_cpu_ctrl.v:30: warning: Numeric constant truncated to 2 bits.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_5/simple_cpu_ctrl.v:31: warning: Extra digits given for sized binary constant.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_5/simple_cpu_ctrl.v:31: warning: Numeric constant truncated to 2 bits.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_5/simple_cpu_ctrl.v:32: warning: Extra digits given for sized binary constant.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_5/simple_cpu_ctrl.v:32: warning: Numeric constant truncated to 2 bits.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_5/simple_cpu_ctrl.v:33: warning: Extra digits given for sized binary constant.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_5/simple_cpu_ctrl.v:33: warning: Numeric constant truncated to 2 bits.
+results/hpc_qwen25coder_32b/simple_cpu_top/iter_5/simple_cpu_top.v:1: syntax error
+I give up.
+

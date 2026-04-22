@@ -1,0 +1,12 @@
+--- COMPILATION ---
+
+
+--- SIMULATION ---
+FAIL: data_valid never asserted (timeout)
+FAIL: got rx_data=8'h00, exp=8'ha3
+FAIL: got rx_data=8'h00, exp=8'hff
+FAIL: got rx_data=8'h00, exp=8'h12
+FAIL: got rx_data=8'h00, exp=8'h34
+FAIL: 5 test(s) failed
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/advanced/uart_rx/iter_6/uart_rx_tb.v:119: $finish called at 4195000 (1ps)
+

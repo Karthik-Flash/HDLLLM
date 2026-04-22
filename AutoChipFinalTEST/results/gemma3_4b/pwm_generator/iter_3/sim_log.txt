@@ -1,0 +1,4 @@
+--- COMPILATION ---
+results\gemma3_4b\pwm_generator\iter_3\pwm_generator.v:9: error: Net ``pwm_out'' has already been declared.
+1 error(s) during elaboration.
+

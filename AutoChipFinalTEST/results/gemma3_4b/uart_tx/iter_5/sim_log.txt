@@ -1,0 +1,45 @@
+--- COMPILATION ---
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:21: syntax error
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:21: error: Invalid module instantiation
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:22: error: Invalid module instantiation
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:23: error: Invalid module instantiation
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:25: syntax error
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:25: error: Invalid module instantiation
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:26: error: Invalid module instantiation
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:27: error: Invalid module instantiation
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:28: error: Invalid module instantiation
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:34: syntax error
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:34: error: Invalid module instantiation
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:35: error: Invalid module instantiation
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:37: syntax error
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:37: error: Invalid module instantiation
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:38: error: Invalid module instantiation
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:44: syntax error
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:44: error: Invalid module instantiation
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:45: error: Invalid module instantiation
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:47: syntax error
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:47: error: Invalid module instantiation
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:48: error: Invalid module instantiation
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:49: error: Invalid module instantiation
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:51: syntax error
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:51: error: Invalid module instantiation
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:58: syntax error
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:58: error: Invalid module instantiation
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:59: error: Invalid module instantiation
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:61: syntax error
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:61: error: Invalid module instantiation
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:62: error: Invalid module instantiation
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:68: syntax error
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:68: error: Invalid module instantiation
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:69: error: Invalid module instantiation
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:70: error: Invalid module instantiation
+results\gemma3_4b\uart_tx\iter_5\uart_tx.v:71: error: Invalid module instantiation
+results\gemma3_4b\uart_tx\iter_5\uart_tx_tb.v:1: error: `timescale directive can not be inside a module definition.
+results\gemma3_4b\uart_tx\iter_5\uart_tx_tb.v:9: error: invalid module item.
+results\gemma3_4b\uart_tx\iter_5\uart_tx_tb.v:14: tx_out wire definition conflicts with reg definition at results\gemma3_4b\uart_tx\iter_5\uart_tx.v:6.
+results\gemma3_4b\uart_tx\iter_5\uart_tx_tb.v:14: error: Net ``tx_out'' has already been declared.
+results\gemma3_4b\uart_tx\iter_5\uart_tx_tb.v:14: busy wire definition conflicts with reg definition at results\gemma3_4b\uart_tx\iter_5\uart_tx.v:7.
+results\gemma3_4b\uart_tx\iter_5\uart_tx_tb.v:14: error: Net ``busy'' has already been declared.
+results\gemma3_4b\uart_tx\iter_5\uart_tx_tb.v:14: done wire definition conflicts with reg definition at results\gemma3_4b\uart_tx\iter_5\uart_tx.v:8.
+results\gemma3_4b\uart_tx\iter_5\uart_tx_tb.v:14: error: Net ``done'' has already been declared.
+

@@ -1,0 +1,19 @@
+{
+  "module": "fsm_seq_detector",
+  "model": "deepseek-coder:6.7b",
+  "pass_at_1": false,
+  "iterations_to_pass": null,
+  "time_to_pass_sec": null,
+  "total_time_sec": 530.69,
+  "total_iterations": 5,
+  "compile_errors": 3,
+  "sim_errors": 2,
+  "error_types": [
+    "reg_wire_mismatch",
+    "reg_wire_mismatch",
+    "reg_wire_mismatch",
+    "logic_error",
+    "logic_error"
+  ],
+  "max_retries": 5
+}

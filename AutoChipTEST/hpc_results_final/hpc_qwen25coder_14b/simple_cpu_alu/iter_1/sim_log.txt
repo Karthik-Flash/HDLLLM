@@ -1,0 +1,16 @@
+--- COMPILATION ---
+
+
+--- SIMULATION ---
+PASS test1
+PASS test2
+PASS test3
+PASS test4
+PASS test5
+PASS test6
+PASS test7
+PASS test8
+PASS test9
+ALL TESTS PASSED
+results/hpc_qwen25coder_14b/simple_cpu_alu/iter_1/simple_cpu_alu_tb.v:40: $finish called at 9 (1s)
+

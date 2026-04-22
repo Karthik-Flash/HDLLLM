@@ -1,0 +1,61 @@
+module simple_cpu_ctrl (
+    input clk,
+    input rst,
+    input [7:0] instruction,
+    output [1:0] alu_op,
+    output we_reg,
+    output [1:0] rs1,
+    output [1:0] rs2,
+    output [1:0] rd
+);
+
+    // Local parameters for states
+    localparam [2:0] S_IDLE = 3'b000;
+    localparam [2:0] S_EXECUTE = 3'b001;
+
+    // State register
+    reg [2:0] current_state, next_state;
+
+    // Instruction decoding
+    wire [2:0] opcode = instruction[7:5];
+    wire [1:0] rs1_decoded = instruction[4:3];
+    wire [1:0] rs2_decoded = instruction[2:1];
+
+    // Combinational logic for state transition
+    always @(*) begin
+        case (current_state)
+            S_IDLE: next_state = S_EXECUTE;
+            S_EXECUTE: next_state = S_IDLE;
+            default: next_state = S_IDLE;
+        endcase
+    end
+
+    // Sequential logic for state register
+    always @(posedge clk or posedge rst) begin
+        if (rst)
+            current_state <= S_IDLE;
+        else
+            current_state <= next_state;
+    end
+
+    // Combinational logic for output generation
+    always @(*) begin
+        case (opcode)
+            3'b000: {alu_op, we_reg} = 2'b00; // NOP
+            3'b001: {alu_op, we_reg} = 2'b00; // ADD
+            3'b010: {alu_op, we_reg} = 2'b01; // SUB
+            3'b011: {alu_op, we_reg} = 2'b10; // AND
+            3'b100: {alu_op, we_reg} = 2'b11; // OR
+            3'b101: {alu_op, we_reg} = 2'b00; // LOAD
+            3'b110: {alu_op, we_reg} = 2'b00; // STORE
+            3'b111: {alu_op, we_reg} = 2'b00; // BRANCH
+            default: {alu_op, we_reg} = 2'b00;
+        endcase
+    end
+
+    // Assign decoded registers
+    assign rs1 = rs1_decoded;
+    assign rs2 = rs2_decoded;
+    assign rd = rs1_decoded; // rd uses rs1
+
+endmodule

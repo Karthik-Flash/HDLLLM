@@ -1,0 +1,5 @@
+--- COMPILATION ---
+results\gemma3_4b\full_adder\iter_3\full_adder.v:9: error: Net ``sum'' has already been declared.
+results\gemma3_4b\full_adder\iter_3\full_adder.v:9: error: Net ``cout'' has already been declared.
+2 error(s) during elaboration.
+

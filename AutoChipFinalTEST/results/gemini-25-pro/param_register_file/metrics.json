@@ -1,0 +1,13 @@
+{
+  "module": "param_register_file",
+  "model": "gemini-2.5-pro",
+  "pass_at_1": true,
+  "iterations_to_pass": 1,
+  "time_to_pass_sec": 21.69,
+  "total_time_sec": 21.69,
+  "total_iterations": 1,
+  "compile_errors": 0,
+  "sim_errors": 0,
+  "error_types": [],
+  "max_retries": 5
+}

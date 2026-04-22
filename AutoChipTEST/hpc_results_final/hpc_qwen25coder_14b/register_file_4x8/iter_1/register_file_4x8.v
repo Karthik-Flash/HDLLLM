@@ -1,0 +1,25 @@
+module register_file_4x8 (
+    input clk,
+    input we,
+    input [1:0] waddr,
+    input [1:0] raddr1,
+    input [1:0] raddr2,
+    input [7:0] wdata,
+    output [7:0] rdata1,
+    output [7:0] rdata2
+);
+
+    reg [7:0] registers [0:3];
+
+    // Asynchronous read
+    assign rdata1 = registers[raddr1];
+    assign rdata2 = registers[raddr2];
+
+    // Synchronous write
+    always @(posedge clk) begin
+        if (we) begin
+            registers[waddr] <= wdata;
+        end
+    end
+
+endmodule

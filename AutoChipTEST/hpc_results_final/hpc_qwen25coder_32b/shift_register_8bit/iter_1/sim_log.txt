@@ -1,0 +1,17 @@
+--- COMPILATION ---
+
+
+--- SIMULATION ---
+FAIL reset
+FAIL shift1
+FAIL shift2
+FAIL shift3
+FAIL shift4
+FAIL shift5
+FAIL shift6
+FAIL shift7
+FAIL shift8
+FAIL sout
+10 TEST(S) FAILED
+results/hpc_qwen25coder_32b/shift_register_8bit/iter_1/shift_register_8bit_tb.v:24: $finish called at 86 (1s)
+

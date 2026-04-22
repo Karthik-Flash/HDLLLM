@@ -1,0 +1,19 @@
+{
+  "module": "simple_cpu_ctrl",
+  "model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+  "hardware": "V100-32GB-HPC",
+  "pass_at_1": false,
+  "iterations_to_pass": null,
+  "time_to_pass_sec": null,
+  "total_iterations": 5,
+  "compile_errors": 1,
+  "sim_errors": 4,
+  "error_types": [
+    "compile_other",
+    "logic_error",
+    "logic_error",
+    "logic_error",
+    "logic_error"
+  ],
+  "max_retries": 5
+}

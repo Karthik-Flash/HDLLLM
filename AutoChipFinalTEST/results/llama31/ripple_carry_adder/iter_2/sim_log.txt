@@ -1,0 +1,4 @@
+--- COMPILATION ---
+results\llama31\ripple_carry_adder\iter_2\ripple_carry_adder.v:13: warning: input port cin is coerced to inout.
+Assertion failed: &l != &r, file ../verilog-0.9.7/net_link.cc, line 61
+

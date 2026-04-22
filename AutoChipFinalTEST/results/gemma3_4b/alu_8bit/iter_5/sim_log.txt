@@ -1,0 +1,5 @@
+--- COMPILATION ---
+results\gemma3_4b\alu_8bit\iter_5\alu_8bit.v:58: error: Net ``zero'' has already been declared.
+results\gemma3_4b\alu_8bit\iter_5\alu_8bit_tb.v:56: Module alu_8bit_tb was already declared here: results\gemma3_4b\alu_8bit\iter_5\alu_8bit.v:44
+
+

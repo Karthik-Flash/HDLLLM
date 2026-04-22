@@ -1,0 +1,4 @@
+--- COMPILATION ---
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/baseline/decoder_3to8/iter_6/decoder_3to8.v:20: syntax error
+/mnt/c/KarDRIVE/BITS Files/3-2/LLM_Verilog Project/AgenticAI/AutoChipAdvFB/results_v2/gemma3_12b/baseline/decoder_3to8/iter_6/decoder_3to8.v:21: Syntax in assignment statement l-value.
+

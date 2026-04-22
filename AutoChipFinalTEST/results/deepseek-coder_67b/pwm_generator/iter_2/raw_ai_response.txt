@@ -1,0 +1,17 @@
+The error message indicates that `pwm_out` should be declared as a `reg`, not a `wire`. Here's the corrected code:
+
+```verilog
+module pwm_generator(input clk, rst, input [7:0] duty_cycle, output reg pwm_out);
+  reg [7:0] counter;
+  
+  always @(posedge clk) begin
+    if (rst) 
+      counter <= 8'd0;
+    else 
+      counter <= counter + 1'b1;
+  end
+  
+  assign pwm_out = (counter < duty_cycle);
+endmodule
+```
+This code should now compile without errors. The `pwm_out` signal is declared as a `reg`, which can be driven by continuous assignment and combinational logic inside an always block.

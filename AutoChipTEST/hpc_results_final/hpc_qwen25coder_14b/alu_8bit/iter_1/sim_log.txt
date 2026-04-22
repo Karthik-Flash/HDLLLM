@@ -1,0 +1,23 @@
+--- COMPILATION ---
+
+
+--- SIMULATION ---
+PASS test1
+PASS test2
+PASS test3
+PASS test4
+PASS test5
+PASS test6
+PASS test7
+PASS test8
+PASS test9
+PASS test10
+PASS test11
+PASS test12
+PASS test13
+PASS test14
+PASS test15
+PASS test16
+ALL TESTS PASSED
+results/hpc_qwen25coder_14b/alu_8bit/iter_1/alu_8bit_tb.v:57: $finish called at 32 (1s)
+

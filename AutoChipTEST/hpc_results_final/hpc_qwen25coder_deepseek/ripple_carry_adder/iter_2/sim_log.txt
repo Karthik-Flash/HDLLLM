@@ -1,0 +1,6 @@
+--- COMPILATION ---
+results/hpc_qwen25coder_deepseek/ripple_carry_adder/iter_2/ripple_carry_adder.v:47: error: 'full_adder' has already been declared in this scope.
+results/hpc_qwen25coder_deepseek/ripple_carry_adder/iter_2/full_adder.v:1:      : It was declared here as a module.
+results/hpc_qwen25coder_deepseek/ripple_carry_adder/iter_2/ripple_carry_adder.v:58: error: Module full_adder was already declared here: results/hpc_qwen25coder_deepseek/ripple_carry_adder/iter_2/full_adder.v:1
+
+

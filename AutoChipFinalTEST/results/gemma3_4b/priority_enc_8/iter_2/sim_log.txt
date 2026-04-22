@@ -1,0 +1,21 @@
+--- COMPILATION ---
+results\gemma3_4b\priority_enc_8\iter_2\priority_enc_8.v:10: error: valid is not a valid l-value in priority_enc_8_tb.uut.
+results\gemma3_4b\priority_enc_8\iter_2\priority_enc_8.v:4:      : valid is declared here as wire.
+results\gemma3_4b\priority_enc_8\iter_2\priority_enc_8.v:13: error: valid is not a valid l-value in priority_enc_8_tb.uut.
+results\gemma3_4b\priority_enc_8\iter_2\priority_enc_8.v:4:      : valid is declared here as wire.
+results\gemma3_4b\priority_enc_8\iter_2\priority_enc_8.v:16: error: valid is not a valid l-value in priority_enc_8_tb.uut.
+results\gemma3_4b\priority_enc_8\iter_2\priority_enc_8.v:4:      : valid is declared here as wire.
+results\gemma3_4b\priority_enc_8\iter_2\priority_enc_8.v:19: error: valid is not a valid l-value in priority_enc_8_tb.uut.
+results\gemma3_4b\priority_enc_8\iter_2\priority_enc_8.v:4:      : valid is declared here as wire.
+results\gemma3_4b\priority_enc_8\iter_2\priority_enc_8.v:22: error: valid is not a valid l-value in priority_enc_8_tb.uut.
+results\gemma3_4b\priority_enc_8\iter_2\priority_enc_8.v:4:      : valid is declared here as wire.
+results\gemma3_4b\priority_enc_8\iter_2\priority_enc_8.v:25: error: valid is not a valid l-value in priority_enc_8_tb.uut.
+results\gemma3_4b\priority_enc_8\iter_2\priority_enc_8.v:4:      : valid is declared here as wire.
+results\gemma3_4b\priority_enc_8\iter_2\priority_enc_8.v:28: error: valid is not a valid l-value in priority_enc_8_tb.uut.
+results\gemma3_4b\priority_enc_8\iter_2\priority_enc_8.v:4:      : valid is declared here as wire.
+results\gemma3_4b\priority_enc_8\iter_2\priority_enc_8.v:31: error: valid is not a valid l-value in priority_enc_8_tb.uut.
+results\gemma3_4b\priority_enc_8\iter_2\priority_enc_8.v:4:      : valid is declared here as wire.
+results\gemma3_4b\priority_enc_8\iter_2\priority_enc_8.v:34: error: valid is not a valid l-value in priority_enc_8_tb.uut.
+results\gemma3_4b\priority_enc_8\iter_2\priority_enc_8.v:4:      : valid is declared here as wire.
+9 error(s) during elaboration.
+

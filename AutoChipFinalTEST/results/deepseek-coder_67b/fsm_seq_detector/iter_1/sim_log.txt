@@ -1,0 +1,11 @@
+--- COMPILATION ---
+results\deepseek-coder_67b\fsm_seq_detector\iter_1\fsm_seq_detector.v:16: error: next_state is not a valid l-value in fsm_seq_detector_tb.uut.
+results\deepseek-coder_67b\fsm_seq_detector\iter_1\fsm_seq_detector.v:3:      : next_state is declared here as wire.
+results\deepseek-coder_67b\fsm_seq_detector\iter_1\fsm_seq_detector.v:17: error: next_state is not a valid l-value in fsm_seq_detector_tb.uut.
+results\deepseek-coder_67b\fsm_seq_detector\iter_1\fsm_seq_detector.v:3:      : next_state is declared here as wire.
+results\deepseek-coder_67b\fsm_seq_detector\iter_1\fsm_seq_detector.v:18: error: next_state is not a valid l-value in fsm_seq_detector_tb.uut.
+results\deepseek-coder_67b\fsm_seq_detector\iter_1\fsm_seq_detector.v:3:      : next_state is declared here as wire.
+results\deepseek-coder_67b\fsm_seq_detector\iter_1\fsm_seq_detector.v:19: error: next_state is not a valid l-value in fsm_seq_detector_tb.uut.
+results\deepseek-coder_67b\fsm_seq_detector\iter_1\fsm_seq_detector.v:3:      : next_state is declared here as wire.
+4 error(s) during elaboration.
+

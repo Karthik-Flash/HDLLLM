@@ -1,0 +1,24 @@
+module simple_cpu_alu (
+    input [3:0] A,
+    input [3:0] B,
+    input [1:0] op,
+    output [3:0] result,
+    output zero
+);
+
+reg [3:0] result;
+wire zero;
+
+always @(*) begin
+    case (op)
+        2'b00: result = A + B; // ADD
+        2'b01: result = A - B; // SUB
+        2'b10: result = A & B; // AND
+        2'b11: result = A | B; // OR
+        default: result = 4'b0000; // Default case
+    endcase
+end
+
+assign zero = (result == 4'b0000);
+
+endmodule

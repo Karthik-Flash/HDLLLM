@@ -1,0 +1,4 @@
+--- COMPILATION ---
+results\llama31\spi_master_8bit\iter_4\spi_master_8bit.v:2: syntax error
+I give up.
+

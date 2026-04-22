@@ -1,0 +1,13 @@
+{
+  "module": "alu_8bit",
+  "model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+  "hardware": "V100-32GB-HPC",
+  "pass_at_1": true,
+  "iterations_to_pass": 1,
+  "time_to_pass_sec": 12.42,
+  "total_iterations": 1,
+  "compile_errors": 0,
+  "sim_errors": 0,
+  "error_types": [],
+  "max_retries": 5
+}

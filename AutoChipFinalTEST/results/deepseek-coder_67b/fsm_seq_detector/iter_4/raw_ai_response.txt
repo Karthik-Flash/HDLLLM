@@ -1,0 +1,22 @@
+I apologize for any confusion earlier. Here is the Verilog-2001 code as per your specification:
+
+```verilog
+module fsm_seq_detector(input clk, rst, in, output wire detected);
+    reg [1:0] state;
+    
+    always @(posedge clk or posedge rst) begin
+        if (rst) 
+            state <= 2'd0; // Reset to S0 on reset signal
+        else 
+            case (state)
+                2'd0: state <= in ? 2'd1 : 2'd0; // If input is 1, go to S1, stay at S0 otherwise
+                2'd1: state <= !in ? 2'd2 : 2'd1; // If input is 0, go to S2, stay at S1 otherwise
+                2'd2: state <= in ? 2'd3 : 2'd0; // If input is 1, go to S3, reset to S0 otherwise
+                default: state <= !in ? 2'd1 : 2'd2; // For state S3, if input is 0, go back to S1, stay at S2 otherwise
+            endcase
+    end
+    
+    assign detected = (state == 2'd3) & in; // Output 'detected' fires when the state is S3 and input is 1
+endmodule
+```
+This module implements a Mealy FSM that detects the sequence 1011 on serial input 'in'. The states are represented by a two-bit register 'state', which updates synchronously with the clock signal. The next state is determined combinatorially based on the current state and the input, as specified in your specification. The output 'detected' fires when the state is S3 (2'd3) and the input 'in' is 1, indicating that the sequence has been detected.

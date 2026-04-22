@@ -1,0 +1,5 @@
+--- COMPILATION ---
+results\llama31\alu_8bit\iter_2\alu_8bit.v:22: error: zero is not a valid l-value in alu_8bit_tb.uut.
+results\llama31\alu_8bit\iter_2\alu_8bit.v:6:      : zero is declared here as wire.
+1 error(s) during elaboration.
+

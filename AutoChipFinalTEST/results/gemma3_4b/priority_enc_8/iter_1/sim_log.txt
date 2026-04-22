@@ -1,0 +1,15 @@
+--- COMPILATION ---
+
+
+--- SIMULATION ---
+FAIL: in=8'b00000001  expected out=0 valid=1  got out=0 valid=0
+FAIL: in=8'b00000010  expected out=1 valid=1  got out=1 valid=0
+FAIL: in=8'b00000100  expected out=2 valid=1  got out=2 valid=0
+FAIL: in=8'b00001000  expected out=3 valid=1  got out=3 valid=0
+FAIL: in=8'b00010000  expected out=4 valid=1  got out=4 valid=0
+FAIL: in=8'b00100000  expected out=5 valid=1  got out=5 valid=0
+FAIL: in=8'b01000000  expected out=6 valid=1  got out=6 valid=0
+FAIL: in=8'b00110010  expected out=5 valid=1  got out=5 valid=0
+FAIL: in=8'b00000111  expected out=2 valid=1  got out=2 valid=0
+FAIL: in=8'b01100000  expected out=6 valid=1  got out=6 valid=0
+

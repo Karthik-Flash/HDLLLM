@@ -1,0 +1,4 @@
+--- COMPILATION ---
+results\deepseek-coder_67b\pwm_generator\iter_1\pwm_generator.v:9: error: reg pwm_out; cannot be driven by primitives or continuous assignment.
+1 error(s) during elaboration.
+

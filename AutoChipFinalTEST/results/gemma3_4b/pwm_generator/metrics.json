@@ -1,0 +1,19 @@
+{
+  "module": "pwm_generator",
+  "model": "gemma3:4b",
+  "pass_at_1": false,
+  "iterations_to_pass": null,
+  "time_to_pass_sec": null,
+  "total_time_sec": 9.15,
+  "total_iterations": 5,
+  "compile_errors": 5,
+  "sim_errors": 0,
+  "error_types": [
+    "duplicate_module",
+    "duplicate_module",
+    "duplicate_module",
+    "duplicate_module",
+    "duplicate_module"
+  ],
+  "max_retries": 5
+}

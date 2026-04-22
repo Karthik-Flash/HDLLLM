@@ -1,0 +1,5 @@
+--- COMPILATION ---
+results\deepseek-coder_67b\full_adder\iter_5\full_adder.v:2: error: reg sum; cannot be driven by primitives or continuous assignment.
+results\deepseek-coder_67b\full_adder\iter_5\full_adder.v:3: error: reg cout; cannot be driven by primitives or continuous assignment.
+2 error(s) during elaboration.
+

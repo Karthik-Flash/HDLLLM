@@ -1,0 +1,13 @@
+{
+  "module": "dff_sync_reset",
+  "model": "deepseek-coder:6.7b",
+  "pass_at_1": true,
+  "iterations_to_pass": 1,
+  "time_to_pass_sec": 11.24,
+  "total_time_sec": 11.24,
+  "total_iterations": 1,
+  "compile_errors": 0,
+  "sim_errors": 0,
+  "error_types": [],
+  "max_retries": 5
+}

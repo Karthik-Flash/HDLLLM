@@ -1,0 +1,267 @@
+#! /c/iverilog/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision - 12;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0129AA50 .scope module, "ripple_carry_adder_tb" "ripple_carry_adder_tb" 2 2;
+ .timescale -9 -12;
+v012FECB0_0 .var "A", 3 0;
+v012FEFC8_0 .var "B", 3 0;
+RS_012D5374 .resolv tri, L_012FF020, L_012FF180, L_012FF1D8, L_012FF6A8;
+v012FEC58_0 .net8 "Sum", 3 0, RS_012D5374; 4 drivers
+v012FEAA0_0 .var "cin", 0 0;
+v012FED08_0 .net "cout", 0 0, L_013017D0; 1 drivers
+v012FE8E8_0 .var/i "fail", 31 0;
+S_0129A500 .scope task, "check" "check" 2 11, 2 11, S_0129AA50;
+ .timescale -9 -12;
+v012FEF70_0 .var "ea", 3 0;
+v012FEEC0_0 .var "eb", 3 0;
+v012FEA48_0 .var "ecin", 0 0;
+v012FF288_0 .var "ecout", 0 0;
+v012FE998_0 .var "esum", 3 0;
+TD_ripple_carry_adder_tb.check ;
+    %load/v 8, v012FEF70_0, 4;
+    %set/v v012FECB0_0, 8, 4;
+    %load/v 8, v012FEEC0_0, 4;
+    %set/v v012FEFC8_0, 8, 4;
+    %load/v 8, v012FEA48_0, 1;
+    %set/v v012FEAA0_0, 8, 1;
+    %delay 10000, 0;
+    %load/v 8, v012FEC58_0, 4;
+    %load/v 12, v012FE998_0, 4;
+    %cmp/u 8, 12, 4;
+    %inv 6, 1;
+    %mov 8, 6, 1;
+    %load/v 9, v012FED08_0, 1;
+    %load/v 10, v012FF288_0, 1;
+    %cmp/u 9, 10, 1;
+    %inv 6, 1;
+    %or 8, 6, 1;
+    %jmp/0xz  T_0.0, 8;
+    %vpi_call 2 19 "$display", "FAIL: %0d + %0d + %0d  expected Sum=%0d cout=%b  got Sum=%0d cout=%b", v012FEF70_0, v012FEEC0_0, v012FEA48_0, v012FE998_0, v012FF288_0, v012FEC58_0, v012FED08_0;
+    %load/v 8, v012FE8E8_0, 32;
+    %mov 40, 39, 1;
+    %addi 8, 1, 33;
+    %set/v v012FE8E8_0, 8, 32;
+T_0.0 ;
+    %end;
+S_0129A3F0 .scope module, "uut" "ripple_carry_adder" 2 9, 3 1, S_0129AA50;
+ .timescale 0 0;
+RS_012D508C .resolv tri, L_01300378, L_01301798, C4<z>, C4<z>;
+L_013017D0 .functor BUFZ 1, RS_012D508C, C4<0>, C4<0>, C4<0>;
+RS_012D5314 .resolv tri, L_01301A00, v012FEAA0_0, C4<z>, C4<z>;
+L_01301A00 .functor BUFZ 1, RS_012D5314, C4<0>, C4<0>, C4<0>;
+L_01301798 .functor BUFZ 1, L_013017D0, C4<0>, C4<0>, C4<0>;
+v012FE178_0 .net "A", 3 0, v012FECB0_0; 1 drivers
+v012FDF10_0 .net "B", 3 0, v012FEFC8_0; 1 drivers
+v012FDBF8_0 .alias "Sum", 3 0, v012FEC58_0;
+v012FDCA8_0 .net *"_s27", 0 0, L_012FF128; 1 drivers
+v012FE280_0 .net *"_s31", 0 0, L_012FF2E0; 1 drivers
+v012FDD00_0 .net *"_s35", 0 0, L_012FF650; 1 drivers
+v012FDE08_0 .net *"_s39", 0 0, L_012FF548; 1 drivers
+v012FDD58_0 .net8 "cin", 0 0, RS_012D5314; 2 drivers
+v012FDE60_0 .alias "cout", 0 0, v012FED08_0;
+v012FDEB8_0 .net "fa0_cout", 0 0, L_012D1B00; 1 drivers
+v012FDF68_0 .net "fa0_sum", 3 0, L_012FEE68; 1 drivers
+v012FDFC0_0 .net "fa1_cout", 0 0, L_01300228; 1 drivers
+v012FE018_0 .net "fa1_sum", 3 0, L_012FEAF8; 1 drivers
+v012FEC00_0 .net "fa2_cout", 0 0, L_012FFEA8; 1 drivers
+v012FED60_0 .net "fa2_sum", 3 0, L_012FEE10; 1 drivers
+v012FE890_0 .net8 "fa3_cout", 0 0, RS_012D508C; 2 drivers
+v012FE940_0 .net "fa3_sum", 3 0, L_012FF0D0; 1 drivers
+L_012FE838 .part v012FECB0_0, 0, 1;
+L_012FEDB8 .part v012FEFC8_0, 0, 1;
+L_012FEE68 .part/pv L_01293670, 0, 1, 4;
+L_012FE9F0 .part v012FECB0_0, 1, 1;
+L_012FF078 .part v012FEFC8_0, 1, 1;
+L_012FEAF8 .part/pv L_012D1E48, 1, 1, 4;
+L_012FF230 .part v012FECB0_0, 2, 1;
+L_012FEB50 .part v012FEFC8_0, 2, 1;
+L_012FEE10 .part/pv L_01300298, 2, 1, 4;
+L_012FEF18 .part v012FECB0_0, 3, 1;
+L_012FEBA8 .part v012FEFC8_0, 3, 1;
+L_012FF0D0 .part/pv L_01300068, 3, 1, 4;
+L_012FF020 .part/pv L_012FF128, 0, 1, 4;
+L_012FF128 .part L_012FEE68, 0, 1;
+L_012FF180 .part/pv L_012FF2E0, 1, 1, 4;
+L_012FF2E0 .part L_012FEAF8, 1, 1;
+L_012FF1D8 .part/pv L_012FF650, 2, 1, 4;
+L_012FF650 .part L_012FEE10, 2, 1;
+L_012FF6A8 .part/pv L_012FF548, 3, 1, 4;
+L_012FF548 .part L_012FF0D0, 3, 1;
+S_0129AAD8 .scope module, "fa0" "full_adder" 3 12, 4 1, S_0129A3F0;
+ .timescale 0 0;
+L_0129BC58 .functor XOR 1, L_012FE838, L_012FEDB8, C4<0>, C4<0>;
+L_01293670 .functor XOR 1, L_0129BC58, RS_012D5314, C4<0>, C4<0>;
+L_012D1C50 .functor AND 1, L_012FE838, L_012FEDB8, C4<1>, C4<1>;
+L_012D1C18 .functor AND 1, L_012FEDB8, RS_012D5314, C4<1>, C4<1>;
+L_012D1CC0 .functor OR 1, L_012D1C50, L_012D1C18, C4<0>, C4<0>;
+L_012D1BA8 .functor AND 1, L_012FE838, RS_012D5314, C4<1>, C4<1>;
+L_012D1B00 .functor OR 1, L_012D1CC0, L_012D1BA8, C4<0>, C4<0>;
+v012FE120_0 .net *"_s0", 0 0, L_0129BC58; 1 drivers
+v012FE228_0 .net *"_s10", 0 0, L_012D1BA8; 1 drivers
+v012FDDB0_0 .net *"_s4", 0 0, L_012D1C50; 1 drivers
+v012FDAF0_0 .net *"_s6", 0 0, L_012D1C18; 1 drivers
+v012FD938_0 .net *"_s8", 0 0, L_012D1CC0; 1 drivers
+v012FDA98_0 .net "a", 0 0, L_012FE838; 1 drivers
+v012FE2D8_0 .net "b", 0 0, L_012FEDB8; 1 drivers
+v012FDB48_0 .alias "cin", 0 0, v012FDD58_0;
+v012FDC50_0 .alias "cout", 0 0, v012FDEB8_0;
+v012FDBA0_0 .net "sum", 0 0, L_01293670; 1 drivers
+S_0129A698 .scope module, "fa1" "full_adder" 3 20, 4 1, S_0129A3F0;
+ .timescale 0 0;
+L_012D1DD8 .functor XOR 1, L_012FE9F0, L_012FF078, C4<0>, C4<0>;
+L_012D1E48 .functor XOR 1, L_012D1DD8, L_012D1B00, C4<0>, C4<0>;
+L_012D1BE0 .functor AND 1, L_012FE9F0, L_012FF078, C4<1>, C4<1>;
+L_012FFC78 .functor AND 1, L_012FF078, L_012D1B00, C4<1>, C4<1>;
+L_012FFD90 .functor OR 1, L_012D1BE0, L_012FFC78, C4<0>, C4<0>;
+L_012FFC40 .functor AND 1, L_012FE9F0, L_012D1B00, C4<1>, C4<1>;
+L_01300228 .functor OR 1, L_012FFD90, L_012FFC40, C4<0>, C4<0>;
+v012FE490_0 .net *"_s0", 0 0, L_012D1DD8; 1 drivers
+v012FD888_0 .net *"_s10", 0 0, L_012FFC40; 1 drivers
+v012FD830_0 .net *"_s4", 0 0, L_012D1BE0; 1 drivers
+v012FD990_0 .net *"_s6", 0 0, L_012FFC78; 1 drivers
+v012FD9E8_0 .net *"_s8", 0 0, L_012FFD90; 1 drivers
+v012FDA40_0 .net "a", 0 0, L_012FE9F0; 1 drivers
+v012FE1D0_0 .net "b", 0 0, L_012FF078; 1 drivers
+v012FE070_0 .alias "cin", 0 0, v012FDEB8_0;
+v012FD8E0_0 .alias "cout", 0 0, v012FDFC0_0;
+v012FE0C8_0 .net "sum", 0 0, L_012D1E48; 1 drivers
+S_0129AF18 .scope module, "fa2" "full_adder" 3 28, 4 1, S_0129A3F0;
+ .timescale 0 0;
+L_012FFFC0 .functor XOR 1, L_012FF230, L_012FEB50, C4<0>, C4<0>;
+L_01300298 .functor XOR 1, L_012FFFC0, L_01300228, C4<0>, C4<0>;
+L_012FFF50 .functor AND 1, L_012FF230, L_012FEB50, C4<1>, C4<1>;
+L_013002D0 .functor AND 1, L_012FEB50, L_01300228, C4<1>, C4<1>;
+L_013000D8 .functor OR 1, L_012FFF50, L_013002D0, C4<0>, C4<0>;
+L_012FFFF8 .functor AND 1, L_012FF230, L_01300228, C4<1>, C4<1>;
+L_012FFEA8 .functor OR 1, L_013000D8, L_012FFFF8, C4<0>, C4<0>;
+v012FE750_0 .net *"_s0", 0 0, L_012FFFC0; 1 drivers
+v012FE438_0 .net *"_s10", 0 0, L_012FFFF8; 1 drivers
+v012FE4E8_0 .net *"_s4", 0 0, L_012FFF50; 1 drivers
+v012FE6A0_0 .net *"_s6", 0 0, L_013002D0; 1 drivers
+v012FE330_0 .net *"_s8", 0 0, L_013000D8; 1 drivers
+v012FE6F8_0 .net "a", 0 0, L_012FF230; 1 drivers
+v012FE7A8_0 .net "b", 0 0, L_012FEB50; 1 drivers
+v012FE5F0_0 .alias "cin", 0 0, v012FDFC0_0;
+v012FE388_0 .alias "cout", 0 0, v012FEC00_0;
+v012FE3E0_0 .net "sum", 0 0, L_01300298; 1 drivers
+S_0129A610 .scope module, "fa3" "full_adder" 3 36, 4 1, S_0129A3F0;
+ .timescale 0 0;
+L_013001B8 .functor XOR 1, L_012FEF18, L_012FEBA8, C4<0>, C4<0>;
+L_01300068 .functor XOR 1, L_013001B8, L_012FFEA8, C4<0>, C4<0>;
+L_012FFCB0 .functor AND 1, L_012FEF18, L_012FEBA8, C4<1>, C4<1>;
+L_012FFDC8 .functor AND 1, L_012FEBA8, L_012FFEA8, C4<1>, C4<1>;
+L_012FFE00 .functor OR 1, L_012FFCB0, L_012FFDC8, C4<0>, C4<0>;
+L_01300340 .functor AND 1, L_012FEF18, L_012FFEA8, C4<1>, C4<1>;
+L_01300378 .functor OR 1, L_012FFE00, L_01300340, C4<0>, C4<0>;
+v012C4B20_0 .net *"_s0", 0 0, L_013001B8; 1 drivers
+v012C47B0_0 .net *"_s10", 0 0, L_01300340; 1 drivers
+v012C4808_0 .net *"_s4", 0 0, L_012FFCB0; 1 drivers
+v012C4C28_0 .net *"_s6", 0 0, L_012FFDC8; 1 drivers
+v012C4860_0 .net *"_s8", 0 0, L_012FFE00; 1 drivers
+v012C48B8_0 .net "a", 0 0, L_012FEF18; 1 drivers
+v012C4C80_0 .net "b", 0 0, L_012FEBA8; 1 drivers
+v012FE540_0 .alias "cin", 0 0, v012FEC00_0;
+v012FE598_0 .alias "cout", 0 0, v012FE890_0;
+v012FE648_0 .net "sum", 0 0, L_01300068; 1 drivers
+    .scope S_0129AA50;
+T_1 ;
+    %set/v v012FE8E8_0, 0, 32;
+    %end;
+    .thread T_1;
+    .scope S_0129AA50;
+T_2 ;
+    %set/v v012FEF70_0, 0, 4;
+    %set/v v012FEEC0_0, 0, 4;
+    %set/v v012FEA48_0, 0, 1;
+    %set/v v012FE998_0, 0, 4;
+    %set/v v012FF288_0, 0, 1;
+    %fork TD_ripple_carry_adder_tb.check, S_0129A500;
+    %join;
+    %movi 8, 1, 4;
+    %set/v v012FEF70_0, 8, 4;
+    %movi 8, 1, 4;
+    %set/v v012FEEC0_0, 8, 4;
+    %set/v v012FEA48_0, 0, 1;
+    %movi 8, 2, 4;
+    %set/v v012FE998_0, 8, 4;
+    %set/v v012FF288_0, 0, 1;
+    %fork TD_ripple_carry_adder_tb.check, S_0129A500;
+    %join;
+    %movi 8, 7, 4;
+    %set/v v012FEF70_0, 8, 4;
+    %movi 8, 8, 4;
+    %set/v v012FEEC0_0, 8, 4;
+    %set/v v012FEA48_0, 0, 1;
+    %set/v v012FE998_0, 1, 4;
+    %set/v v012FF288_0, 0, 1;
+    %fork TD_ripple_carry_adder_tb.check, S_0129A500;
+    %join;
+    %movi 8, 8, 4;
+    %set/v v012FEF70_0, 8, 4;
+    %movi 8, 8, 4;
+    %set/v v012FEEC0_0, 8, 4;
+    %set/v v012FEA48_0, 0, 1;
+    %set/v v012FE998_0, 0, 4;
+    %set/v v012FF288_0, 1, 1;
+    %fork TD_ripple_carry_adder_tb.check, S_0129A500;
+    %join;
+    %set/v v012FEF70_0, 1, 4;
+    %set/v v012FEEC0_0, 1, 4;
+    %set/v v012FEA48_0, 0, 1;
+    %movi 8, 14, 4;
+    %set/v v012FE998_0, 8, 4;
+    %set/v v012FF288_0, 1, 1;
+    %fork TD_ripple_carry_adder_tb.check, S_0129A500;
+    %join;
+    %set/v v012FEF70_0, 1, 4;
+    %set/v v012FEEC0_0, 1, 4;
+    %set/v v012FEA48_0, 1, 1;
+    %set/v v012FE998_0, 1, 4;
+    %set/v v012FF288_0, 1, 1;
+    %fork TD_ripple_carry_adder_tb.check, S_0129A500;
+    %join;
+    %movi 8, 5, 4;
+    %set/v v012FEF70_0, 8, 4;
+    %movi 8, 3, 4;
+    %set/v v012FEEC0_0, 8, 4;
+    %set/v v012FEA48_0, 0, 1;
+    %movi 8, 8, 4;
+    %set/v v012FE998_0, 8, 4;
+    %set/v v012FF288_0, 0, 1;
+    %fork TD_ripple_carry_adder_tb.check, S_0129A500;
+    %join;
+    %movi 8, 9, 4;
+    %set/v v012FEF70_0, 8, 4;
+    %movi 8, 6, 4;
+    %set/v v012FEEC0_0, 8, 4;
+    %set/v v012FEA48_0, 1, 1;
+    %set/v v012FE998_0, 0, 4;
+    %set/v v012FF288_0, 1, 1;
+    %fork TD_ripple_carry_adder_tb.check, S_0129A500;
+    %join;
+    %set/v v012FEF70_0, 0, 4;
+    %set/v v012FEEC0_0, 0, 4;
+    %set/v v012FEA48_0, 1, 1;
+    %movi 8, 1, 4;
+    %set/v v012FE998_0, 8, 4;
+    %set/v v012FF288_0, 0, 1;
+    %fork TD_ripple_carry_adder_tb.check, S_0129A500;
+    %join;
+    %load/v 8, v012FE8E8_0, 32;
+    %cmpi/u 8, 0, 32;
+    %jmp/0xz  T_2.0, 4;
+    %vpi_call 2 36 "$display", "ALL TESTS PASSED";
+T_2.0 ;
+    %vpi_call 2 37 "$finish";
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "results\gemma3_4b\ripple_carry_adder\iter_1\ripple_carry_adder_tb.v";
+    "results\gemma3_4b\ripple_carry_adder\iter_1\ripple_carry_adder.v";
+    "results\gemma3_4b\ripple_carry_adder\iter_1\full_adder.v";

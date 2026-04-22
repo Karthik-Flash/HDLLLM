@@ -1,0 +1,6 @@
+--- COMPILATION ---
+results\deepseek-coder_67b\spi_master_8bit\iter_1\spi_master_8bit.v:7: syntax error
+results\deepseek-coder_67b\spi_master_8bit\iter_1\spi_master_8bit.v:7: error: Invalid module instantiation
+results\deepseek-coder_67b\spi_master_8bit\iter_1\spi_master_8bit.v:8: syntax error
+results\deepseek-coder_67b\spi_master_8bit\iter_1\spi_master_8bit.v:8: error: Invalid module instantiation
+

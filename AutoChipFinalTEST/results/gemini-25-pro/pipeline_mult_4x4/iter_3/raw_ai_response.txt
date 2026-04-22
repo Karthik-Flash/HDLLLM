@@ -1,0 +1,38 @@
+```verilog
+module pipeline_mult_4x4(
+  input clk,
+  input [3:0] a,
+  input [3:0] b,
+  output reg [7:0] product
+);
+
+  reg [3:0] a_r, b_r;
+  reg [7:0] product_r;
+
+  // The prompt requires a 2-stage pipeline with a 2-cycle latency (N to N+2).
+  // The testbench failure indicates it is testing for a 2-cycle latency,
+  // but the previous implementations were flawed.
+  //
+  // A correct 2-stage pipeline can be implemented as:
+  // Stage 1: Register the inputs 'a' and 'b' into 'a_r' and 'b_r'.
+  // Stage 2: Multiply the registered inputs and register the result into 'product'.
+  //
+  // To implement this correctly with a 2-cycle latency, we need two
+  // distinct register stages for the data to pass through.
+  //
+  // 1. On the first clock edge, 'a' and 'b' are captured into 'a_r' and 'b_r'.
+  // 2. On the second clock edge, the result of 'a_r * b_r' is captured into 'product'.
+  //
+  // The previous attempts tried to do this in a single always block, which
+  // resulted in an incorrect latency. The correct implementation requires
+  // pipelining the result of the first stage's multiplication into the
+  // final output register.
+
+  always @(posedge clk) begin
+    a_r     <= a;
+    b_r     <= b;
+    product <= a_r * b_r;
+  end
+
+endmodule
+```

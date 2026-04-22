@@ -1,0 +1,47 @@
+--- COMPILATION ---
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit.v:4: syntax error
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit.v:4: error: Invalid module instantiation
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit.v:5: syntax error
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit.v:5: error: Invalid module instantiation
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:1: error: `timescale directive can not be inside a module definition.
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:9: syntax error
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:9: error: malformed statement
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:10: syntax error
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:10: Syntax in assignment statement l-value.
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:12: syntax error
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:12: Syntax in assignment statement l-value.
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:13: syntax error
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:13: error: malformed statement
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:14: syntax error
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:14: error: malformed statement
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:15: syntax error
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:15: error: malformed statement
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:16: syntax error
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:16: Syntax in assignment statement l-value.
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:18: syntax error
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:23: error: malformed statement
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:25: syntax error
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:25: Syntax in assignment statement l-value.
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:30: syntax error
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:30: error: malformed statement
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:31: syntax error
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:31: error: malformed statement
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:32: syntax error
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:32: error: malformed statement
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:34: syntax error
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:35: Syntax in assignment statement l-value.
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:50: syntax error
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:50: error: malformed statement
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:51: syntax error
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:51: error: malformed statement
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:52: syntax error
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:53: Syntax in assignment statement l-value.
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:62: syntax error
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:62: error: malformed statement
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:63: syntax error
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:63: error: malformed statement
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:64: syntax error
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:65: Syntax in assignment statement l-value.
+results\deepseek-coder_67b\spi_master_8bit\iter_4\spi_master_8bit_tb.v:129: syntax error
+I give up.
+

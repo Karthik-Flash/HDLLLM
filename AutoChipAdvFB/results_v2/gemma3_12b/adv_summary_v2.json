@@ -1,0 +1,467 @@
+{
+  "model": "gemma3:12b",
+  "mode": "both",
+  "baseline": [
+    {
+      "module": "seg7_decoder",
+      "model": "gemma3:12b",
+      "condition": "baseline",
+      "pass_at_1": true,
+      "iterations_to_pass": 1,
+      "time_to_pass_sec": 32.11,
+      "total_time_sec": 32.11,
+      "total_iterations": 1,
+      "compile_errors": 0,
+      "sim_errors": 0,
+      "latch_warnings": 0,
+      "verilator_catches": 0,
+      "error_types": [],
+      "per_iter_detail": [
+        {
+          "iter": 1,
+          "verilator_warning": false,
+          "yosys_latch": false,
+          "iverilog_result": "PASS",
+          "err_type": "PASS"
+        }
+      ]
+    },
+    {
+      "module": "alu_ops",
+      "model": "gemma3:12b",
+      "condition": "baseline",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_time_sec": 178.59,
+      "total_iterations": 6,
+      "compile_errors": 6,
+      "sim_errors": 0,
+      "latch_warnings": 0,
+      "verilator_catches": 0,
+      "error_types": [
+        "syntax_error",
+        "syntax_error",
+        "syntax_error",
+        "syntax_error",
+        "syntax_error",
+        "syntax_error"
+      ],
+      "per_iter_detail": [
+        {
+          "iter": 1,
+          "verilator_warning": false,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "syntax_error"
+        },
+        {
+          "iter": 2,
+          "verilator_warning": false,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "syntax_error"
+        },
+        {
+          "iter": 3,
+          "verilator_warning": false,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "syntax_error"
+        },
+        {
+          "iter": 4,
+          "verilator_warning": false,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "syntax_error"
+        },
+        {
+          "iter": 5,
+          "verilator_warning": false,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "syntax_error"
+        },
+        {
+          "iter": 6,
+          "verilator_warning": false,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "syntax_error"
+        }
+      ]
+    },
+    {
+      "module": "decoder_3to8",
+      "model": "gemma3:12b",
+      "condition": "baseline",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_time_sec": 172.66,
+      "total_iterations": 6,
+      "compile_errors": 5,
+      "sim_errors": 1,
+      "latch_warnings": 0,
+      "verilator_catches": 0,
+      "error_types": [
+        "logic_error",
+        "syntax_error",
+        "syntax_error",
+        "syntax_error",
+        "syntax_error",
+        "syntax_error"
+      ],
+      "per_iter_detail": [
+        {
+          "iter": 1,
+          "verilator_warning": false,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "logic_error"
+        },
+        {
+          "iter": 2,
+          "verilator_warning": false,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "syntax_error"
+        },
+        {
+          "iter": 3,
+          "verilator_warning": false,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "syntax_error"
+        },
+        {
+          "iter": 4,
+          "verilator_warning": false,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "syntax_error"
+        },
+        {
+          "iter": 5,
+          "verilator_warning": false,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "syntax_error"
+        },
+        {
+          "iter": 6,
+          "verilator_warning": false,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "syntax_error"
+        }
+      ]
+    },
+    {
+      "module": "comb_sensitivity",
+      "model": "gemma3:12b",
+      "condition": "baseline",
+      "pass_at_1": true,
+      "iterations_to_pass": 1,
+      "time_to_pass_sec": 9.46,
+      "total_time_sec": 9.46,
+      "total_iterations": 1,
+      "compile_errors": 0,
+      "sim_errors": 0,
+      "latch_warnings": 0,
+      "verilator_catches": 0,
+      "error_types": [],
+      "per_iter_detail": [
+        {
+          "iter": 1,
+          "verilator_warning": false,
+          "yosys_latch": false,
+          "iverilog_result": "PASS",
+          "err_type": "PASS"
+        }
+      ]
+    },
+    {
+      "module": "uart_rx",
+      "model": "gemma3:12b",
+      "condition": "baseline",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_time_sec": 428.51,
+      "total_iterations": 6,
+      "compile_errors": 0,
+      "sim_errors": 6,
+      "latch_warnings": 0,
+      "verilator_catches": 0,
+      "error_types": [
+        "logic_error",
+        "logic_error",
+        "logic_error",
+        "logic_error",
+        "logic_error",
+        "logic_error"
+      ],
+      "per_iter_detail": [
+        {
+          "iter": 1,
+          "verilator_warning": false,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "logic_error"
+        },
+        {
+          "iter": 2,
+          "verilator_warning": false,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "logic_error"
+        },
+        {
+          "iter": 3,
+          "verilator_warning": false,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "logic_error"
+        },
+        {
+          "iter": 4,
+          "verilator_warning": false,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "logic_error"
+        },
+        {
+          "iter": 5,
+          "verilator_warning": false,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "logic_error"
+        },
+        {
+          "iter": 6,
+          "verilator_warning": false,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "logic_error"
+        }
+      ]
+    }
+  ],
+  "advanced": [
+    {
+      "module": "seg7_decoder",
+      "model": "gemma3:12b",
+      "condition": "advanced",
+      "pass_at_1": true,
+      "iterations_to_pass": 1,
+      "time_to_pass_sec": 31.7,
+      "total_time_sec": 31.7,
+      "total_iterations": 1,
+      "compile_errors": 0,
+      "sim_errors": 0,
+      "latch_warnings": 0,
+      "verilator_catches": 0,
+      "error_types": [],
+      "per_iter_detail": [
+        {
+          "iter": 1,
+          "verilator_warning": false,
+          "yosys_latch": false,
+          "iverilog_result": "PASS",
+          "err_type": "PASS"
+        }
+      ]
+    },
+    {
+      "module": "alu_ops",
+      "model": "gemma3:12b",
+      "condition": "advanced",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_time_sec": 202.81,
+      "total_iterations": 6,
+      "compile_errors": 6,
+      "sim_errors": 0,
+      "latch_warnings": 0,
+      "verilator_catches": 6,
+      "error_types": [
+        "syntax_error",
+        "syntax_error",
+        "syntax_error",
+        "syntax_error",
+        "syntax_error",
+        "syntax_error"
+      ],
+      "per_iter_detail": [
+        {
+          "iter": 1,
+          "verilator_warning": true,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "syntax_error"
+        },
+        {
+          "iter": 2,
+          "verilator_warning": true,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "syntax_error"
+        },
+        {
+          "iter": 3,
+          "verilator_warning": true,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "syntax_error"
+        },
+        {
+          "iter": 4,
+          "verilator_warning": true,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "syntax_error"
+        },
+        {
+          "iter": 5,
+          "verilator_warning": true,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "syntax_error"
+        },
+        {
+          "iter": 6,
+          "verilator_warning": true,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "syntax_error"
+        }
+      ]
+    },
+    {
+      "module": "decoder_3to8",
+      "model": "gemma3:12b",
+      "condition": "advanced",
+      "pass_at_1": true,
+      "iterations_to_pass": 2,
+      "time_to_pass_sec": 55.1,
+      "total_time_sec": 55.1,
+      "total_iterations": 2,
+      "compile_errors": 0,
+      "sim_errors": 1,
+      "latch_warnings": 0,
+      "verilator_catches": 1,
+      "error_types": [
+        "logic_error"
+      ],
+      "per_iter_detail": [
+        {
+          "iter": 1,
+          "verilator_warning": true,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "logic_error"
+        },
+        {
+          "iter": 2,
+          "verilator_warning": false,
+          "yosys_latch": false,
+          "iverilog_result": "PASS",
+          "err_type": "PASS"
+        }
+      ]
+    },
+    {
+      "module": "comb_sensitivity",
+      "model": "gemma3:12b",
+      "condition": "advanced",
+      "pass_at_1": true,
+      "iterations_to_pass": 1,
+      "time_to_pass_sec": 9.58,
+      "total_time_sec": 9.58,
+      "total_iterations": 1,
+      "compile_errors": 0,
+      "sim_errors": 0,
+      "latch_warnings": 0,
+      "verilator_catches": 0,
+      "error_types": [],
+      "per_iter_detail": [
+        {
+          "iter": 1,
+          "verilator_warning": false,
+          "yosys_latch": false,
+          "iverilog_result": "PASS",
+          "err_type": "PASS"
+        }
+      ]
+    },
+    {
+      "module": "uart_rx",
+      "model": "gemma3:12b",
+      "condition": "advanced",
+      "pass_at_1": false,
+      "iterations_to_pass": null,
+      "time_to_pass_sec": null,
+      "total_time_sec": 421.5,
+      "total_iterations": 6,
+      "compile_errors": 0,
+      "sim_errors": 6,
+      "latch_warnings": 0,
+      "verilator_catches": 6,
+      "error_types": [
+        "logic_error",
+        "logic_error",
+        "logic_error",
+        "logic_error",
+        "logic_error",
+        "logic_error"
+      ],
+      "per_iter_detail": [
+        {
+          "iter": 1,
+          "verilator_warning": true,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "logic_error"
+        },
+        {
+          "iter": 2,
+          "verilator_warning": true,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "logic_error"
+        },
+        {
+          "iter": 3,
+          "verilator_warning": true,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "logic_error"
+        },
+        {
+          "iter": 4,
+          "verilator_warning": true,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "logic_error"
+        },
+        {
+          "iter": 5,
+          "verilator_warning": true,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "logic_error"
+        },
+        {
+          "iter": 6,
+          "verilator_warning": true,
+          "yosys_latch": false,
+          "iverilog_result": "FAIL",
+          "err_type": "logic_error"
+        }
+      ]
+    }
+  ]
+}

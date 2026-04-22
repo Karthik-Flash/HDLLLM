@@ -1,0 +1,5 @@
+--- COMPILATION ---
+results\gemma3_4b\fsm_seq_detector\iter_4\fsm_seq_detector.v:9: error: Net ``detected'' has already been declared.
+results\gemma3_4b\fsm_seq_detector\iter_4\fsm_seq_detector.v:53: syntax error
+results\gemma3_4b\fsm_seq_detector\iter_4\fsm_seq_detector.v:53: error: Invalid module instantiation
+
