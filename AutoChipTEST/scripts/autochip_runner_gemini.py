@@ -10,7 +10,7 @@ SAFE_NAME  = "gemini_2_5_flash"
 
 API_KEY = os.environ.get("GEMINI_API_KEY", "")
 if not API_KEY:
-    print("GEMINI_API_KEY not set. Run: set GEMINI_API_KEY=AIzaSyBFjgr3px0aDDnD101ixYZeKJghiho3VCo")
+    print("GEMINI_API_KEY not set. Run: set GEMINI_API_KEY=Your API Key")
     sys.exit(1)
 
 SYSTEM_PROMPT = """You are a Verilog-2001 Expert.
